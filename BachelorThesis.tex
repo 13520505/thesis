@@ -1,0 +1,117 @@
+% This template originates from the Cambridge University thesis 
+% which is created by Prof Harish Bhanderi.  
+% This is template follows the GNU license for Education and training
+% purposes. (http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/ThesisStyle/) 
+% 
+%
+% I modified for uses in University of Information Technology 
+% Vietnam National University. 
+
+\documentclass[oneside,12pt]{Classes/uitPhD}
+\usepackage{StyleFiles/watermark}
+\onehalfspacing
+
+\usepackage{changepage}
+\usepackage{pdfpages}
+\usepackage[left=3.5cm,top=3cm,right=2.0cm,bottom=3cm]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+%\renewcommand{\thealgorithm}{} %Disable the numbering of algorithms
+
+\usepackage{tocloft}
+\renewcommand{\chaptername}{Chương }
+\renewcommand{\cftchappresnum}{Chương }
+\renewcommand{\cftchapaftersnum}{.}
+\renewcommand{\cftchapnumwidth}{6em}
+
+\usepackage[T5,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\DeclareTextSymbolDefault{\OHORN}{T5}
+\DeclareTextSymbolDefault{\UHORN}{T5}
+\DeclareTextSymbolDefault{\ohorn}{T5}
+\DeclareTextSymbolDefault{\uhorn}{T5}
+
+\usepackage{newunicodechar}
+\usepackage{chngcntr}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\algnewcommand\algorithmicforeach{\textbf{foreach}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+\usepackage{indentfirst} %indent first paragraph after each section
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Định nghĩa}
+
+\usepackage{setspace} %line spacing
+\usepackage{bigstrut} %for tables
+\usepackage{multirow} %for tables
+\usepackage{adjustbox}
+\usepackage{rotating} %vertical tables
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{url} % url in bib file
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{document}
+\includepdf[pages=-, scale=0.99]{BiaKhoaLuan.pdf}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\includepdf{General/danhsachhoidong.pdf}
+\includepdf{General/nhanxetCBHD.pdf}
+\includepdf{General/nhanxetCBPB.pdf}
+\include{Acknowledgement/acknowledgement}
+
+
+\tableofcontents
+\include{Terms/terms}
+%\begin{center}
+\listoftables  
+\newpage
+\listoffigures
+%\end{center}
+%\newpage
+\mainmatter
+\renewcommand\thefigure{0.\arabic{figure}} 
+\setcounter{figure}{0}
+\include{Abstract/abstract}
+\renewcommand\thefigure{1.\arabic{figure}} 
+\setcounter{figure}{0}
+\include{Chapter1/chapter1}
+\renewcommand\thefigure{2.\arabic{figure}} 
+\setcounter{figure}{0}
+\include{Chapter2/chapter2}
+\renewcommand\thefigure{3.\arabic{figure}} 
+\setcounter{figure}{0}
+\include{Chapter3/chapter3}
+\renewcommand\thefigure{4.\arabic{figure}} 
+\setcounter{figure}{0}
+\include{Chapter4/chapter4}
+\include{Conclusions/conclusions}
+
+\renewcommand{\bibname}{TÀI LIỆU THAM KHẢO} % changes default name Bibliography to References
+
+\backmatter  
+
+
+%\bibliographystyle{unsrtnat} % bibliography style
+%\bibliographystyle{apa}
+\bibliographystyle{unsrt}
+%\bibliographystyle{Classes/plainnat} % bibliography style
+%\bibliographystyle{Classes/IEEEtran} % bibliography style
+%\bibliographystyle{Classes/splncs03} % bibliography style
+%\bibliographystyle{Classes/jmb} % bibliography style
+
+\bibliography{References/PhDResearch} % References file
+\include{Appendix/appendix}
+
+\end{document}
+

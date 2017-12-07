@@ -1,0 +1,117 @@
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	basicstyle=\ttfamily,
+	frame=single, % adds a frame around the code
+	xleftmargin=3.4pt,
+	xrightmargin=3.4pt,	
+	columns=flexible,
+	showstringspaces=false,
+	language=Java,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+\lstset{literate=
+	{á}{{\'a}}1		{à}{{\`a}}1 	{ả}{{\h{a}}}1 	{ã}{{\~a}}1 	{ạ}{{\d{a}}}1
+	{â}{{\^a}}1 	{ấ}{\'{\^a}}1 	{ầ}{\`{\^a}}1	{ẩ}{\h{\^a}}1	{ẫ}{\~{\^a}}1 	{ậ}{\d{\^a}}1
+	{ă}{{\u{a}}}1	{ắ}{\'\u{a}}1	{ằ}{\`\u{a}}1	{ẳ}{\h\u{a}}1	{ẵ}{\~\u{a}}1	{ặ}{\d\u{a}}1	
+	{é}{{\'e}}1		{è}{{\`e}}1		{ẻ}{{\h{e}}}1	{ẽ}{{\~e}}1		{ẹ}{{\d{e}}}1
+	{ê}{{\^{e}}}1	{ế}{\'\^{e}}1	{ề}{\`{\^{e}}}1	{ể}{\h\^{e}}1	{ễ}{\~\^{e}}1	{ệ}{\d\^{e}}1
+	{í}{{\'i}}1		{ì}{{\`i}}1		{ỉ}{{\h{i}}}1	{ĩ}{{\~i}}1		{ị}{{\d{i}}}1
+	{ó}{{\'o}}1		{ò}{{\`o}}1		{ỏ}{{\h{o}}}1	{õ}{{\~o}}1		{ọ}{{\d{o}}}1
+	{ơ}{{\ohorn}}1 	{ớ}{\'\ohorn}1	{ờ}{\`\ohorn}1	{ở}{\h\ohorn}1 	{ỡ}{\~\ohorn}1 	{ợ}{\d\ohorn}1
+	{ô}{{\^o}}1 	{ố}{\'\^o}1		{ồ}{\`\^o}1		{ổ}{\h\^o}1 	{ỗ}{\~\^o}1 	{ộ}{\d\^o}1 	
+	{ú}{{\'u}}1		{ù}{{\`u}}1		{ủ}{{\h{u}}}1	{ũ}{{\~u}}1		{ụ}{{\d{u}}}1
+	{ư}{\uhorn}1 	{ứ}{\'\uhorn}1 	{ừ}{\`\uhorn}1 	{ử}{\h\uhorn}1 	{ữ}{\~\uhorn}1 	{ự}{\d\uhorn}1 
+}
+\chapter*{Phụ lục. Giới thiệu về thư viện Apache Lucene}
+
+\section*{Giới thiệu}
+\addcontentsline{toc}{chapter}{Phụ lục. Giới thiệu về thư viện Apache Lucene}
+Truy hồi thông tin là một lĩnh vực nghiên cứu lớn nhắm giải quyết vấn đề tìm kiếm, lọc đường thông tin cần thiết, hữu ích từ lượng dữ liệu khổng lồ. Apache Lucene là một thư viện mã nguồn mở, được viết bằng Java và dùng để hỗ trợ giải bài toán này. Thư viện cung cấp khả năng đánh chỉ mục (index) trên dữ liệu và thực hiện tìm kiếm trên chỉ mục đó, cùng với các chức năng hỗ trợ khác.
+
+Lucene lưu trữ dữ liệu ở dạng chỉ mục ngược (inverted index), cho phép tìm kiếm các đối tượng văn bản dựa trên từ khóa một cách nhanh chóng. Một đối tượng văn bản trong Lucene được gọi là Document. Mỗi Document có một hoặc nhiều Field, ứng với các thuộc tính của Document đó. Một bài viết hay một trang web có thể là một Document, với các Field như: tiêu đề, nội dung, tác giả, ngày đăng,...
+
+Một số class chính của thư viện:
+\begin{itemize}
+	\item Analyzer và các class con: có nhiệm vụ phân tích dữ liệu văn bản thành những token/term trước khi ghi vào index. Một số class con như StandardAnalyzer, WhitespaceAnalyzer, SimpleAnalyzer, KeywordAnalyzer.
+	\item IndexWriter: nhận luồng dữ liệu đã tokenize bằng Analyzer và ghi vào index.
+	\item IndexReader, IndexSearcher: đọc và tìm kiếm trên index đã tạo từ trước, ngoài ra cung cấp các thông tin khác từ index như danh sách term, tần số của term trong một Document, trong toàn bộ dữ liệu.
+	\item Query và các class con: dùng để xây dựng câu truy vấn và truyền vào IndexSearcher để thực hiện tìm kiếm. Một số class con như TermQuery, RangeQuery, Boolean Query. 
+\end{itemize}
+
+Hệ thống chủ yếu sử dụng Lucene hỗ trợ trong bước tiền xử lý dữ liệu, nhằm tính và biểu diễn các bài viết ở dạng vector tf-idf, thông qua các thông tin về tần số term trong index.
+
+\section*{Sử dụng Lucene trong Java}
+	\subsection*{Tạo IndexWriter}
+	Để ghi dữ liệu vào Lucene index, ta cần tạo IndexWriter như sau:
+		\begin{lstlisting}
+	indexDirectory = FSDirectory.open(new File(indexDir)); 
+	analyzer = new StandardAnalyzer(Version.LUCENE_36, Collections.emptySet());
+	IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);
+	config.setOpenMode(OpenMode.CREATE);
+	IndexWriter writer = new IndexWriter(indexDirectory, config);
+		\end{lstlisting}
+	\subsection*{Thêm một document vào index}
+	Giả sử ta có một tweet với ID là "001", nội dung là "Tai nan kinh hoang khi xe tai mat phanh", dưới đây là cách tạo và thêm vào index document với 2 field tương ứng là "tweetID" và "tweetContent".
+	
+		\begin{lstlisting}
+	Field tweetID = new Field("tweetID", "001", Field.Store.YES, Field.Index.NO);
+	Field tweetContent = new Field("tweetContent", "Tai nan kinh hoang khi xe tai mat phanh", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES);				
+	Document lucenceDocument = new Document();
+	lucenceDocument.add(tweetID);
+	lucenceDocument.add(tweetContent);
+	writer.addDocument(luceneDocument);
+		\end{lstlisting}
+		
+	\subsection*{Đọc dữ liệu từ index}
+	Sau khi tạo index, ta có thể đọc thông tin trong index thông qua IndexReader hoặc IndexSearcher. 
+		\begin{lstlisting}
+	IndexReader reader = IndexReader.open(indexDir);
+	IndexSearcher searcher = new IndexSearcher(reader);
+		\end{lstlisting}
+	
+	Cách tính giá trị \textbf{idf} cho tất cả term trong field "tweetContent" trong bộ dữ liệu:
+		\begin{lstlisting}	
+	int docCount = reader.numDocs();
+	TermEnum listOfTerms = reader.terms();
+	TreeMap<String, Double> idfVector = new TreeMap<String, Double>();
+	while (listOfTerms.next()) {
+		String currentTerm = listOfTerms.term().text();
+		int docFreq = searcher.docFreq(new Term("tweetContent", currentTerm));
+		double idf = 1 + Math.log((double) docCount / docFreq);
+		idfVector.put(currentTerm, idf);
+	}
+		\end{lstlisting}
+
+	Cách tính vector tf-idf cho document thứ \textbf{i} trong index:	
+%	Cách lấy danh sách term và tần số xuất hiện từng term trong một document có số thứ tự 0 (dùng để tính \textbf{tf} của từng term trong từng document):
+		\begin{lstlisting}
+	TermFreqVector tfv = reader.getTermFreqVector(i, "tweetContent");
+	String[] termList = tfv.getTerms(); //list of terms in this document
+	int[] termFreqList = tfv.getTermFrequencies();
+	int totalTermCount = 0;
+	LinkedHashMap<String, Double> tfidfVector = new LinkedHashMap<String, Double>();
+	
+	// calculate (total) term count in document i
+	for (int temp : termFreqList) {
+		totalTermCount += temp;
+	}
+	// loop through all term in doc i and calculate tfidf vector
+	int uniqueTermCount = termList.length;
+	for (int j = 0; j < uniqueTermCount; j++) {				
+		if (termFreqList[j] != 0 && idfVector.containsKey(termList[j])){
+			double tfidf = ((double)termFreqList[j] / totalTermCount)
+			* idfVector.get(termList[j]);
+			tfidfVector.put(termList[j], tfidf);
+		}
+	}
+		\end{lstlisting}
+		

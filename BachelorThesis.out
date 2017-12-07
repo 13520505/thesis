@@ -1,0 +1,78 @@
+\BOOKMARK [0][]{section*.1}{Muc luc}{}% 1
+\BOOKMARK [0][]{chapter*.2}{Danh muc c\341c k\375 hiu, thut ng v\340 ch vit tt}{}% 2
+\BOOKMARK [0][]{section*.3}{Danh s\341ch bang}{}% 3
+\BOOKMARK [0][]{section*.4}{Danh s\341ch h\354nh ve}{}% 4
+\BOOKMARK [0][]{chapter*.5}{T\323M TT KH\323A LUN}{}% 5
+\BOOKMARK [0][]{chapter.8}{1 M \320U}{}% 6
+\BOOKMARK [1][]{section.9}{1.1 Dn nhp}{chapter.8}% 7
+\BOOKMARK [1][]{section.12}{1.2 Muc ti\352u \040t\340i}{chapter.8}% 8
+\BOOKMARK [1][]{section.13}{1.3 Ni dung thc hin}{chapter.8}% 9
+\BOOKMARK [1][]{section.14}{1.4 Pham vi \040t\340i}{chapter.8}% 10
+\BOOKMARK [1][]{section.15}{1.5 Cu tr\372c b\341o c\341o}{chapter.8}% 11
+\BOOKMARK [0][]{chapter.16}{2 B\300I TO\301N PH\301T HIN TIN N\323NG V\300 C\301C PHNG PH\301P TIP CN PH BIN}{}% 12
+\BOOKMARK [1][]{section.17}{2.1 M u}{chapter.16}% 13
+\BOOKMARK [1][]{section.18}{2.2 Gii thiu b\340i to\341n}{chapter.16}% 14
+\BOOKMARK [2][]{subsection.19}{2.2.1 C\341c kh\341i nim c ban}{section.18}% 15
+\BOOKMARK [2][]{subsection.20}{2.2.2 B\340i to\341n Topic Detection and Tracking}{section.18}% 16
+\BOOKMARK [2][]{subsection.21}{2.2.3 B\340i to\341n ph\341t hin tin n\363ng}{section.18}% 17
+\BOOKMARK [2][]{subsection.22}{2.2.4 Ph\341t biu b\340i to\341n ph\341t hin tin n\363ng t Twitter}{section.18}% 18
+\BOOKMARK [1][]{section.23}{2.3 C\341c nghi\352n cu li\352n quan}{chapter.16}% 19
+\BOOKMARK [1][]{section.24}{2.4 Gii thiu mt s \040o khoang c\341ch/s tng ng}{chapter.16}% 20
+\BOOKMARK [1][]{section.29}{2.5 C\341c phng ph\341p tip cn ph bin}{chapter.16}% 21
+\BOOKMARK [2][]{subsection.30}{2.5.1 Thut to\341n gom cum k-l\341ng ging gn \(k-Nearest Neighbor\)}{section.29}% 22
+\BOOKMARK [3][]{subsubsection.31}{2.5.1.1 \335 tng}{subsection.30}% 23
+\BOOKMARK [3][]{subsubsection.32}{2.5.1.2 Minh hoa thut to\341n}{subsection.30}% 24
+\BOOKMARK [3][]{subsubsection.35}{2.5.1.3 M\343 gia}{subsection.30}% 25
+\BOOKMARK [3][]{subsubsection.37}{2.5.1.4 u im, han ch}{subsection.30}% 26
+\BOOKMARK [2][]{subsection.38}{2.5.2 Thut to\341n gom cum c\363 Boost trong s cho Named Entity}{section.29}% 27
+\BOOKMARK [3][]{subsubsection.39}{2.5.2.1 \335 tng}{subsection.38}% 28
+\BOOKMARK [3][]{subsubsection.40}{2.5.2.2 Minh hoa thut to\341n}{subsection.38}% 29
+\BOOKMARK [3][]{subsubsection.42}{2.5.2.3 M\343 gia}{subsection.38}% 30
+\BOOKMARK [3][]{subsubsection.47}{2.5.2.4 u im, han ch}{subsection.38}% 31
+\BOOKMARK [2][]{subsection.48}{2.5.3 Thut to\341n Locality Sensitive Hashing}{section.29}% 32
+\BOOKMARK [3][]{subsubsection.49}{2.5.3.1 \335 tng}{subsection.48}% 33
+\BOOKMARK [3][]{subsubsection.50}{2.5.3.2 Minh hoa c\341ch t\355nh hash code cho LSH}{subsection.48}% 34
+\BOOKMARK [3][]{subsubsection.52}{2.5.3.3 M\343 gia}{subsection.48}% 35
+\BOOKMARK [3][]{subsubsection.54}{2.5.3.4 LSH cai tin}{subsection.48}% 36
+\BOOKMARK [1][]{section.56}{2.6 Gii thiu mt s \040o \341nh gi\341 hiu nang gom cum}{chapter.16}% 37
+\BOOKMARK [2][]{subsection.57}{2.6.1 Khoang c\341ch cuc b v\340 to\340n cuc \(Intra-cluster v\340 Inter-cluster distance\)}{section.56}% 38
+\BOOKMARK [2][]{subsection.59}{2.6.2 \320 o Dunn index}{section.56}% 39
+\BOOKMARK [2][]{subsection.61}{2.6.3 H s Silhouette \(Silhouette coefficient\)}{section.56}% 40
+\BOOKMARK [2][]{subsection.66}{2.6.4 \320 o Purity}{section.56}% 41
+\BOOKMARK [1][]{section.69}{2.7 Xp hang cum}{chapter.16}% 42
+\BOOKMARK [1][]{section.72}{2.8 Kt chng}{chapter.16}% 43
+\BOOKMARK [0][]{chapter.73}{3 HIN THC H THNG PH\301T HIN TIN N\323NG}{}% 44
+\BOOKMARK [1][]{section.74}{3.1 M u}{chapter.73}% 45
+\BOOKMARK [1][]{section.75}{3.2 M\364 h\354nh h thng}{chapter.73}% 46
+\BOOKMARK [1][]{section.77}{3.3 Ph\342n h thu thp d liu \(Data Streaming\)}{chapter.73}% 47
+\BOOKMARK [1][]{section.81}{3.4 Ph\342n h tin x l\375 d liu \(Data Preprocessor\)}{chapter.73}% 48
+\BOOKMARK [1][]{section.86}{3.5 Ph\342n h thut to\341n gom cum \(Clustering Algorithm\)}{chapter.73}% 49
+\BOOKMARK [1][]{section.87}{3.6 Ph\342n h hin thi tin n\363ng \(Top Stories\)}{chapter.73}% 50
+\BOOKMARK [1][]{section.88}{3.7 Thit k h thng}{chapter.73}% 51
+\BOOKMARK [1][]{section.90}{3.8 C\340i t h thng}{chapter.73}% 52
+\BOOKMARK [2][]{subsection.91}{3.8.1 C\341c package}{section.90}% 53
+\BOOKMARK [2][]{subsection.92}{3.8.2 C s d liu MongoDB}{section.90}% 54
+\BOOKMARK [3][]{subsubsection.94}{3.8.2.1 Collection Streaming}{subsection.92}% 55
+\BOOKMARK [3][]{subsubsection.96}{3.8.2.2 Collection Cluster}{subsection.92}% 56
+\BOOKMARK [2][]{subsection.98}{3.8.3 C s d liu MySQL}{section.90}% 57
+\BOOKMARK [3][]{subsubsection.99}{3.8.3.1 Bang User}{subsection.98}% 58
+\BOOKMARK [3][]{subsubsection.101}{3.8.3.2 Bang UserType}{subsection.98}% 59
+\BOOKMARK [3][]{subsubsection.103}{3.8.3.3 Bang Topic}{subsection.98}% 60
+\BOOKMARK [1][]{section.105}{3.9 Kt qua}{chapter.73}% 61
+\BOOKMARK [1][]{section.111}{3.10 Kt chng}{chapter.73}% 62
+\BOOKMARK [0][]{chapter.112}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 63
+\BOOKMARK [1][]{section.113}{4.1 M u}{chapter.112}% 64
+\BOOKMARK [1][]{section.114}{4.2 Tng quan v b d liu}{chapter.112}% 65
+\BOOKMARK [1][]{section.116}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.112}% 66
+\BOOKMARK [1][]{section.117}{4.4 Kt qua thc nghim}{chapter.112}% 67
+\BOOKMARK [2][]{subsection.118}{4.4.1 Thay i MergeThreshold}{section.117}% 68
+\BOOKMARK [2][]{subsection.128}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.117}% 69
+\BOOKMARK [1][]{section.130}{4.5 Nhn x\351t}{chapter.112}% 70
+\BOOKMARK [2][]{subsection.131}{4.5.1 Nhn inh v MergeThreshold}{section.130}% 71
+\BOOKMARK [2][]{subsection.136}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.130}% 72
+\BOOKMARK [1][]{section.138}{4.6 Kt chng}{chapter.112}% 73
+\BOOKMARK [0][]{chapter*.139}{KT LUN V\300 HNG PH\301T TRIN}{}% 74
+\BOOKMARK [1][]{section*.140}{Kt qua at c}{chapter*.139}% 75
+\BOOKMARK [1][]{section*.141}{Hng ph\341t trin}{chapter*.139}% 76
+\BOOKMARK [0][]{chapter*.142}{T\300I LIU THAM KHAO}{}% 77
+\BOOKMARK [0][]{section*.144}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 78

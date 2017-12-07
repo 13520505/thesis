@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{Fiscus:TDTDefinition}
+Jonathan~G. Fiscus and George~R. Doddington.
+\newblock Topic detection and tracking.
+\newblock chapter Topic Detection and Tracking Evaluation Overview, pages
+  17--31. Kluwer Academic Publishers, Norwell, MA, USA, 2002.
+
+\bibitem{Allan:2002:ITD:772260.772262}
+James Allan.
+\newblock Topic detection and tracking.
+\newblock chapter Introduction to Topic Detection and Tracking, pages 1--16.
+  Kluwer Academic Publishers, Norwell, MA, USA, 2002.
+
+\bibitem{TwiterStand:Sankaranarayanan}
+Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
+  and Jon Sperling.
+\newblock Twitterstand: News in tweets.
+\newblock In {\em Proceedings of the 17th ACM SIGSPATIAL International
+  Conference on Advances in Geographic Information Systems}, GIS '09, pages
+  42--51, New York, NY, USA, 2009. ACM.
+
+\bibitem{SwitPhuvipadawat}
+S.~Phuvipadawat and T.~Murata.
+\newblock Breaking news detection and tracking in twitter.
+\newblock In {\em 2010 IEEE/WIC/ACM International Conference on Web
+  Intelligence and Intelligent Agent Technology}, volume~3, pages 120--123, Aug
+  2010.
+
+\bibitem{IntroToIR}
+Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Sch\"{u}tze.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press, New York, NY, USA, 2008.
+
+\bibitem{Allan00detectionsbounds}
+James Allan, Victor Lavrenko, Daniella Malin, and Russell Swan.
+\newblock Detections, bounds, and timelines: Umass and tdt-3.
+\newblock In {\em In Proceedings of Topic Detection and Tracking Workshop
+  (TDT-3)}, 2000.
+
+\bibitem{Indyk:LSH-Definition}
+Piotr Indyk and Rajeev Motwani.
+\newblock Approximate nearest neighbors: Towards removing the curse of
+  dimensionality.
+\newblock In {\em Proceedings of the Thirtieth Annual ACM Symposium on Theory
+  of Computing}, STOC '98, pages 604--613, New York, NY, USA, 1998. ACM.
+
+\bibitem{Petrovic:LSH}
+Sa\v{s}a Petrovi\'{c}, Miles Osborne, and Victor Lavrenko.
+\newblock Streaming first story detection with application to twitter.
+\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
+  the North American Chapter of the Association for Computational Linguistics},
+  HLT '10, pages 181--189, Stroudsburg, PA, USA, 2010. Association for
+  Computational Linguistics.
+
+\bibitem{IntroToDM}
+P.N. Tan, M.~Steinbach, and V.~Kumar.
+\newblock {\em Introduction to Data Mining}.
+\newblock Pearson Education, Limited, 2014.
+
+\bibitem{dunn1973fuzzy2}
+J.~C. Dunn.
+\newblock A fuzzy relative of the isodata process and its use in detecting
+  compact well-separated clusters.
+\newblock {\em Journal of Cybernetics}, 3(3):32--57, 1973.
+
+\bibitem{TDT2004Annotation}
+Tdt 2004: Annotation manual.
+\newblock \url{https://catalog.ldc.upenn.edu/docs/LDC2006T19/TDT2004V1.2.pdf},
+  2004.
+\newblock Accessed: 2016-12-6.
+
+\end{thebibliography}
