@@ -13,25 +13,19 @@
     \graphicspath{{Abstract/AbstractFigs/EPS/}{Abstract/AbstractFigs/}}
 \fi
 
-Với sự phát triển chóng mặt của công nghệ số, chúng ta có thể tiếp xúc với một lượng thông tin khổng lồ mỗi ngày. Năm 2016, cứ mỗi phút có gần 150 triệu email được gửi đi, hơn 500 giờ video được đăng tải lên YouTube, và	3.3 triệu bài viết được đăng trên Facebook \footnote{http://www.smartinsights.com/internet-marketing-statistics/happens-online-60-seconds/}. Tương tự, trong lĩnh vực truyền thông báo chí, cứ mỗi giờ có khoảng 2,118 bài được đăng trên các trang báo mạng Việt Nam \footnote{Theo thống kê từ dữ liệu thu thập bởi công ty VCCorp tính đến tháng 7/2017.}. Điều này dẫn đến tình trạng quá tải thông tin, và đặt ra vấn đề đối với nhà báo: Làm sao để thu hút người đọc khi tin tức được cung cấp tràn lan khắp nơi?
-%Mỗi ngày có 2.5 exabyte dữ liệu được tạo ra \footnote{www-01.ibm.com/software/data/bigdata/what-is-big-data.html}
-%. một người chỉ có thể dành khoảng thời gian giới hạn để đọc tin tức mỗi ngày. Vì vậy, ta thường chỉ quan tâm tìm đọc những "tin nóng", tức là những tin viết về sự kiện mới xảy ra và có khả năng thu hút sự chú ý của người đọc.
+Cùng với sự phát triển nhanh chóng của internet là sự tăng trưởng mạnh mẽ của ngành truyền thông báo chí. Cụ thể, tính đến ngày 31/12/2015, cả nước Việt Nam có 105 cơ quan báo điện tử, 207 trang thông tin điện tử tổng hợp của các cơ quan báo chí \footnote{http://mic.gov.vn/Pages/TinTuc/116095/Tinh-hinh-phat-trien-linh-vuc-bao-chi-va-phat-thanh-truyen-hinh-nam-2015.html}, và cứ mỗi giờ có khoảng 2,118 bài được đăng trên các trang báo mạng Việt Nam \footnote{Theo thống kê từ dữ liệu thu thập bởi công ty VCCorp tính đến tháng 7/2017.}. Cùng với sự tăng trưởng lớn về thông tin là nhu cầu phân tích và xử lý các thông tin đó để phục vụ cho nhiều mục tích khác nhau, và ngày nay nhiều doanh nghiệp đã và đang xây dựng các hệ thống phân tích dữ liệu tin tức để phục vụ tốt hơn cho người dùng và biên tập viên. 
 
-Các kênh thông tin trong lĩnh vực truyền thông rất đa dạng: báo chí, đài truyền hình, đài phát thanh, các trang báo mạng chính thống, mạng xã hội, blog. Những nguồn chính thống thường đưa thông tin chuẩn xác, chất lượng bài viết được kiểm duyệt tốt. Ngược lại các nguồn như mạng xã hội, đặc biệt là Twitter, thường có thông tin chưa được xác thực, kiểm chứng. Tuy nhiên không thể chối cãi tốc độ đưa tin nhanh chóng của các trang mạng xã hội, nhờ vào lượng người dùng rộng rãi khắp nơi.
+Việc phân tích dữ liệu tin tức đòi hỏi hệ thống phải thu thập dữ liệu từ nhiều website tin tức khác nhau để có được một nguồn dữ liệu đa dạng, phong phú và đủ lớn. Tuy nhiên, dữ liệu thu thập từ các website có bản chất không phù hợp với mục đích của hệ thống phân tích có thể gây ra nhiễu và khiến cho kết quả phân tích, xử lý không chính xác. Do đó, việc sàn lọc dữ liệu thu thập được trước khi đưa vào phân tích và xử lý là cần thiết. 
 
-Về phía biên tập viên, nhà báo, họ cần phải dành thêm nhiều công sức, nguồn lực cho việc tìm kiếm, sàng lọc các nguồn tin, cũng như rất nhiều thời gian để kiểm chứng độ tin cậy của các tin đó. Việc khai thác hiệu quả các nguồn tin không chính thống như các trang mạng xã hội Twitter, Facebook là một vấn đề đáng quan tâm, nghiên cứu.
+Hiểu được nhu cầu trên, chúng em thực hiện khóa luận này với mục tiêu xây dựng một hệ thống lọc "rác" cho dữ liệu tin tức từ các nguồn báo chính thống Việt Nam, cụ thể là lọc "rác" cho hệ thống "Phát hiện tin nóng". 
 
-%Ngoài ra, để có thể nhanh chóng thu thập được thông tin cho việc viết bài, biên tập viên cũng cần khai thác các nguồn không chính thống như các trang mạng xã hội Twitter, Facebook, Google+.
-
-Hiểu được nhu cầu trên, em thực hiện khóa luận này với mục tiêu nghiên cứu và đánh giá các phương pháp phát hiện tin nóng, cụ thể là trên dữ liệu từ Twitter, và xây dựng một hệ thống có khả năng phát hiện tin nóng trong thực tiễn.
-
-Trong phạm vi của khóa luận, em đã nghiên cứu một số phương pháp gom cụm: k-láng giềng gần nhất, gom cụm có tăng trọng số cho thực thể có tên, và gom cụm dùng locality sensitive hashing. Áp dụng một công thức xếp hạng để sắp xếp các tin theo độ nóng, và xây dựng hệ thống phát hiện tin nóng dựa trên các kiến thức đã tìm hiểu được.
+Trong phạm vi của khóa luận, chúng em đã nghiên cứu một số thuật toán phân lớp: SVM, Naive Bayes, J48.
 
 Sau quá trình thực hiện, đề tài khóa luận thu thập được các kết quả như sau:
 	\begin{itemize}
-		\item Thu thập bộ dữ liệu gồm các bài đăng tiếng Việt từ nguồn Twitter.
-		\item Đánh giá và so sánh các phương pháp: k-láng giềng gần nhất, gom cụm có tăng trọng số cho thực thể có tên, và gom cụm dùng locality sensitive hashing.
-		\item Xây dựng được hệ thống phát hiện tin nóng.
+		\item Thu thập bộ dữ liệu gồm các bài đăng trên các website tin tức Việt Nam.
+		\item Đánh giá và so sánh các thuật toán: SVM, Naive Bayes, J48.
+		\item Xây dựng được hệ thống lọc rác cho hệ thống phát hiện tin nóng.
 	\end{itemize}
 
 

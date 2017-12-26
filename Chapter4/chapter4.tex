@@ -6,14 +6,14 @@
 \fi
 
 \section{Mở đầu}
-Mục đích của chương này là trình bày một số kết quả thực nghiệm trên bộ dữ liệu thu thập được. Qua đó đánh giá, nhận định và so sánh các thuật toán gom cụm, cũng như xem xét sự ảnh hưởng của các thông số đến kết quả, thời gian thực thi các thuật toán.
+Mục đích của chương này là trình bày kết quả huấn luyện các thuật toán phân lớp trên bộ dữ liệu thu thập được. Qua đó đánh giá, nhận định và so sánh các thuật toán phân lớp.
 
 \section{Tổng quan về bộ dữ liệu}
-Bộ dữ liệu gồm các bài viết từ Twitter. Dữ liệu được lấy thông qua 2 luồng khác nhau: Twitter Search API và Twitter Streaming API. Một danh sách 115 từ khóa được sử dụng để chọn lọc những bài viết đề cập đến sự kiện nào đó, thay vì chỉ là những bài đăng cá nhân. Các từ khóa được chia theo 14 chủ đề, dựa trên 13 chủ đề ban đầu của tài liệu hướng dẫn gán nhãn TDT 2004 \cite{TDT2004Annotation}. %liên quan đến các sự kiện thường được đăng tin.
+Bộ dữ liệu gồm các bài viết từ các trang báo điện tử Việt Nam. Dữ liệu được lấy về từ cơ sở dữ liệu tin tức của công ty VCCorp\@. Dữ liệu thu thập được được sàn lọc thông qua một tập các từ khóa đã được định nghĩa trước. \cite{TDT2004Annotation}. %liên quan đến các sự kiện thường được đăng tin.
 
-Mỗi tweet trong tập dữ liệu bao gồm các thông tin sau: ID tweet do Twitter tạo, ID người dùng đăng tweet, tên tài khoản người đăng tweet, nội dung tweet, thời gian đăng tweet, thời gian tweet được thu thập vào hệ thống.
+Mỗi mẫu tin bao gồm các thông tin như sau: tựa đề tin, nội dung tin, mô tả tin, ngày đăng tin, và nguồn tin.
 
-Bộ dữ liệu thử nghiệm thứ nhất gồm 9,211 tweets tiếng Việt, được thu thập thông qua Search API trong khoảng thời gian 11 ngày, từ 31/1/2017 đến 10/2/2017.
+Bộ dữ liệu huấn luyện gồm 15,612 tin tiếng Việt, được thu thập và sàn lọc trong khoảng thời gian từ.
 
 %Bộ dữ liệu thử nghiệm thứ hai gồm 57,915 tweets tiếng Việt, được thu thập thông qua Streaming API trong khoảng thời gian 25 ngày, từ 18/5/2017 đến 10/6/2017.
 
@@ -22,33 +22,11 @@ Bộ dữ liệu thử nghiệm thứ nhất gồm 9,211 tweets tiếng Việt, 
 		\setlength\extrarowheight{3pt}
 		\begin{tabular}{|p{4cm}|p{10cm}|}
 			\hline
-			Accident      & tai nạn, chết người, thảm khốc, rơi máy bay, tai nạn máy bay, máy bay mất tích, \#tainan, \#tainạn, \#chetnguoi, \#chếtngười \\
+			Chia sẻ      & thủ thuật, mẹo, tình cảm, chia tay, món ăn, ngon, tâm sự \\
 			\hline
-			Act of War or Violence, Military News & thả bom, đánh bom, tên lửa, hạt nhân, bom hạt nhân, đầu đạn hạt nhân, vũ khí, vũ khí huỷ diệt, xả súng, khủng bố, \#đánhbom, \#khủngbố \\
+			Tuyển dụng   & việc làm, tuyển dụng, cộng tác viên, lao động \\ 
 			\hline
-			Bizarre News and World Records & kỷ lục thế giới, Guinness, chuyện lạ có thật, chuyện lạ khó tin, chuyện lạ bốn phương, phong tục kỳ lạ \\
-			\hline
-			Celebrity and Human Interest News & tổng thống, tổng bí thư, thủ tướng, chủ tịch nước, phát ngôn, phát ngôn gây sốc, Barack Obama, Donald Trump, Putin, Shinzo Abe, Tập Cận Bình, Rodrigo Duterte, Nguyễn Phú Trọng, Nguyễn Xuân Phúc, Trần Đại Quang, Ca sĩ, Hoa hậu, Người mẫu,	Diễn viên \\
-			\hline
-			Election      & đại hội đảng, bầu cử, bầu cử đại biểu quốc hội, bầu cử tổng thống, \#baucu, \#bầucử \\
-			\hline
-			Financial     & xăng lên giá, xăng giảm giá, chứng khoán, bất động sản, chấn động thị trường, \#taichinh, \#tàichính \\
-			\hline
-			General       & tin nóng, tin giật gân, \#tinnong, \#tinnóng, \#tingiatgan, \#tingiậtgân \\
-			\hline
-			Legal and Criminal Case & cướp, giết người, khủng khiếp, hãm hiếp, hiếp dâm, lạm dụng tình dục, tham ô, tham nhũng, \#gietnguoi, \#giếtngười \\
-			\hline
-			Natural Disaster & động đất, sóng thần, lũ lụt, mưa đá, thiên tai, bão lớn, \#thientai, \#thiêntai \\
-			\hline
-			New Law       & dự thảo luật, điều luật mới, chính sách mới \\
-			\hline
-			Political Meeting and Statement & tổng thống, tổng bí thư, thủ tướng, chủ tịch nước, hội nghị, cuộc gặp gỡ, gặp mặt, họp mặt \\
-			\hline
-			Scandal and Hearing & bê bối, quấy rối, quấy rối tình dục, hầu tòa, ra tòa, scandal, \#scandal \\
-			\hline
-			Science and Discovery & phát minh, giải nobel, giải fields, khám phá mới, phát hiện mới \\
-			\hline
-			Sport         & đội tuyển bóng đá quốc gia, đội tuyển U19, U19 Hoàng Anh Gia Lai, SeaGames, AFC Suzuki Cup, \#bongda, \#bóngđá \\
+			Quảng cáo & giảm giá, khuyển mãi, trúng thưởng \\
 			\hline
 		\end{tabular}%
 		\caption{Danh sách từ khóa để thu thập dữ liệu}
@@ -58,13 +36,13 @@ Bộ dữ liệu thử nghiệm thứ nhất gồm 9,211 tweets tiếng Việt, 
 Bộ dữ liệu có thể được tải về từ địa chỉ: \url{https://drive.google.com/open?id=0B6FWPU7hs7CIRUZudGl3bG9DbEk}
 
 \section{Thiết lập thực nghiệm, cách đánh giá}
-Sử dụng 4 thuật toán: Gom cụm theo k-Nearest Neighbor, gom cụm với boost cho Named Entity, gom cụm dùng LSH và LSH cải tiến. 
+Sử dụng 3 thuật toán: Naive Bayes, SVM, J48.
 
-Ta đánh giá và so sánh kết quả về thời gian xử lý và chất lượng cụm thông qua một số độ đo đã trình bày ở mục \ref{clusterEvalMetrics}: intracluster distance, intercluster distance.
+Ta đánh giá và so sánh kết quả về thời gian xử lý và chất lượng cụm thông qua một số độ đo đã trình bày ở mục~\ref{clusterEvalMetrics}: intracluster distance, intercluster distance.
 
 Cả 4 thuật toán đều sử dụng giá trị ngưỡng để xét điểm dữ liệu có thuộc cụm hay không. Thuật toán Nearest Neighbor và Boost Named Entity sử dụng ngưỡng về \textit{độ tương đồng} MergeThreshold, ngược lại thuật toán LSH sử dụng ngưỡng \textit{khoảng cách} NoveltyThreshold. Thực chất $NoveltyThreshold = 1 - MergeThreshold$ nên ta vẫn có thể quy đổi giá trị giữa chúng để so sánh kết quả các thuật toán. Tất cả giá trị ngưỡng trong chương này sẽ được quy đổi về giá trị của \textbf{MergeThreshold} tương ứng.
 
-Riêng thuật toán LSH có thêm các thông số như: số hashtable, số siêu phẳng, lượng document tối đa cho mỗi bucket,... ta sẽ cần xét sự ảnh hưởng của chúng đến quá trình và kết quả gom cụm.
+Riêng thuật toán LSH có thêm các thông số như: số hashtable, số siêu phẳng, lượng document tối đa cho mỗi bucket,… ta sẽ cần xét sự ảnh hưởng của chúng đến quá trình và kết quả gom cụm.
 \section{Kết quả thực nghiệm}
 
 	\subsection{Thay đổi MergeThreshold}
@@ -243,7 +221,7 @@ Riêng thuật toán LSH có thêm các thông số như: số hashtable, số s
 
 		
 	\subsection{Thay đổi các thông số của thuật toán LSH}
-		Lấy MergeThreshold = 0.5, ta thử nghiệm với số lượng hash table, số lượng siêu phẳng thay đổi, kết quả thử nghiệm được trình bày trong Bảng \ref{tab:LSHParams}.
+		Lấy MergeThreshold = 0.5, ta thử nghiệm với số lượng hash table, số lượng siêu phẳng thay đổi, kết quả thử nghiệm được trình bày trong Bảng~\ref{tab:LSHParams}.
 		 % Table generated by Excel2LaTeX from sheet 'LSH params'
 		\begin{sidewaystable}[htbp]
 			\centering
@@ -291,7 +269,7 @@ Riêng thuật toán LSH có thêm các thông số như: số hashtable, số s
 		
 \section{Nhận xét}
 	\subsection{Nhận định về MergeThreshold}
-	Dựa vào Hình \ref{fig:thresholdvsclustercount} và bản chất của giá trị MergeThreshold, ta thấy số cụm tỷ lệ thuận với ngưỡng này, do khi ngưỡng càng cao thì khả năng một document vào chung cụm với document khác càng thấp, dẫn đến sinh ra nhiều cụm nhỏ lẻ hơn. Ngưỡng tăng cũng dẫn đến giá trị intracluster distance và intercluster distance giảm, vì cụm ít phần tử dẫn đến khoảng cách cục bộ nhỏ, và số lượng cụm nhiều lại dẫn đến khoảng cách toàn cục giảm.
+	Dựa vào Hình~\ref{fig:thresholdvsclustercount} và bản chất của giá trị MergeThreshold, ta thấy số cụm tỷ lệ thuận với ngưỡng này, do khi ngưỡng càng cao thì khả năng một document vào chung cụm với document khác càng thấp, dẫn đến sinh ra nhiều cụm nhỏ lẻ hơn. Ngưỡng tăng cũng dẫn đến giá trị intracluster distance và intercluster distance giảm, vì cụm ít phần tử dẫn đến khoảng cách cục bộ nhỏ, và số lượng cụm nhiều lại dẫn đến khoảng cách toàn cục giảm.
 		\begin{sidewaysfigure}
 			\centering
 			\includegraphics[width=1\linewidth]{Chapter4/Chapter4Figs/ThresholdVsClusterCount}
@@ -311,7 +289,7 @@ Riêng thuật toán LSH có thêm các thông số như: số hashtable, số s
 			\label{fig:thresholdvsglobal}
 		\end{figure}
 	
-	Hình \ref{fig:thresholdvsruntime} cho thấy đối với cùng số lượng mẫu trong dữ liệu, hai thuật toán LSH xử lý nhanh nhất, kế đến là Nearest Neighbor và cuối cùng là thuật toán Boost Named Entity. Giá trị của MergeThreshold không có ảnh hưởng rõ rệt đến thời gian chạy của thuật toán Nearest Neighbor và LSH, tuy nhiên thuật toán Boost Named Entity thì lại tăng đáng kể. 
+	Hình~\ref{fig:thresholdvsruntime} cho thấy đối với cùng số lượng mẫu trong dữ liệu, hai thuật toán LSH xử lý nhanh nhất, kế đến là Nearest Neighbor và cuối cùng là thuật toán Boost Named Entity. Giá trị của MergeThreshold không có ảnh hưởng rõ rệt đến thời gian chạy của thuật toán Nearest Neighbor và LSH, tuy nhiên thuật toán Boost Named Entity thì lại tăng đáng kể. 
 	
 	Lý do chính thuật toán Boost Named Entity có thời gian xử lý lâu như vậy (gấp 10-600 lần các thuật toán còn lại) là vì thư viện nhận diện thực thể tiếng Việt được sử dụng có thời gian xử lý khá chậm, chiếm phần lớn thời gian thực thi của thuật toán này.
 		\begin{sidewaysfigure}
@@ -322,7 +300,7 @@ Riêng thuật toán LSH có thêm các thông số như: số hashtable, số s
 		\end{sidewaysfigure}
 
 	\subsection{Nhận định về các tham số của LSH}
-	Thử nghiệm với thuật toán LSH cải tiến, theo Bảng \ref{tab:LSHParams} và Hình \ref{fig:lshruntime}, với giá trị MergeThreshold cố định bằng 0.5, số hash table lẫn số siêu phẳng đều tỷ lệ nghịch với số cụm thu được, tuy nhiên chúng không làm số cụm thay đổi nhiều như giá trị MergeThreshold.
+	Thử nghiệm với thuật toán LSH cải tiến, theo Bảng~\ref{tab:LSHParams} và Hình~\ref{fig:lshruntime}, với giá trị MergeThreshold cố định bằng 0.5, số hash table lẫn số siêu phẳng đều tỷ lệ nghịch với số cụm thu được, tuy nhiên chúng không làm số cụm thay đổi nhiều như giá trị MergeThreshold.
 	
 	Về mặt thời gian xử lý, số lượng hash table tăng giảm làm thay đổi trực tiếp thời gian thực thi thuật toán. Trong khi đó, số siêu phẳng hầu như không gây ảnh hưởng nhiều.
 

@@ -55,7 +55,6 @@
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{algpseudocode}
-\usepackage{algcompatible}
 \usepackage{algorithm}
 \usepackage{paralist}
 \usepackage{listings}

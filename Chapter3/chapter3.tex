@@ -27,12 +27,12 @@ Hệ thống có 2 loại người dùng chính: quản trị viên hệ thống
 %\end{itemize}
 
 \section{Phân hệ thu thập dữ liệu (Data Streaming)}
-Module này sử dụng Twitter Streaming API \footnote{https://dev.twitter.com/streaming/overview} để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước. API này cho phép người dùng lấy những tweet đăng ở chế độ công khai thông qua 2 endpoint:
+Module này sử dụng Twitter Streaming API\footnote{https://dev.twitter.com/streaming/overview} để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước. API này cho phép người dùng lấy những tweet đăng ở chế độ công khai thông qua 2 endpoint:
 	\begin{itemize}
 		\item GET statuses/sample: lấy mẫu ngẫu nhiên từ tất các bài đăng hiện tại.
 		\item POST statuses/filter: lọc các bài theo nhiều tiêu chí cho trước như: có chứa từ khóa tìm kiếm, viết bởi ngôn ngữ nào đó, vị trí người dùng khi đăng bài, bài đăng bởi người dùng trong danh sách theo dõi. Mặc định Twitter cho phép lọc với tối đa 400 từ khóa và theo dõi tối đa 5000 người dùng.
 	\end{itemize}
-Cả 2 endpoint này đều có chung giới hạn: lượng tweet trả về bởi API không vượt quá 1\%\footnote{https://twittercommunity.com/t/potential-adjustments-to-streaming-api-sample-volumes/31628} tổng số tweet đang được đăng tại thời điểm đó trên Twitter. Ví dụ, với con số trung bình 6000 tweet được đăng mỗi giây vào năm 2013 \footnote{http://www.internetlivestats.com/twitter-statistics/}, mỗi giây ta có thể lấy tối đa 60 tweet. Con số này có thể dao động theo từng thời điểm.
+Cả 2 endpoint này đều có chung giới hạn: lượng tweet trả về bởi API không vượt quá 1\%\footnote{https://twittercommunity.com/t/potential-adjustments-to-streaming-api-sample-volumes/31628} tổng số tweet đang được đăng tại thời điểm đó trên Twitter. Ví dụ, với con số trung bình 6000 tweet được đăng mỗi giây vào năm 2013\footnote{http://www.internetlivestats.com/twitter-statistics/}, mỗi giây ta có thể lấy tối đa 60 tweet. Con số này có thể dao động theo từng thời điểm.
 
 Hệ thống sử dụng endpoint statuses/filter với 115 keywords, ngôn ngữ tiếng Việt, và thu được trung bình 2300 tweet mỗi ngày, với ngày cao nhất đạt 6329 tweet. 
 
@@ -69,7 +69,7 @@ Chạy thuật toán gom cụm trên dữ liệu đã mã hóa thành vector tr�
 Các thông số trên cho phép thuật toán kịp thời xử lý hết lượng dữ liệu truyền liên tục từ Twitter về, và vẫn phát hiện được các cụm tương đối tốt.
 
 \section{Phân hệ hiển thị tin nóng (Top Stories)}
-Giao diện hiển thị các cụm tin tức nóng cho người dùng. Mỗi cụm được đại diện bằng một bài viết đầu tiên, tức là bài viết sớm nhất nói về sự kiện nào đó, cùng với các thông tin như số bài viết trong cụm, tổng số favorite và retweet trong cụm, tổng số follower của người dùng có đăng bài trong cụm,... Hình \ref{fig:topstories} thể hiện giao diện đã cài đặt trên thực tế.
+Giao diện hiển thị các cụm tin tức nóng cho người dùng. Mỗi cụm được đại diện bằng một bài viết đầu tiên, tức là bài viết sớm nhất nói về sự kiện nào đó, cùng với các thông tin như số bài viết trong cụm, tổng số favorite và retweet trong cụm, tổng số follower của người dùng có đăng bài trong cụm,… Hình~\ref{fig:topstories} thể hiện giao diện đã cài đặt trên thực tế.
 
 \section{Thiết kế hệ thống} 
 
@@ -87,7 +87,7 @@ Hệ thống xây dựng theo kiến trúc 3 tầng gồm: Presentation Layer, B
 				\item View: Có nhiệm vụ hiển thị các giao diện hệ thống cho người dùng.
 			\end{itemize}
 		\item Model: Đối tượng chứa dữ liệu để xử lý và hiển thị.
-		\item Business Layer: Chứa các nghiệp vụ của hệ thống. Bao gồm các bước xử lý dữ liệu, thuật toán gom cụm, các tác vụ thống kê,...
+		\item Business Layer: Chứa các nghiệp vụ của hệ thống. Bao gồm các bước xử lý dữ liệu, thuật toán gom cụm, các tác vụ thống kê,…
 		\item Data Access Layer: Có nhiệm vụ giao tiếp với các hệ cơ sở dữ liệu.
 	\end{itemize}
 
@@ -113,7 +113,7 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 		\item admicro.eds.dbconnection: Cung cấp kết nối đến database
 		\item admicro.eds.dto: Data Transfer Object, các đối tượng để vận chuyển dữ liệu từ database
 		\item admicro.eds.interceptor: Chứa các lớp interceptor của Struts 2
-		\item admicro.eds.lucene: Gồm các tác vụ sử dụng thư viện Apache Lucene như index dữ liệu, tính toán tf-idf,...
+		\item admicro.eds.lucene: Gồm các tác vụ sử dụng thư viện Apache Lucene như index dữ liệu, tính toán tf-idf,…
 		\item admicro.eds.statistics: Chạy thống kê dữ liệu offline
 		\item admicro.eds.thread: Các lớp bao đóng để tạo thread chạy song song các tác vụ
 		\item admicro.eds.utility: Các công cụ hỗ trợ trong hệ thống
@@ -195,7 +195,7 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 		\end{table}%
 
 	\subsection{Cơ sở dữ liệu MySQL}
-	MySQL được dùng để lưu trữ các dữ liệu khác của hệ thống như dữ liệu người dùng, các từ khóa dùng cho việc streaming dữ liệu Twitter,...
+	MySQL được dùng để lưu trữ các dữ liệu khác của hệ thống như dữ liệu người dùng, các từ khóa dùng cho việc streaming dữ liệu Twitter,…
 		\subsubsection{Bảng User}
 		Bảng này dùng để quản lý danh sách người dùng hệ thống.
 			\begin{table}[H]
@@ -244,45 +244,132 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 					Topic	& varchar(100)      &  Tên chủ đề\\\hline
 					Keyword	& varchar(1000)    	&  Danh sách từ khóa\\\hline
 				\end{tabular}
-				\caption{Bảng Topic}
+				\caption{Bảng Label}
 				\label{tab:topic}
 			\end{table}
+\section{Giao diện}
+Giao diện hệ thống được xây dựng sử dụng thư viện React, với kiến trúc Redux. Giao diện tương tác với hệ thống thông qua ajax request.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/FrontEndArch}
+		\caption{Kiến trúc giao diện hệ thống}
+		\label{fig:layers}
+	\end{figure}
+
+  \subsection{Giao diện danh sách tin đã phân lớp}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchSpam &  Action   & Truy xuất danh sách các tin đã phân lớp \\
+      sendFeedback & Action & Gửi phản hồi người dùng về label của tin đã phân lớp \\
+      spamList     & State       & Danh sách các tin đã phân lớp  \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      Date  &  Date Picker & Chọn ngày để lấy danh sách tin đã phân lớp \\
+      SpamTable  & Table & Hiển thị danh sách các tin đã phân lớp \\
+      FeedbackBox & Select & Chọn và gửi phản hồi về label của tin đã phân lớp \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
+
+  \subsection{Giao diện phân lớp tin}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchLabels &  Action   &  Gửi danh sách các tin cần phân lớp và lấy về các label tương ứng \\
+      spamLabels  &  State  & Danh sách các tin và label tương ứng \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      InputTable   &  Table & Bảng chứa các tin cần hoặc đã phân lớp \\
+      DatatypeMenu   & Tabs & Chuyển kiễu dữ liệu của input: text hoặc URL \\
+      ClassifyButton  & Button  & Thực hiện phân lớn các input \\
+      InputButton   & Button & Hiển thị input form \\
+      InputForm   & Form, Popup & Form để thêm input mới \\
+      ContentText & Input & Nội dung input \\
+      ExpectedLabel & Select & Label mong đợi của input \\
+      ConfirmButton & Button & Thêm input mới vào table của tab hiện tại \\
+      ImportButton & Button & Truyền dữ liệu input từ file \\
+      ClearAllButton & Button & Xóa hết dữ liệu input từ table của tab hiện tại \\
+      DeleteButton & Button & Xóa một dòng input trên bảng \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
+  \subsection{Giao diện phân thống kê dữ liệu phân lớp}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchSpamStatistics &  Action   &  Truy xuất dữ liệu thống kê phân lớp \\
+      spamStatistics  &  State  & Dữ liệu thống kê phân lớp \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      DateRange   &  Select & Chọn khung thời gian để lấy dữ liệu thống kê \\
+      ChartsSlider   & Slider &  Danh sách các đồ thị hiển thị dữ liệu thống kê \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
 \section{Kết quả}
 Hệ thống đã hoàn thiện các chức năng: Thu thập dữ liệu từ Twitter, điều khiển chạy luồng của thuật toán phát hiện tin nóng, và hiển thị kết quả cho biên tập viên. Dưới đây là một số hình ảnh của hệ thống:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/StreamingNonwide}
-	\caption{Giao diện điều khiển thu thập dữ liệu Twitter}
+	\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/Classified.png}
+	\caption{Giao diện danh sách tin đã phân lớp}
 	\label{fig:streaming}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/StreamingKeywords}
-	\caption{Giao diện thêm xóa từ khóa để thu thập dữ liệu Twitter}
+	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart1.png}
+	\caption{Giao diện thống kê biểu đồ thứ 1 và thứ 2}
+	\label{fig:streamingkeywords}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart2.png}
+	\caption{Giao diện thống kê biểu đồ thứ 3}
+	\label{fig:streamingkeywords}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart3.png}
+  \caption{Giao diện thống kê biểu đồ thứ 4}
 	\label{fig:streamingkeywords}
 \end{figure}
 
 \begin{figure}[H]
 		\centering
-	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/StartClustering}
-	\caption{Giao diện điều khiển thuật toán phát hiện tin nóng}
+	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Filter.png}
+	\caption{Giao diện bộ phân lớp tin tức}
 	\label{fig:startclustering}
-\end{figure}
-
-\begin{figure}[H]
-		\centering
-	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/TopStories2}
-	\caption{Giao diện hiển thị các cụm bài viết cho biên tập viên}
-	\label{fig:topstories}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/StoryDetails2}
-	\caption{Chi tiết một cụm bài viết}
-	\label{fig:storydetail}
 \end{figure}
 
 \section{Kết chương}
