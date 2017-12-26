@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  26 DEC 2017 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  26 DEC 2017 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1081,9 +1081,6 @@ LaTeX Font Info:    Try loading font information for T5+cmr on input line 22.
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) (./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux
 
-LaTeX Warning: Label `fig:layers' multiply defined.
-
-
 LaTeX Warning: Label `fig:streamingkeywords' multiply defined.
 
 
@@ -1192,16 +1189,28 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<BiaKhoaLuan.pdf, id=333, 597.55246pt x 845.07718pt>
+
+
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=309, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf>
 Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 64.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf>
 Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 64.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<BiaKhoaLuan.pdf, id=336, page=1, 597.55246pt x 845.07718pt>
+
+
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=312, page=1, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
 Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 64.
@@ -1230,7 +1239,9 @@ Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 64.
 [1
 
  <./BiaKhoaLuan.pdf>]
-<BiaKhoaLuan.pdf, id=367, page=2, 597.55246pt x 845.07718pt>
+
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=351, page=2, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 2>
 Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 64.
@@ -1249,7 +1260,7 @@ File: BiaKhoaLuan.pdf Graphic file (type pdf)
 Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 64.
 (pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 [2 <./BiaKhoaLuan.pdf>]
-<General/danhsachhoidong.pdf, id=373, 597.55246pt x 845.07718pt>
+<General/danhsachhoidong.pdf, id=357, 597.55246pt x 845.07718pt>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf>
 Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 69.
@@ -1258,7 +1269,7 @@ File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf>
 Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 69.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<General/danhsachhoidong.pdf, id=376, page=1, 597.55246pt x 845.07718pt>
+<General/danhsachhoidong.pdf, id=360, page=1, 597.55246pt x 845.07718pt>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
 Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 69.
@@ -1287,7 +1298,7 @@ Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 
 [1
 
  <./General/danhsachhoidong.pdf>]
-<General/nhanxetCBHD.pdf, id=410, 597.55246pt x 845.07718pt>
+<General/nhanxetCBHD.pdf, id=394, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf>
 Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 70.
@@ -1296,7 +1307,7 @@ File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf>
 Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 70.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<General/nhanxetCBHD.pdf, id=413, page=1, 597.55246pt x 845.07718pt>
+<General/nhanxetCBHD.pdf, id=397, page=1, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 70.
@@ -1323,7 +1334,7 @@ File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 70.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2 <./General/nhanxetCBHD.pdf>]
-<General/nhanxetCBPB.pdf, id=443, 597.55246pt x 845.07718pt>
+<General/nhanxetCBPB.pdf, id=427, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf>
 Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 71.
@@ -1332,7 +1343,7 @@ File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf>
 Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 71.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<General/nhanxetCBPB.pdf, id=446, page=1, 597.55246pt x 845.07718pt>
+<General/nhanxetCBPB.pdf, id=430, page=1, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 71.
@@ -1390,11 +1401,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 \FN@pp@footnotehinttrue 
 
-] [6] [7])
+] [6])
 \tf@toc=\write5
 \openout5 = `BachelorThesis.toc'.
 
- [8]
+ [7]
 \openout2 = `Terms/terms.aux'.
 
  (./Terms/terms.tex
@@ -1457,7 +1468,7 @@ Package hyperref Warning: Composite letter `\textacute+\abreve'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\abreve' on input line 9.
 
-) [9
+) [8
 
 
 ]
@@ -1469,7 +1480,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 \tf@lot=\write6
 \openout6 = `BachelorThesis.lot'.
 
- [10
+ [9
 
 ]
 
@@ -1481,7 +1492,7 @@ Package hyperref Warning: Composite letter `\texttilde+e'
 \tf@lof=\write7
 \openout7 = `BachelorThesis.lof'.
 
- [11]
+ [10]
 \openout2 = `Abstract/abstract.aux'.
 
  (./Abstract/abstract.tex
@@ -1721,11 +1732,20 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 11.
+(hyperref)                removing `\textacute' on input line 10.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 11.
+(hyperref)                removing `\ohorn' on input line 10.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 10.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 10.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
@@ -1737,21 +1757,12 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 11.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 12.
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 11.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 12.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 12.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 12.
+(hyperref)                removing `\h' on input line 11.
 
 [6
 
@@ -1761,311 +1772,311 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 39.
+(hyperref)                removing `\textdotbelow' on input line 38.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 39.
+(hyperref)                removing `\ecircumflex' on input line 38.
 
 [7]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 46.
+(hyperref)                removing `\h' on input line 45.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 46.
+(hyperref)                removing `\ecircumflex' on input line 45.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 46.
+(hyperref)                removing `\textdotbelow' on input line 45.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 46.
+(hyperref)                removing `\ecircumflex' on input line 45.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 46.
+(hyperref)                removing `\textasciigrave' on input line 45.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 46.
+(hyperref)                removing `\uhorn' on input line 45.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 47.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 46.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 49.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 48.
 
 
-LaTeX Warning: Command \textellipsis invalid in math mode on input line 49.
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 48.
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 55.
+(hyperref)                removing `\textacute' on input line 54.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 55.
+(hyperref)                removing `\uhorn' on input line 54.
 
 [8]
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 62.
+(hyperref)                removing `\textacute' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 62.
+(hyperref)                removing `\ohorn' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 62.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 62.
+(hyperref)                removing `\ecircumflex' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 62.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 62.
+(hyperref)                removing `\ocircumflex' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 62.
+(hyperref)                removing `\textacute' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 62.
+(hyperref)                removing `\ocircumflex' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 62.
+(hyperref)                removing `\dj' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 62.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 62.
+(hyperref)                removing `\ocircumflex' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 62.
+(hyperref)                removing `\dj' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 62.
+(hyperref)                removing `\h' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 62.
+(hyperref)                removing `\textdotbelow' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 62.
+(hyperref)                removing `\uhorn' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 62.
+(hyperref)                removing `\uhorn' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 62.
+(hyperref)                removing `\ohorn' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 62.
+(hyperref)                removing `\dj' on input line 61.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 62.
+(hyperref)                removing `\textasciigrave' on input line 61.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 62.
+(hyperref)                removing `\ocircumflex' on input line 61.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 78.
+(hyperref)                removing `\uhorn' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 78.
+(hyperref)                removing `\ohorn' on input line 77.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 78.
+(hyperref)                removing `\textacute' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 78.
+(hyperref)                removing `\ecircumflex' on input line 77.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 78.
+(hyperref)                removing `\textdotbelow' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 78.
+(hyperref)                removing `\acircumflex' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 78.
+(hyperref)                removing `\h' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 78.
+(hyperref)                removing `\ocircumflex' on input line 77.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 78.
+(hyperref)                removing `\textacute' on input line 77.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 78.
+(hyperref)                removing `\ecircumflex' on input line 77.
 
 [9]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 83.
+(hyperref)                removing `\textdotbelow' on input line 82.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 83.
+(hyperref)                removing `\acircumflex' on input line 82.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 83.
+(hyperref)                removing `\textdotbelow' on input line 82.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 83.
+(hyperref)                removing `\textasciigrave' on input line 82.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 83.
+(hyperref)                removing `\ecircumflex' on input line 82.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 83.
+(hyperref)                removing `\textasciigrave' on input line 82.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 83.
+(hyperref)                removing `\acircumflex' on input line 82.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 84.
+(hyperref)                removing `\uhorn' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 84.
+(hyperref)                removing `\h' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 84.
+(hyperref)                removing `\ohorn' on input line 83.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 90.
+(hyperref)                removing `\textdotbelow' on input line 89.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 90.
+(hyperref)                removing `\textdotbelow' on input line 89.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 90.
+(hyperref)                removing `\acircumflex' on input line 89.
 
 
-Overfull \hbox (4.19135pt too wide) in paragraph at lines 103--104
+Overfull \hbox (4.19135pt too wide) in paragraph at lines 102--103
 []|\T5/cmr/bx/n/12 newDoc| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 105--105
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 104--104
 []|\T5/cmr/m/n/12 0.973729| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 105--106
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 104--105
 []|\T5/cmr/m/n/12 0.646058| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 106--106
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 105--105
 []|\T5/cmr/m/n/12 0.973479| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 106--106
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 105--105
 []|\T5/cmr/m/n/12 0.398962| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 106--107
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 105--106
 []|\T5/cmr/m/n/12 0.984525| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 107--107
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 106--106
 []|\T5/cmr/m/n/12 0.575396| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 107--108
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 106--107
 []|\T5/cmr/m/n/12 0.969572| 
  []
 
 
-Overfull \hbox (1.69891pt too wide) in paragraph at lines 108--109
+Overfull \hbox (1.69891pt too wide) in paragraph at lines 107--108
 []|\T5/cmr/m/n/12 0.491473| 
  []
 
 [10]
-<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=751, 409.53pt x 294.09875pt>
+<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=707, 409.53pt x 294.09875pt>
 File: Chapter2/Chapter2Figs/PDF/NNS.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/NNS.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/NNS.pdf  used on input line 119.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/NNS.pdf  used on input line 118.
 (pdftex.def)             Requested size: 396.91325pt x 285.05554pt.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 124.
+(hyperref)                removing `\h' on input line 123.
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 126.
-./Chapter2/chapter2.tex:128: Undefined control sequence.
-l.128 				\REQUIRE
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 125.
+./Chapter2/chapter2.tex:127: Undefined control sequence.
+l.127 				\REQUIRE
                    luồng bài viết từ Twitter, giá trị ngưỡng Me...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2073,8 +2084,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:129: Undefined control sequence.
-l.129 				\ENSURE
+./Chapter2/chapter2.tex:128: Undefined control sequence.
+l.128 				\ENSURE
                   các cụm bài viết
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2083,13 +2094,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:130: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:129: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 				\ForEach
+l.129 				\ForEach
+                  {document $d$ trong toàn bộ dữ liệu}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:129: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 				\ForEach
+                  {document $d$ trong toàn bộ dữ liệu}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:129: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 				\ForEach
                   {document $d$ trong toàn bộ dữ liệu}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2101,8 +2136,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 				\ForEach
-                  {document $d$ trong toàn bộ dữ liệu}
+l.130 					\State
+                  $S(d) \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2113,19 +2148,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 				\ForEach
-                  {document $d$ trong toàn bộ dữ liệu}
+l.130 					\State
+                  $S(d) \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:131: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:130: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 					\State
+l.130 					\State
                   $S(d) \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2137,8 +2172,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 					\State
-                  $S(d) \leftarrow \emptyset$
+l.131 					\ForEach
+                   {term $t$ trong document $d$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2149,19 +2184,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 					\State
-                  $S(d) \leftarrow \emptyset$
+l.131 					\ForEach
+                   {term $t$ trong document $d$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:132: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:131: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 					\ForEach
+l.131 					\ForEach
                    {term $t$ trong document $d$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2173,8 +2208,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 					\ForEach
-                   {term $t$ trong document $d$}
+l.132 						\ForEach
+                    {document $d'$ trong $index[t]$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2185,19 +2220,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 					\ForEach
-                   {term $t$ trong document $d$}
+l.132 						\ForEach
+                    {document $d'$ trong $index[t]$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:133: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:132: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 						\ForEach
+l.132 						\ForEach
                     {document $d'$ trong $index[t]$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2209,8 +2244,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 						\ForEach
-                    {document $d'$ trong $index[t]$}
+l.133 							\State
+                    cập nhật độ tương đồng $similarity(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2221,19 +2256,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 						\ForEach
-                    {document $d'$ trong $index[t]$}
+l.133 							\State
+                    cập nhật độ tương đồng $similarity(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:134: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:133: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 							\State
+l.133 							\State
                     cập nhật độ tương đồng $similarity(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2246,7 +2281,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.134 							\State
-                    cập nhật độ tương đồng $similarity(d,d')$
+                    $S(d) \leftarrow S(d) \cup d'$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2258,48 +2293,24 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.134 							\State
-                    cập nhật độ tương đồng $similarity(d,d')$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:135: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 							\State
                     $S(d) \leftarrow S(d) \cup d'$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:135: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:134: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 							\State
+l.134 							\State
                     $S(d) \leftarrow S(d) \cup d'$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:135: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 							\State
-                    $S(d) \leftarrow S(d) \cup d'$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:136: Undefined control sequence.
-l.136 						\ENDFOR
+./Chapter2/chapter2.tex:135: Undefined control sequence.
+l.135 						\ENDFOR
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2308,43 +2319,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:137: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:136: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 						\State
+l.136 						\State
                    $index[t] \leftarrow index[t] \cup d$ (thêm document $d$...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:137: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:136: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 						\State
+l.136 						\State
                    $index[t] \leftarrow index[t] \cup d$ (thêm document $d$...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:137: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:136: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 						\State
+l.136 						\State
                    $index[t] \leftarrow index[t] \cup d$ (thêm document $d$...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapter2/chapter2.tex:138: Undefined control sequence.
-l.138 					\ENDFOR
+./Chapter2/chapter2.tex:137: Undefined control sequence.
+l.137 					\ENDFOR
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2352,8 +2363,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:139: Undefined control sequence.
-l.139 					\STATE
+./Chapter2/chapter2.tex:138: Undefined control sequence.
+l.138 					\STATE
                   similarity score của d: $similarity_{max}(d) \leftarrow 0$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2362,43 +2373,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:141: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:140: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 					\ForEach
+l.140 					\ForEach
                    {document $d'$ trong S(d)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:141: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:140: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 					\ForEach
+l.140 					\ForEach
                    {document $d'$ trong S(d)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:141: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:140: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 					\ForEach
+l.140 					\ForEach
                    {document $d'$ trong S(d)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapter2/chapter2.tex:142: Undefined control sequence.
-l.142 						\IF
+./Chapter2/chapter2.tex:141: Undefined control sequence.
+l.141 						\IF
                {$similarity(d,d') > similarity_{max}(d)$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2406,8 +2417,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:143: Undefined control sequence.
-l.143 							\STATE
+./Chapter2/chapter2.tex:142: Undefined control sequence.
+l.142 							\STATE
                     $similarity_{max}(d) \leftarrow similarity(d,d')$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2415,8 +2426,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:143: Undefined control sequence.
+l.143 						\ENDIF
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ./Chapter2/chapter2.tex:144: Undefined control sequence.
-l.144 						\ENDIF
+l.144 					\ENDFOR
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2425,16 +2445,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:145: Undefined control sequence.
-l.145 					\ENDFOR
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:146: Undefined control sequence.
-l.146 					\IF
+l.145 					\IF
               {$similarity_{max}(d) < MergeTheshold$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2442,8 +2453,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:147: Undefined control sequence.
-l.147 						\STATE
+./Chapter2/chapter2.tex:146: Undefined control sequence.
+l.146 						\STATE
                    d là một first story
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2451,8 +2462,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:148: Undefined control sequence.
-l.148 					\ELSE
+./Chapter2/chapter2.tex:147: Undefined control sequence.
+l.147 					\ELSE
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2460,17 +2471,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:149: Undefined control sequence.
+l.149 					\ENDIF
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ./Chapter2/chapter2.tex:150: Undefined control sequence.
-l.150 					\ENDIF
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:151: Undefined control sequence.
-l.151 				\ENDFOR
+l.150 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2479,13 +2490,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:153: Package algorithmicx Error: Some blocks are not closed!!!.
+./Chapter2/chapter2.tex:152: Package algorithmicx Error: Some blocks are not closed!!!.
 
 See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 			\end{algorithmic}
+l.152 			\end{algorithmic}
                           
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -2493,13 +2504,13 @@ Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
 
-./Chapter2/chapter2.tex:153: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:152: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 			\end{algorithmic}
+l.152 			\end{algorithmic}
                           
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2507,107 +2518,107 @@ If that doesn't work, type  X <return>  to quit.
 [11 <./Chapter2/Chapter2Figs/PDF/NNS.pdf>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 164.
+(hyperref)                removing `\UHORN' on input line 163.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 164.
+(hyperref)                removing `\dj' on input line 163.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 164.
+(hyperref)                removing `\h' on input line 163.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 164.
+(hyperref)                removing `\ecircumflex' on input line 163.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 164.
+(hyperref)                removing `\textdotbelow' on input line 163.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 164.
+(hyperref)                removing `\textacute' on input line 163.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 164.
+(hyperref)                removing `\ecircumflex' on input line 163.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 178.
+(hyperref)                removing `\textdotbelow' on input line 177.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 178.
+(hyperref)                removing `\acircumflex' on input line 177.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 178.
+(hyperref)                removing `\textdotbelow' on input line 177.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 178.
+(hyperref)                removing `\textdotbelow' on input line 177.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 178.
+(hyperref)                removing `\textacute' on input line 177.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 178.
+(hyperref)                removing `\ocircumflex' on input line 177.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 179.
+(hyperref)                removing `\uhorn' on input line 178.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 179.
+(hyperref)                removing `\h' on input line 178.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 179.
+(hyperref)                removing `\ohorn' on input line 178.
 
 [12]
 
 Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 186.
+(hyperref)                removing `\textdotbelow' on input line 185.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 186.
+(hyperref)                removing `\textdotbelow' on input line 185.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 186.
+(hyperref)                removing `\acircumflex' on input line 185.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 [13]
-<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=773, 530.98375pt x 533.995pt>
+<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=728, 530.98375pt x 533.995pt>
 File: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf  used on input line 202.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf  used on input line 201.
 (pdftex.def)             Requested size: 286.65883pt x 288.28783pt.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 207.
+(hyperref)                removing `\h' on input line 206.
 
-./Chapter2/chapter2.tex:211: Undefined control sequence.
-l.211 			\REQUIRE
+./Chapter2/chapter2.tex:210: Undefined control sequence.
+l.210 			\REQUIRE
                   luồng bài viết từ Twitter, giá trị ngưỡng Mer...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2615,8 +2626,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:212: Undefined control sequence.
-l.212 			\ENSURE
+./Chapter2/chapter2.tex:211: Undefined control sequence.
+l.211 			\ENSURE
                  các cụm bài viết ứng với mỗi story phát hiện...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2624,29 +2635,53 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:214: Missing \endcsname inserted.
+./Chapter2/chapter2.tex:213: Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.214 			\ForEach
+l.213 			\ForEach
                  {document $d$ trong toàn bộ dữ liệu}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
-./Chapter2/chapter2.tex:214: Extra \endcsname.
+./Chapter2/chapter2.tex:213: Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.214 			\ForEach
+l.213 			\ForEach
                  {document $d$ trong toàn bộ dữ liệu}
 I'm ignoring this, since I wasn't doing a \csname.
 
 
-./Chapter2/chapter2.tex:214: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:213: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 			\ForEach
+l.213 			\ForEach
+                 {document $d$ trong toàn bộ dữ liệu}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:213: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 			\ForEach
+                 {document $d$ trong toàn bộ dữ liệu}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:213: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 			\ForEach
                  {document $d$ trong toàn bộ dữ liệu}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2658,8 +2693,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 			\ForEach
-                 {document $d$ trong toàn bộ dữ liệu}
+l.214 				\State
+                 $MaxScore_d \leftarrow 0$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2670,19 +2705,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 			\ForEach
-                 {document $d$ trong toàn bộ dữ liệu}
+l.214 				\State
+                 $MaxScore_d \leftarrow 0$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:215: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:214: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.215 				\State
+l.214 				\State
                  $MaxScore_d \leftarrow 0$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2695,7 +2730,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.215 				\State
-                 $MaxScore_d \leftarrow 0$
+                 $IDMaxScore_d \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2707,18 +2742,18 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.215 				\State
-                 $MaxScore_d \leftarrow 0$
+                 $IDMaxScore_d \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:216: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:215: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 				\State
+l.215 				\State
                  $IDMaxScore_d \leftarrow \emptyset$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2730,8 +2765,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 				\State
-                 $IDMaxScore_d \leftarrow \emptyset$
+l.216 				\ForEach
+                  {cụm g trong tập hợp cụm G}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2742,85 +2777,61 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 				\State
-                 $IDMaxScore_d \leftarrow \emptyset$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:217: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 				\ForEach
+l.216 				\ForEach
                   {cụm g trong tập hợp cụm G}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:217: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:216: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.217 				\ForEach
+l.216 				\ForEach
                   {cụm g trong tập hợp cụm G}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:217: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:218: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.217 				\ForEach
-                  {cụm g trong tập hợp cụm G}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:219: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 					\State
+l.218 					\State
                   tính $Score_d[g] \leftarrow similarity(d, g.firstDoc)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:219: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:218: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 					\State
+l.218 					\State
                   tính $Score_d[g] \leftarrow similarity(d, g.firstDoc)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:219: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:218: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 					\State
+l.218 					\State
                   tính $Score_d[g] \leftarrow similarity(d, g.firstDoc)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapter2/chapter2.tex:221: Undefined control sequence.
-l.221 					\IF
+./Chapter2/chapter2.tex:220: Undefined control sequence.
+l.220 					\IF
               {$MaxScore_d < Score_d[g]$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2829,13 +2840,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:222: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:221: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 						\State
+l.221 						\State
+                   $MaxScore_d \leftarrow Score_d[g]$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:221: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 						\State
+                   $MaxScore_d \leftarrow Score_d[g]$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:221: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 						\State
                    $MaxScore_d \leftarrow Score_d[g]$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2848,7 +2883,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.222 						\State
-                   $MaxScore_d \leftarrow Score_d[g]$
+                   $IDMaxScore_d \leftarrow g.groupID$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2860,48 +2895,33 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.222 						\State
-                   $MaxScore_d \leftarrow Score_d[g]$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:223: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 						\State
                    $IDMaxScore_d \leftarrow g.groupID$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:223: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:222: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 						\State
+l.222 						\State
                    $IDMaxScore_d \leftarrow g.groupID$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:223: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 						\State
-                   $IDMaxScore_d \leftarrow g.groupID$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+./Chapter2/chapter2.tex:223: Undefined control sequence.
+l.223 					\ENDIF
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:224: Undefined control sequence.
-l.224 					\ENDIF
+l.224 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2909,17 +2929,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:225: Undefined control sequence.
-l.225 				\ENDFOR
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:227: Undefined control sequence.
-l.227 				\IF
+./Chapter2/chapter2.tex:226: Undefined control sequence.
+l.226 				\IF
              {$MaxScore_d$ > MergeThreshold}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2928,43 +2939,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:228: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:227: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 					\State
+l.227 					\State
                   gán $d$ vào cụm $IDMaxScore_d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:228: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:227: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 					\State
+l.227 					\State
                   gán $d$ vào cụm $IDMaxScore_d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:228: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:227: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 					\State
+l.227 					\State
                   gán $d$ vào cụm $IDMaxScore_d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./Chapter2/chapter2.tex:229: Undefined control sequence.
-l.229 				\ELSE
+./Chapter2/chapter2.tex:228: Undefined control sequence.
+l.228 				\ELSE
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2973,13 +2984,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:230: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:229: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 					\State
+l.229 					\State
+                  tạo cụm $g_{new}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:229: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 					\State
+                  tạo cụm $g_{new}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:229: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 					\State
                   tạo cụm $g_{new}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2992,7 +3027,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.230 					\State
-                  tạo cụm $g_{new}$
+                  $g_{new}.firstDoc \leftarrow d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3004,57 +3039,33 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.230 					\State
-                  tạo cụm $g_{new}$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:231: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.231 					\State
                   $g_{new}.firstDoc \leftarrow d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:231: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:230: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 					\State
+l.230 					\State
                   $g_{new}.firstDoc \leftarrow d$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:231: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.231 					\State
-                  $g_{new}.firstDoc \leftarrow d$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+./Chapter2/chapter2.tex:231: Undefined control sequence.
+l.231 				\ENDIF
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:232: Undefined control sequence.
-l.232 				\ENDIF
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:233: Undefined control sequence.
-l.233 			\ENDFOR
+l.232 			\ENDFOR
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3063,24 +3074,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:234: Package algorithmicx Error: Some blocks are not closed!!!.
+./Chapter2/chapter2.tex:233: Package algorithmicx Error: Some blocks are not closed!!!.
 
 See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.234 		\end{algorithmic}
+l.233 		\end{algorithmic}
                          
 (That was another \errmessage.)
 
 
-./Chapter2/chapter2.tex:234: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:233: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.234 		\end{algorithmic}
+l.233 		\end{algorithmic}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3088,72 +3099,72 @@ If that doesn't work, type  X <return>  to quit.
 [14 <./Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\UHORN' on input line 265.
+(hyperref)                removing `\UHORN' on input line 264.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 265.
+(hyperref)                removing `\dj' on input line 264.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 265.
+(hyperref)                removing `\h' on input line 264.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 265.
+(hyperref)                removing `\ecircumflex' on input line 264.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 265.
+(hyperref)                removing `\textdotbelow' on input line 264.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 265.
+(hyperref)                removing `\textacute' on input line 264.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 265.
+(hyperref)                removing `\ecircumflex' on input line 264.
 
 [15]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 276.
+(hyperref)                removing `\textdotbelow' on input line 275.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 276.
+(hyperref)                removing `\acircumflex' on input line 275.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 277.
+(hyperref)                removing `\uhorn' on input line 276.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 277.
+(hyperref)                removing `\h' on input line 276.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 277.
+(hyperref)                removing `\ohorn' on input line 276.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 288.
+(hyperref)                removing `\textdotbelow' on input line 287.
 
-<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=791, 538.01pt x 529.98pt>
+<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=747, 538.01pt x 529.98pt>
 File: Chapter2/Chapter2Figs/PDF/LSH.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/LSH.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/LSH.pdf  used on input line 301.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/LSH.pdf  used on input line 300.
 (pdftex.def)             Requested size: 286.65883pt x 282.38411pt.
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 306.
+(hyperref)                removing `\h' on input line 305.
 
-./Chapter2/chapter2.tex:310: Undefined control sequence.
-l.310 			\REQUIRE
+./Chapter2/chapter2.tex:309: Undefined control sequence.
+l.309 			\REQUIRE
                   luồng bài viết từ Twitter, giá trị ngưỡng t
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3161,8 +3172,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:311: Undefined control sequence.
-l.311 			\ENSURE
+./Chapter2/chapter2.tex:310: Undefined control sequence.
+l.310 			\ENSURE
                  những cụm bài viết
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3170,80 +3181,104 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:311: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.311 			\State
+                Khởi tạo L hash tables
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Chapter2/chapter2.tex:311: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.311 			\State
+                Khởi tạo L hash tables
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./Chapter2/chapter2.tex:311: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:311: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:311: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.311 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ./Chapter2/chapter2.tex:312: Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.312 			\State
-                Khởi tạo L hash tables
+l.312 			\ForEach
+                 {document $d$ mới}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
 ./Chapter2/chapter2.tex:312: Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.312 			\State
-                Khởi tạo L hash tables
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.312 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.312 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.312 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:313: Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.313 			\ForEach
-                 {document $d$ mới}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-./Chapter2/chapter2.tex:313: Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.313 			\ForEach
+l.312 			\ForEach
                  {document $d$ mới}
 I'm ignoring this, since I wasn't doing a \csname.
 
 
-./Chapter2/chapter2.tex:313: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 			\ForEach
+l.312 			\ForEach
+                 {document $d$ mới}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 			\ForEach
+                 {document $d$ mới}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:312: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.312 			\ForEach
                  {document $d$ mới}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3255,8 +3290,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 			\ForEach
-                 {document $d$ mới}
+l.313 				\ForEach
+                  {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3267,19 +3302,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 			\ForEach
-                 {document $d$ mới}
+l.313 				\ForEach
+                  {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:314: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:313: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 				\ForEach
+l.313 				\ForEach
                   {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3291,8 +3326,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 				\ForEach
-                  {hash table $l$ trong $L$}
+l.314 					\State
+                  Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3303,19 +3338,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314 				\ForEach
-                  {hash table $l$ trong $L$}
+l.314 					\State
+                  Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:315: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:314: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.315 					\State
+l.314 					\State
                   Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3328,7 +3363,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.315 					\State
-                  Tính hash code cho document d: $LSH_l(d)$
+                  Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3340,48 +3375,24 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.315 					\State
-                  Tính hash code cho document d: $LSH_l(d)$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:316: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.316 					\State
                   Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:316: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:315: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 					\State
+l.315 					\State
                   Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:316: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.316 					\State
-                  Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:317: Undefined control sequence.
-l.317 				\ENDFOR
+./Chapter2/chapter2.tex:316: Undefined control sequence.
+l.316 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3390,13 +3401,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:318: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:317: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 				\State
+l.317 				\State
+                 $dis_{min}(d) = 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:317: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 				\State
+                 $dis_{min}(d) = 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:317: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 				\State
                  $dis_{min}(d) = 1$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3408,8 +3443,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 				\State
-                 $dis_{min}(d) = 1$
+l.318 				\ForEach
+                  {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3420,50 +3455,35 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.318 				\State
-                 $dis_{min}(d) = 1$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:319: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.319 				\ForEach
+l.318 				\ForEach
                   {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:319: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:318: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.319 				\ForEach
+l.318 				\ForEach
                   {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:319: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.319 				\ForEach
-                  {document $d'$ trong $S$}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+./Chapter2/chapter2.tex:319: Undefined control sequence.
+l.319 					\IF
+               {$distance(d,d') < dis_{min}(d)$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:320: Undefined control sequence.
-l.320 					\IF
-               {$distance(d,d') < dis_{min}(d)$}
+l.320 					\STATE
+                  $dis_{min}(d) = distance(d,d')$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3471,16 +3491,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:321: Undefined control sequence.
-l.321 					\STATE
-                  $dis_{min}(d) = distance(d,d')$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:322: Undefined control sequence.
-l.322 		 			\ENDIF
+l.321 		 			\ENDIF
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3488,8 +3499,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:323: Undefined control sequence.
-l.323 				\ENDFOR
+./Chapter2/chapter2.tex:322: Undefined control sequence.
+l.322 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3497,8 +3508,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:324: Undefined control sequence.
-l.324 				\IF
+./Chapter2/chapter2.tex:323: Undefined control sequence.
+l.323 				\IF
              {$dis_{min}(d) >= t$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3506,8 +3517,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:325: Undefined control sequence.
-l.325 					\STATE
+./Chapter2/chapter2.tex:324: Undefined control sequence.
+l.324 					\STATE
                   tạo cụm mới chứa d
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3515,8 +3526,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:326: Undefined control sequence.
-l.326 				\ELSE
+./Chapter2/chapter2.tex:325: Undefined control sequence.
+l.325 				\ELSE
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3524,8 +3535,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:327: Undefined control sequence.
-l.327 					\STATE
+./Chapter2/chapter2.tex:326: Undefined control sequence.
+l.326 					\STATE
                   thêm d vào cụm chứa hàng xóm gần nhất của d
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3533,17 +3544,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:327: Undefined control sequence.
+l.327 				\ENDIF
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ./Chapter2/chapter2.tex:328: Undefined control sequence.
-l.328 				\ENDIF
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:329: Undefined control sequence.
-l.329 			\ENDFOR
+l.328 			\ENDFOR
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3552,24 +3563,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:331: Package algorithmicx Error: Some blocks are not closed!!!.
+./Chapter2/chapter2.tex:330: Package algorithmicx Error: Some blocks are not closed!!!.
 
 See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 		\end{algorithmic}
+l.330 		\end{algorithmic}
                          
 (That was another \errmessage.)
 
 
-./Chapter2/chapter2.tex:331: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:330: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 		\end{algorithmic}
+l.330 		\end{algorithmic}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3577,19 +3588,19 @@ If that doesn't work, type  X <return>  to quit.
 [16] [17 <./Chapter2/Chapter2Figs/PDF/LSH.pdf>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 353.
+(hyperref)                removing `\h' on input line 352.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 353.
+(hyperref)                removing `\textacute' on input line 352.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 353.
+(hyperref)                removing `\ecircumflex' on input line 352.
 
-./Chapter2/chapter2.tex:362: Undefined control sequence.
-l.362 			\REQUIRE
+./Chapter2/chapter2.tex:361: Undefined control sequence.
+l.361 			\REQUIRE
                   luồng bài viết từ Twitter, giá trị ngưỡng t
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3597,8 +3608,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:363: Undefined control sequence.
-l.363 			\ENSURE
+./Chapter2/chapter2.tex:362: Undefined control sequence.
+l.362 			\ENSURE
                  những cum bài viết
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3606,80 +3617,104 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:363: Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.363 			\State
+                Khởi tạo L hash tables
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+./Chapter2/chapter2.tex:363: Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.363 			\State
+                Khởi tạo L hash tables
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+./Chapter2/chapter2.tex:363: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:363: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:363: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 			\State
+                Khởi tạo L hash tables
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ./Chapter2/chapter2.tex:364: Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.364 			\State
-                Khởi tạo L hash tables
+l.364 			\ForEach
+                 {document $d$ mới}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
 
 ./Chapter2/chapter2.tex:364: Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.364 			\State
-                Khởi tạo L hash tables
-I'm ignoring this, since I wasn't doing a \csname.
-
-
-./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.364 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.364 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.364 			\State
-                Khởi tạo L hash tables
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:365: Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.365 			\ForEach
-                 {document $d$ mới}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-./Chapter2/chapter2.tex:365: Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.365 			\ForEach
+l.364 			\ForEach
                  {document $d$ mới}
 I'm ignoring this, since I wasn't doing a \csname.
 
 
-./Chapter2/chapter2.tex:365: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.365 			\ForEach
+l.364 			\ForEach
+                 {document $d$ mới}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.364 			\ForEach
+                 {document $d$ mới}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:364: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.364 			\ForEach
                  {document $d$ mới}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3691,8 +3726,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.365 			\ForEach
-                 {document $d$ mới}
+l.365 				\ForEach
+                  {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3703,19 +3738,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.365 			\ForEach
-                 {document $d$ mới}
+l.365 				\ForEach
+                  {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:366: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:365: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 				\ForEach
+l.365 				\ForEach
                   {hash table $l$ trong $L$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3727,8 +3762,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 				\ForEach
-                  {hash table $l$ trong $L$}
+l.366 					\State
+                  Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3739,19 +3774,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 				\ForEach
-                  {hash table $l$ trong $L$}
+l.366 					\State
+                  Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:367: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:366: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.367 					\State
+l.366 					\State
                   Tính hash code cho document d: $LSH_l(d)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3764,7 +3799,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.367 					\State
-                  Tính hash code cho document d: $LSH_l(d)$
+                  Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3776,48 +3811,24 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.367 					\State
-                  Tính hash code cho document d: $LSH_l(d)$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:368: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.368 					\State
                   Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:368: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:367: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.368 					\State
+l.367 					\State
                   Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:368: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.368 					\State
-                  Thêm tất cả các documents d' có $LSH_l(d') = LSH_l(...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:369: Undefined control sequence.
-l.369 				\ENDFOR
+./Chapter2/chapter2.tex:368: Undefined control sequence.
+l.368 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3826,13 +3837,37 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:370: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:369: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 				\State
+l.369 				\State
+                 $dis_{min}(d) = 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:369: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 				\State
+                 $dis_{min}(d) = 1$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter2/chapter2.tex:369: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 				\State
                  $dis_{min}(d) = 1$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3844,8 +3879,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 				\State
-                 $dis_{min}(d) = 1$
+l.370 				\ForEach
+                  {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3856,49 +3891,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.370 				\State
-                 $dis_{min}(d) = 1$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./Chapter2/chapter2.tex:371: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.371 				\ForEach
+l.370 				\ForEach
                   {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:371: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:370: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 				\ForEach
+l.370 				\ForEach
                   {document $d'$ trong $S$}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-
-./Chapter2/chapter2.tex:371: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.371 				\ForEach
-                  {document $d'$ trong $S$}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./Chapter2/chapter2.tex:373: Undefined control sequence.
-l.373 					\IF
+./Chapter2/chapter2.tex:372: Undefined control sequence.
+l.372 					\IF
                {$distance(d,d') < dis_{min}(d)$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3907,43 +3918,52 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:374: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:373: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.374 					\State
+l.373 					\State
                   $dis_{min}(d) = distance(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:374: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:373: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.374 					\State
+l.373 					\State
                   $dis_{min}(d) = distance(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:374: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:373: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.374 					\State
+l.373 					\State
                   $dis_{min}(d) = distance(d,d')$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+./Chapter2/chapter2.tex:374: Undefined control sequence.
+l.374 					\ENDIF
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:375: Undefined control sequence.
-l.375 					\ENDIF
+l.375 				\ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3952,16 +3972,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:376: Undefined control sequence.
-l.376 				\ENDFOR
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:377: Undefined control sequence.
-l.377 				\IF
+l.376 				\IF
              {$dis_{min}(d) >= t$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3970,44 +3981,53 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:378: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:377: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 					\State
+l.377 					\State
                   Tính khoảng cách giữa d với một lượng (1000-3...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:378: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:377: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 					\State
+l.377 					\State
                   Tính khoảng cách giữa d với một lượng (1000-3...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./Chapter2/chapter2.tex:378: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:377: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 					\State
+l.377 					\State
                   Tính khoảng cách giữa d với một lượng (1000-3...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+./Chapter2/chapter2.tex:378: Undefined control sequence.
+l.378 				\ENDIF
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:379: Undefined control sequence.
-l.379 				\ENDIF
-                
+l.379 				\IF
+             {$dis_{min}(d) >= t$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4015,16 +4035,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ./Chapter2/chapter2.tex:380: Undefined control sequence.
-l.380 				\IF
-             {$dis_{min}(d) >= t$}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:381: Undefined control sequence.
-l.381 					\STATE
+l.380 					\STATE
                   tạo cụm mới chứa d
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4032,8 +4043,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:382: Undefined control sequence.
-l.382 				\ELSE
+./Chapter2/chapter2.tex:381: Undefined control sequence.
+l.381 				\ELSE
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4041,8 +4052,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./Chapter2/chapter2.tex:383: Undefined control sequence.
-l.383 					\STATE
+./Chapter2/chapter2.tex:382: Undefined control sequence.
+l.382 					\STATE
                   thêm d vào cụm chứa hàng xóm gần nhất của d
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4050,17 +4061,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+./Chapter2/chapter2.tex:383: Undefined control sequence.
+l.383 				\ENDIF
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ./Chapter2/chapter2.tex:384: Undefined control sequence.
-l.384 				\ENDIF
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter2/chapter2.tex:385: Undefined control sequence.
-l.385 			\ENDFOR
+l.384 			\ENDFOR
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4069,24 +4080,24 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./Chapter2/chapter2.tex:387: Package algorithmicx Error: Some blocks are not closed!!!.
+./Chapter2/chapter2.tex:386: Package algorithmicx Error: Some blocks are not closed!!!.
 
 See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.387 		\end{algorithmic}
+l.386 		\end{algorithmic}
                          
 (That was another \errmessage.)
 
 
-./Chapter2/chapter2.tex:387: LaTeX Error: Something's wrong--perhaps a missing \item.
+./Chapter2/chapter2.tex:386: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.387 		\end{algorithmic}
+l.386 		\end{algorithmic}
                          
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4094,114 +4105,114 @@ If that doesn't work, type  X <return>  to quit.
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 390.
+(hyperref)                removing `\textacute' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 390.
+(hyperref)                removing `\ohorn' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 390.
+(hyperref)                removing `\ecircumflex' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 390.
+(hyperref)                removing `\ocircumflex' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 390.
+(hyperref)                removing `\textacute' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 390.
+(hyperref)                removing `\ocircumflex' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 390.
+(hyperref)                removing `\dj' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 390.
+(hyperref)                removing `\ocircumflex' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 390.
+(hyperref)                removing `\dj' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 390.
+(hyperref)                removing `\dj' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 390.
+(hyperref)                removing `\ecircumflex' on input line 389.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 390.
+(hyperref)                removing `\u' on input line 389.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 390.
+(hyperref)                removing `\textdotbelow' on input line 389.
 
 [18]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 401.
+(hyperref)                removing `\h' on input line 400.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 401.
+(hyperref)                removing `\textdotbelow' on input line 400.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 401.
+(hyperref)                removing `\textdotbelow' on input line 400.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 401.
+(hyperref)                removing `\ocircumflex' on input line 400.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 401.
+(hyperref)                removing `\textdotbelow' on input line 400.
 
 
-Overfull \hbox (2.23532pt too wide) in paragraph at lines 407--409
+Overfull \hbox (2.23532pt too wide) in paragraph at lines 406--408
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--409
+Underfull \hbox (badness 10000) in paragraph at lines 406--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--412
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
 
  []
 
@@ -4209,50 +4220,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--412
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 440.
+(hyperref)                removing `\textdotbelow' on input line 439.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 440.
+(hyperref)                removing `\ocircumflex' on input line 439.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 440.
+(hyperref)                removing `\dj' on input line 439.
 
 [20]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 449.
+(hyperref)                removing `\textdotbelow' on input line 448.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 449.
+(hyperref)                removing `\ecircumflex' on input line 448.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 449.
+(hyperref)                removing `\textacute' on input line 448.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 449.
+(hyperref)                removing `\ocircumflex' on input line 448.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 468.
+(hyperref)                removing `\textdotbelow' on input line 467.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 468.
+(hyperref)                removing `\ocircumflex' on input line 467.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 468.
+(hyperref)                removing `\dj' on input line 467.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
@@ -4260,39 +4271,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 493.
+(hyperref)                removing `\textacute' on input line 492.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 493.
+(hyperref)                removing `\ecircumflex' on input line 492.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 493.
+(hyperref)                removing `\textdotbelow' on input line 492.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 493.
+(hyperref)                removing `\textdotbelow' on input line 492.
 
 [22]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 522.
+(hyperref)                removing `\textacute' on input line 521.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 522.
+(hyperref)                removing `\ecircumflex' on input line 521.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 522.
+(hyperref)                removing `\uhorn' on input line 521.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 522.
+(hyperref)                removing `\ohorn' on input line 521.
 
 ) [23]
 \openout2 = `Chapter3/chapter3.aux'.
@@ -4383,7 +4394,7 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 11.
 
-<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=854, 694.595pt x 310.15875pt>
+<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=810, 694.595pt x 310.15875pt>
 File: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf Graphic file (type pdf)
 <use Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf>
 Package pdftex.def Info: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf  used on input line 15.
@@ -4432,606 +4443,288 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 39.
+(hyperref)                removing `\textdotbelow' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 39.
+(hyperref)                removing `\ecircumflex' on input line 36.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 39.
+(hyperref)                removing `\textasciigrave' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 39.
+(hyperref)                removing `\ecircumflex' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 39.
+(hyperref)                removing `\h' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 39.
+(hyperref)                removing `\uhorn' on input line 36.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 39.
+(hyperref)                removing `\texttilde' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 39.
+(hyperref)                removing `\uhorn' on input line 36.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 39.
+(hyperref)                removing `\textdotbelow' on input line 36.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 39.
+(hyperref)                removing `\ecircumflex' on input line 36.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 46.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+a'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 46.
+
+
+Package hyperref Warning: Composite letter `\textacute+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 46.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 46.
 
 [25]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 49.
+(hyperref)                removing `\textdotbelow' on input line 55.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 49.
+(hyperref)                removing `\ecircumflex' on input line 55.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
+Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 49.
+(hyperref)                removing `\textdotbelow' on input line 55.
 
 
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 49.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+u'
+Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 49.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 71.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 71.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 71.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 71.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+i'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 71.
-
-
-LaTeX Warning: Reference `fig:topstories' on page 26 undefined on input line 72.
+(hyperref)                removing `\textdotbelow' on input line 55.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 74.
+(hyperref)                removing `\textacute' on input line 63.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 74.
+(hyperref)                removing `\ecircumflex' on input line 63.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 74.
+(hyperref)                removing `\textacute' on input line 63.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 74.
+(hyperref)                removing `\ecircumflex' on input line 63.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 74.
+(hyperref)                removing `\textdotbelow' on input line 63.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 74.
+(hyperref)                removing `\ecircumflex' on input line 63.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 74.
+(hyperref)                removing `\textacute' on input line 63.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 74.
+(hyperref)                removing `\ocircumflex' on input line 63.
 
-<Chapter3/Chapter3Figs/Layers.png, id=875, 1174.3875pt x 1767.60374pt>
+<Chapter3/Chapter3Figs/Layers.png, id=827, 1174.3875pt x 1767.60374pt>
 File: Chapter3/Chapter3Figs/Layers.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Layers.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Layers.png  used on input line 78.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Layers.png  used on input line 67.
 (pdftex.def)             Requested size: 220.50887pt x 331.8834pt.
 [26] [27 <./Chapter3/Chapter3Figs/Layers.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 94.
+(hyperref)                removing `\dj' on input line 83.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 94.
+(hyperref)                removing `\textdotbelow' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 94.
+(hyperref)                removing `\abreve' on input line 83.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 94.
+(hyperref)                removing `\textdotbelow' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 94.
+(hyperref)                removing `\ecircumflex' on input line 83.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 94.
+(hyperref)                removing `\textacute' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 94.
-
-[28]
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 122.
+(hyperref)                removing `\ocircumflex' on input line 83.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 122.
+(hyperref)                removing `\ohorn' on input line 106.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 122.
+(hyperref)                removing `\h' on input line 106.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ohorn' on input line 106.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 122.
+(hyperref)                removing `\texttilde' on input line 106.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 122.
+(hyperref)                removing `\uhorn' on input line 106.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 122.
+(hyperref)                removing `\textdotbelow' on input line 106.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 122.
+(hyperref)                removing `\ecircumflex' on input line 106.
 
-
-Underfull \hbox (badness 2269) in paragraph at lines 165--165
-[]|\T5/cmr/m/n/12 X�c su�t tweet thu�c l�p "Kh�ng"
- []
-
-[29] [30]
+[28] [29]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 197.
+(hyperref)                removing `\ohorn' on input line 169.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 197.
+(hyperref)                removing `\h' on input line 169.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 197.
+(hyperref)                removing `\ohorn' on input line 169.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 197.
+(hyperref)                removing `\texttilde' on input line 169.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 197.
+(hyperref)                removing `\uhorn' on input line 169.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 197.
+(hyperref)                removing `\textdotbelow' on input line 169.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 197.
+(hyperref)                removing `\ecircumflex' on input line 169.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 199.
+(hyperref)                removing `\h' on input line 171.
 
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 219.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 235.
-
-[31]
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 250.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 250.
-
-<Chapter3/Chapter3Figs/FrontEndArch.png, id=906, 793.96625pt x 362.35374pt>
-File: Chapter3/Chapter3Figs/FrontEndArch.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/FrontEndArch.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/FrontEndArch.png  used on input line 254.
-(pdftex.def)             Requested size: 441.01773pt x 201.2801pt.
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 259.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 259.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 259.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ohorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 259.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 259.
-
-./Chapter3/chapter3.tex:262: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.262     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:263: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.263     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:263: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.263     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./Chapter3/chapter3.tex:274: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.274     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:275: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.275     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:275: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.275     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[32 <./Chapter3/Chapter3Figs/FrontEndArch.png>]
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 284.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 284.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ohorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 284.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 284.
-
-./Chapter3/chapter3.tex:287: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.287     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:288: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.288     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:288: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.288     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Overfull \hbox (14.14337pt too wide) in paragraph at lines 288--293
- [][] 
- []
-
-./Chapter3/chapter3.tex:298: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.298     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:299: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.299     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:299: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.299     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 315.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 315.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 315.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 315.
-
-
-Package hyperref Warning: Composite letter `\texttilde+\uhorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 315.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 315.
-
-
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 315.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 315.
-
-
-Package hyperref Warning: Composite letter `\textacute+\ohorn'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 315.
-
-
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 315.
-
-./Chapter3/chapter3.tex:318: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.318     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:319: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.319     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:319: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.319     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-./Chapter3/chapter3.tex:329: Undefined control sequence.
-<argument> \tabcolstep 
-                       
-l.329     \setlength{\tabcolstep}{12pt}
-                                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./Chapter3/chapter3.tex:330: Missing number, treated as zero.
-<to be read again> 
-                   \def 
-l.330     \begin{tabular}
-                         {@{}lll@{}} \toprule
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./Chapter3/chapter3.tex:330: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \def 
-l.330     \begin{tabular}
-                         {@{}lll@{}} \toprule
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-[33]
+[30]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 337.
+(hyperref)                removing `\textacute' on input line 190.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 337.
+(hyperref)                removing `\ecircumflex' on input line 190.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 337.
+(hyperref)                removing `\h' on input line 190.
 
-<Chapter3/Chapter3Figs/Classified.png, id=916, 1573.88pt x 737.75626pt>
+<Chapter3/Chapter3Figs/Classified.png, id=851, 1573.88pt x 737.75626pt>
 File: Chapter3/Chapter3Figs/Classified.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Classified.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Classified.png  used on input line 342.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Classified.png  used on input line 195.
 (pdftex.def)             Requested size: 441.01773pt x 206.71669pt.
-<Chapter3/Chapter3Figs/Chart1.png, id=917, 1572.87625pt x 724.7075pt>
+<Chapter3/Chapter3Figs/Chart1.png, id=852, 1572.87625pt x 724.7075pt>
 File: Chapter3/Chapter3Figs/Chart1.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Chart1.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Chart1.png  used on input line 349.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Chart1.png  used on input line 202.
 (pdftex.def)             Requested size: 423.37997pt x 195.07649pt.
-[34 <./Chapter3/Chapter3Figs/Classified.png>]
-<Chapter3/Chapter3Figs/Chart2.png, id=923, 1575.8875pt x 702.625pt>
+[31 <./Chapter3/Chapter3Figs/Classified.png>]
+<Chapter3/Chapter3Figs/Chart2.png, id=859, 1575.8875pt x 702.625pt>
 File: Chapter3/Chapter3Figs/Chart2.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Chart2.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Chart2.png  used on input line 356.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Chart2.png  used on input line 209.
 (pdftex.def)             Requested size: 423.37997pt x 188.76782pt.
-<Chapter3/Chapter3Figs/Chart3.png, id=924, 1576.89125pt x 695.59875pt>
+<Chapter3/Chapter3Figs/Chart3.png, id=860, 1576.89125pt x 695.59875pt>
 File: Chapter3/Chapter3Figs/Chart3.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Chart3.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Chart3.png  used on input line 363.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Chart3.png  used on input line 216.
 (pdftex.def)             Requested size: 423.37997pt x 186.75278pt.
- [35 <./Chapter3/Chapter3Figs/Chart1.png> <./Chapter3/Chapter3Figs/Chart2.png>]
-<Chapter3/Chapter3Figs/Filter.png, id=929, 1552.80125pt x 559.08875pt>
+ [32 <./Chapter3/Chapter3Figs/Chart1.png> <./Chapter3/Chapter3Figs/Chart2.png>]
+<Chapter3/Chapter3Figs/Filter.png, id=865, 1552.80125pt x 559.08875pt>
 File: Chapter3/Chapter3Figs/Filter.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Filter.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Filter.png  used on input line 370.
+Package pdftex.def Info: Chapter3/Chapter3Figs/Filter.png  used on input line 223.
 (pdftex.def)             Requested size: 423.37997pt x 152.43184pt.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 375.
+(hyperref)                removing `\textacute' on input line 228.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 375.
+(hyperref)                removing `\ecircumflex' on input line 228.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 375.
+(hyperref)                removing `\uhorn' on input line 228.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 375.
+(hyperref)                removing `\ohorn' on input line 228.
 
-) [36 <./Chapter3/Chapter3Figs/Chart3.png> <./Chapter3/Chapter3Figs/Filter.png>]
+) [33 <./Chapter3/Chapter3Figs/Chart3.png> <./Chapter3/Chapter3Figs/Filter.png>]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex
@@ -5163,7 +4856,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 38.
 
-[37
+[34
 
 
 
@@ -5271,7 +4964,7 @@ Overfull \hbox (1.69891pt too wide) in paragraph at lines 83--83
 []|\T5/cmr/m/n/12 2.434242| 
  []
 
-[38]
+[35]
 Overfull \hbox (2.54382pt too wide) in paragraph at lines 94--94
 []|\T5/cmr/m/n/12 Intracluster
  []
@@ -5391,7 +5084,7 @@ Overfull \hbox (1.69891pt too wide) in paragraph at lines 159--159
 []|\T5/cmr/m/n/12 2.280260| 
  []
 
-[39]
+[36]
 Overfull \hbox (2.54382pt too wide) in paragraph at lines 170--170
 []|\T5/cmr/m/n/12 Intracluster
  []
@@ -5566,18 +5259,18 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 271.
 
-<Chapter4/Chapter4Figs/ThresholdVsClusterCount.png, id=956, 1004.25188pt x 602.25pt>
+<Chapter4/Chapter4Figs/ThresholdVsClusterCount.png, id=890, 1004.25188pt x 602.25pt>
 File: Chapter4/Chapter4Figs/ThresholdVsClusterCount.png Graphic file (type png)
 <use Chapter4/Chapter4Figs/ThresholdVsClusterCount.png>
 Package pdftex.def Info: Chapter4/Chapter4Figs/ThresholdVsClusterCount.png  used on input line 275.
 (pdftex.def)             Requested size: 674.33032pt x 404.41516pt.
-[40] [41]
-<Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png, id=965, 1594.45688pt x 953.06062pt>
+[37] [38]
+<Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png, id=900, 1594.45688pt x 953.06062pt>
 File: Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png Graphic file (type png)
 <use Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png>
 Package pdftex.def Info: Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png  used on input line 281.
 (pdftex.def)             Requested size: 396.91325pt x 237.2466pt.
-<Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png, id=966, 1589.94pt x 951.555pt>
+<Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png, id=901, 1589.94pt x 951.555pt>
 File: Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png Graphic file (type png)
 <use Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png>
 Package pdftex.def Info: Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png  used on input line 287.
@@ -5637,8 +5330,8 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 302.
 
-[42 <./Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png>] [43 <./Chapter4/Chapter4Figs/ThresholdVsClusterCount.png>]
-<Chapter4/Chapter4Figs/LSHRuntime.png, id=979, 1163.84813pt x 697.8572pt>
+[39 <./Chapter4/Chapter4Figs/MergeThresholdVSInterDistance.png>] [40 <./Chapter4/Chapter4Figs/ThresholdVsClusterCount.png>]
+<Chapter4/Chapter4Figs/LSHRuntime.png, id=913, 1163.84813pt x 697.8572pt>
 File: Chapter4/Chapter4Figs/LSHRuntime.png Graphic file (type png)
 <use Chapter4/Chapter4Figs/LSHRuntime.png>
 Package pdftex.def Info: Chapter4/Chapter4Figs/LSHRuntime.png  used on input line 308.
@@ -5661,7 +5354,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 313.
 
-) [44 <./Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png>] [45] [46 <./Chapter4/Chapter4Figs/LSHRuntime.png>]
+) [41 <./Chapter4/Chapter4Figs/MergeThresholdVSIntraDistance.png>] [42] [43 <./Chapter4/Chapter4Figs/LSHRuntime.png>]
 \openout2 = `Conclusions/conclusions.aux'.
 
  (./Conclusions/conclusions.tex
@@ -5764,11 +5457,11 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 40.
 
-[47
+[44
 
 
 
-]) [48] (./BachelorThesis.bbl (./BachelorThesis.brf)
+]) [45] (./BachelorThesis.bbl (./BachelorThesis.brf)
 \tf@brf=\write8
 \openout8 = `BachelorThesis.brf'.
 
@@ -5786,7 +5479,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1.
 
-[49
+[46
 
 
 
@@ -5795,7 +5488,7 @@ Underfull \hbox (badness 3769) in paragraph at lines 72--72
 []\T5/cmr/m/n/12 Tdt 2004: An-no-ta-tion man-ual.  [][]$\T5/cmtt/m/n/12 https : / / catalog . ldc . upenn . edu / docs /
  []
 
-) [50]
+) [47]
 \openout2 = `Appendix/appendix.aux'.
 
  (./Appendix/appendix.tex (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -5851,28 +5544,19 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 37.
 
-[51
+[48
 
 
-] [52] [53]) [54]
+] [49] [50]) [51]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
  (./BachelorThesis.aux (./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
-
-
-Package rerunfilecheck Warning: File `BachelorThesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BachelorThesis.out':
-(rerunfilecheck)             Before: 081E30C38304A5B45EA993E45E62DF88;6316
-(rerunfilecheck)             After:  8D751054B4BA431FD35E0B04D394F993;6310.
+Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
+(rerunfilecheck)             Checksum: 188E97E90FB2B7C611BA99BD76345A42;5779.
 Package rerunfilecheck Info: File `BachelorThesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 8379B5F8B9581459CA157507607CB421;981.
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: 265ED4D3F80012F62165F32D13F30D8D;981.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -5880,18 +5564,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 14770 strings out of 492985
- 213388 string characters out of 6132570
- 369537 words of memory out of 5000000
- 17594 multiletter control sequences out of 15000+600000
+ 14732 strings out of 492985
+ 212798 string characters out of 6132570
+ 369404 words of memory out of 5000000
+ 17579 multiletter control sequences out of 15000+600000
  23391 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,74p,1165b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on BachelorThesis.pdf (67 pages, 1360764 bytes).
+Output written on BachelorThesis.pdf (63 pages, 1430614 bytes).
 PDF statistics:
- 1217 PDF objects out of 1440 (max. 8388607)
- 1067 compressed objects within 11 object streams
- 282 named destinations out of 1000 (max. 500000)
- 817 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1149 PDF objects out of 1200 (max. 8388607)
+ 1004 compressed objects within 11 object streams
+ 260 named destinations out of 1000 (max. 500000)
+ 764 words of extra memory for PDF output out of 10000 (max. 10000000)
 

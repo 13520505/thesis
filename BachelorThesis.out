@@ -45,38 +45,32 @@
 \BOOKMARK [1][]{section.72}{3.1 M u}{chapter.71}% 45
 \BOOKMARK [1][]{section.73}{3.2 M\364 h\354nh h thng}{chapter.71}% 46
 \BOOKMARK [1][]{section.75}{3.3 Ph\342n h thu thp d liu \(Data Streaming\)}{chapter.71}% 47
-\BOOKMARK [1][]{section.79}{3.4 Ph\342n h tin x l\375 d liu \(Data Preprocessor\)}{chapter.71}% 48
-\BOOKMARK [1][]{section.84}{3.5 Ph\342n h thut to\341n gom cum \(Clustering Algorithm\)}{chapter.71}% 49
-\BOOKMARK [1][]{section.85}{3.6 Ph\342n h hin thi tin n\363ng \(Top Stories\)}{chapter.71}% 50
-\BOOKMARK [1][]{section.86}{3.7 Thit k h thng}{chapter.71}% 51
-\BOOKMARK [1][]{section.88}{3.8 C\340i t h thng}{chapter.71}% 52
-\BOOKMARK [2][]{subsection.89}{3.8.1 C\341c package}{section.88}% 53
-\BOOKMARK [2][]{subsection.90}{3.8.2 C s d liu MongoDB}{section.88}% 54
-\BOOKMARK [3][]{subsubsection.92}{3.8.2.1 Collection Streaming}{subsection.90}% 55
-\BOOKMARK [3][]{subsubsection.94}{3.8.2.2 Collection Cluster}{subsection.90}% 56
-\BOOKMARK [2][]{subsection.96}{3.8.3 C s d liu MySQL}{section.88}% 57
-\BOOKMARK [3][]{subsubsection.97}{3.8.3.1 Bang User}{subsection.96}% 58
-\BOOKMARK [3][]{subsubsection.99}{3.8.3.2 Bang UserType}{subsection.96}% 59
-\BOOKMARK [3][]{subsubsection.101}{3.8.3.3 Bang Topic}{subsection.96}% 60
-\BOOKMARK [1][]{section.103}{3.9 Giao din}{chapter.71}% 61
-\BOOKMARK [2][]{subsection.105}{3.9.1 Giao din danh s\341ch tin \343 ph\342n lp}{section.103}% 62
-\BOOKMARK [2][]{subsection.108}{3.9.2 Giao din ph\342n lp tin}{section.103}% 63
-\BOOKMARK [2][]{subsection.111}{3.9.3 Giao din ph\342n thng k\352 d liu ph\342n lp}{section.103}% 64
-\BOOKMARK [1][]{section.114}{3.10 Kt qua}{chapter.71}% 65
-\BOOKMARK [1][]{section.120}{3.11 Kt chng}{chapter.71}% 66
-\BOOKMARK [0][]{chapter.121}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 67
-\BOOKMARK [1][]{section.122}{4.1 M u}{chapter.121}% 68
-\BOOKMARK [1][]{section.123}{4.2 Tng quan v b d liu}{chapter.121}% 69
-\BOOKMARK [1][]{section.125}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.121}% 70
-\BOOKMARK [1][]{section.126}{4.4 Kt qua thc nghim}{chapter.121}% 71
-\BOOKMARK [2][]{subsection.127}{4.4.1 Thay i MergeThreshold}{section.126}% 72
-\BOOKMARK [2][]{subsection.137}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.126}% 73
-\BOOKMARK [1][]{section.139}{4.5 Nhn x\351t}{chapter.121}% 74
-\BOOKMARK [2][]{subsection.140}{4.5.1 Nhn inh v MergeThreshold}{section.139}% 75
-\BOOKMARK [2][]{subsection.145}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.139}% 76
-\BOOKMARK [1][]{section.147}{4.6 Kt chng}{chapter.121}% 77
-\BOOKMARK [0][]{chapter*.148}{KT LUN V\300 HNG PH\301T TRIN}{}% 78
-\BOOKMARK [1][]{section*.149}{Kt qua at c}{chapter*.148}% 79
-\BOOKMARK [1][]{section*.150}{Hng ph\341t trin}{chapter*.148}% 80
-\BOOKMARK [0][]{chapter*.151}{T\300I LIU THAM KHAO}{}% 81
-\BOOKMARK [0][]{section*.153}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 82
+\BOOKMARK [1][]{section.76}{3.4 Ph\342n h tin x l\375 d liu \(Data Preprocessor\)}{chapter.71}% 48
+\BOOKMARK [1][]{section.81}{3.5 Ph\342n h ph\342n loai tin tc}{chapter.71}% 49
+\BOOKMARK [1][]{section.82}{3.6 Ph\342n h ph\342n loai loai r\341c}{chapter.71}% 50
+\BOOKMARK [1][]{section.83}{3.7 Thit k h thng}{chapter.71}% 51
+\BOOKMARK [1][]{section.85}{3.8 C\340i t h thng}{chapter.71}% 52
+\BOOKMARK [2][]{subsection.86}{3.8.1 C\341c package}{section.85}% 53
+\BOOKMARK [2][]{subsection.87}{3.8.2 C s d liu MongoDB}{section.85}% 54
+\BOOKMARK [3][]{subsubsection.89}{3.8.2.1 Collection News}{subsection.87}% 55
+\BOOKMARK [3][]{subsubsection.91}{3.8.2.2 Collection HashCode}{subsection.87}% 56
+\BOOKMARK [2][]{subsection.93}{3.8.3 C s d liu MySQL}{section.85}% 57
+\BOOKMARK [3][]{subsubsection.94}{3.8.3.1 Bang User}{subsection.93}% 58
+\BOOKMARK [1][]{section.96}{3.9 Kt qua}{chapter.71}% 59
+\BOOKMARK [1][]{section.102}{3.10 Kt chng}{chapter.71}% 60
+\BOOKMARK [0][]{chapter.103}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 61
+\BOOKMARK [1][]{section.104}{4.1 M u}{chapter.103}% 62
+\BOOKMARK [1][]{section.105}{4.2 Tng quan v b d liu}{chapter.103}% 63
+\BOOKMARK [1][]{section.107}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.103}% 64
+\BOOKMARK [1][]{section.108}{4.4 Kt qua thc nghim}{chapter.103}% 65
+\BOOKMARK [2][]{subsection.109}{4.4.1 Thay i MergeThreshold}{section.108}% 66
+\BOOKMARK [2][]{subsection.119}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.108}% 67
+\BOOKMARK [1][]{section.121}{4.5 Nhn x\351t}{chapter.103}% 68
+\BOOKMARK [2][]{subsection.122}{4.5.1 Nhn inh v MergeThreshold}{section.121}% 69
+\BOOKMARK [2][]{subsection.127}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.121}% 70
+\BOOKMARK [1][]{section.129}{4.6 Kt chng}{chapter.103}% 71
+\BOOKMARK [0][]{chapter*.130}{KT LUN V\300 HNG PH\301T TRIN}{}% 72
+\BOOKMARK [1][]{section*.131}{Kt qua at c}{chapter*.130}% 73
+\BOOKMARK [1][]{section*.132}{Hng ph\341t trin}{chapter*.130}% 74
+\BOOKMARK [0][]{chapter*.133}{T\300I LIU THAM KHAO}{}% 75
+\BOOKMARK [0][]{section*.135}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 76

@@ -6,7 +6,7 @@
 \fi
 
 \section{Mở đầu}
-Chương này sẽ trình bày về thiết kế, chi tiết cài đặt, các thư viện và framework được sử dụng để xây dựng hệ thống phát hiện tin nóng.
+Chương này sẽ trình bày về thiết kế, chi tiết cài đặt, các thư viện và framework được sử dụng để xây dựng hệ thống lọc rác tin tức.
 
 \section{Mô hình hệ thống}
 Dưới đây là mô hình của các thành phần chính hệ thống:
@@ -17,7 +17,7 @@ Dưới đây là mô hình của các thành phần chính hệ thống:
 	\label{fig:systemarchitecture}
 \end{figure}
 
-Hệ thống có 2 loại người dùng chính: quản trị viên hệ thống (admin) và biên tập viên. Quản trị viên có nhiệm vụ theo dõi hệ thống, điều khiển bật tắt, thay đổi thông số của các tác vụ trong hệ thống. Biên tập viên sử dụng hệ thống thông qua giao diện Top Stories để xem các sự kiện phát hiện được và các thông tin liên quan.
+Hệ thống có 2 loại người dùng chính: quản trị viên hệ thống (admin) và biên tập viên. Quản trị viên có nhiệm vụ theo dõi hệ thống, điều khiển bật tắt, thay đổi thông số của các tác vụ trong hệ thống. Biên tập viên sử dụng hệ thống thông qua giao diện Spam Filtering để xem các sự kiện phát hiện được và các thông tin liên quan.
 %\begin{itemize}
 %	\item \textit{Data Streaming}: Module này sử dụng Twitter Streaming API để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước.
 %	\item \textit{Data Preprocessor}: Module tiền xử lý (loại bỏ link, stopwords; tách từ) và biểu diễn dữ liệu thành vector trọng số tf-idf.
@@ -27,17 +27,14 @@ Hệ thống có 2 loại người dùng chính: quản trị viên hệ thống
 %\end{itemize}
 
 \section{Phân hệ thu thập dữ liệu (Data Streaming)}
-Module này sử dụng Twitter Streaming API\footnote{https://dev.twitter.com/streaming/overview} để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước. API này cho phép người dùng lấy những tweet đăng ở chế độ công khai thông qua 2 endpoint:
+Module này sử dụng hệ thống Crawler để lấy các bài đăng từ nhiều nguồn tin tức lưu trữ ở cơ sở dữ liệu MySQL và đưa qua cơ sở dữ liệu MongoDB, hệ thống sẽ thực hiện các chức năng:
 	\begin{itemize}
-		\item GET statuses/sample: lấy mẫu ngẫu nhiên từ tất các bài đăng hiện tại.
-		\item POST statuses/filter: lọc các bài theo nhiều tiêu chí cho trước như: có chứa từ khóa tìm kiếm, viết bởi ngôn ngữ nào đó, vị trí người dùng khi đăng bài, bài đăng bởi người dùng trong danh sách theo dõi. Mặc định Twitter cho phép lọc với tối đa 400 từ khóa và theo dõi tối đa 5000 người dùng.
+		\item Connect vào cơ sở dữ liệu mySQL để lấy các bài bài báo.
+		\item Xóa các bài viết trùng.
+		\item Lưu trữ xuống cơ sở dữ liệu MongoDB
 	\end{itemize}
-Cả 2 endpoint này đều có chung giới hạn: lượng tweet trả về bởi API không vượt quá 1\%\footnote{https://twittercommunity.com/t/potential-adjustments-to-streaming-api-sample-volumes/31628} tổng số tweet đang được đăng tại thời điểm đó trên Twitter. Ví dụ, với con số trung bình 6000 tweet được đăng mỗi giây vào năm 2013\footnote{http://www.internetlivestats.com/twitter-statistics/}, mỗi giây ta có thể lấy tối đa 60 tweet. Con số này có thể dao động theo từng thời điểm.
-
-Hệ thống sử dụng endpoint statuses/filter với 115 keywords, ngôn ngữ tiếng Việt, và thu được trung bình 2300 tweet mỗi ngày, với ngày cao nhất đạt 6329 tweet. 
-
 \section{Phân hệ tiền xử lý dữ liệu (Data Preprocessor)}
-Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hiện tách từ, loại bỏ stopwords và biểu diễn dữ liệu thành vector trọng số tf-idf. Trước khi chạy thuật toán gom cụm, dữ liệu được lấy ra từ MongoDB và tiền xử lý phần nội dung của tweet bằng các bước sau:
+Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hiện tách từ, loại bỏ stopwords và biểu diễn dữ liệu thành vector trọng số tf-idf. Trước khi chạy thuật toán phân loại, dữ liệu được lấy ra từ MongoDB và tiền xử lý phần nội dung của bài báo bằng các bước sau:
 	\begin{enumerate}
 		\item Loại bỏ URL bằng regular expression.
 		\item Tách từ sử dụng thư viện TPSegmenter. Bước này dùng để biểu diễn các từ ghép trong tiếng Việt bằng cách thêm gạch nối giữa các tiếng của từ.\\
@@ -46,30 +43,22 @@ Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hi�
 		\item Tính và biểu diễn dữ liệu thành vector tf-idf và metadata.
 	\end{enumerate}
 
-\section{Phân hệ thuật toán gom cụm (Clustering Algorithm)}
-Chạy thuật toán gom cụm trên dữ liệu đã mã hóa thành vector trọng số, đưa ra các cụm bài viết tương ứng và lưu vào cơ sở dữ liệu. Hệ thống sử dụng thuật toán LSH cải tiến đã trình bày ở chương 2 làm thuật toán chính, với các thông số mặc định như sau:
-	\begin{table}[H]
-		\centering
-		\setlength\extrarowheight{3pt}
-		\begin{tabular}{|c|c|}
-			\hline 
-			Threshold & 0.5 \\ 
-			\hline 
-			Số hashtable & 20 \\ 
-			\hline 
-			Số siêu phẳng & 200 \\ 
-			\hline 
-			Số bài viết gần nhất để so sánh & 1000 \\ 
-			\hline 
-			Số bài viết tối đa cho một bucket & 200 \\ 
-			\hline 
-		\end{tabular} 
-	\end{table}
+\section{Phân hệ phân loại tin tức}
+Sử dụng model đã train trước đó để phân loại tin tức. Model sử dụng thuật toán SVM đã trình bày ở chương 2 làm thuật toán chính để phân loại tin tức. Hiện tại hệ thống có 2 nhãn đã được định nghĩa trước đó:
+	\begin{itemize}
+		\item \textit Không rác
+		\item \textit Rác
+	\end{itemize}
 
-Các thông số trên cho phép thuật toán kịp thời xử lý hết lượng dữ liệu truyền liên tục từ Twitter về, và vẫn phát hiện được các cụm tương đối tốt.
+Sau khi đã phân loại, hệ thống sẽ lưu nhãn đã gán cho tin tức xuống cơ sở dữ liệu MongoDB.
 
-\section{Phân hệ hiển thị tin nóng (Top Stories)}
-Giao diện hiển thị các cụm tin tức nóng cho người dùng. Mỗi cụm được đại diện bằng một bài viết đầu tiên, tức là bài viết sớm nhất nói về sự kiện nào đó, cùng với các thông tin như số bài viết trong cụm, tổng số favorite và retweet trong cụm, tổng số follower của người dùng có đăng bài trong cụm,… Hình~\ref{fig:topstories} thể hiện giao diện đã cài đặt trên thực tế.
+\section{Phân hệ phân loại loại rác}
+Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân loại tin tức ở trên để phân loại loại rác cho tin đó. Hiện tại có 3 loại rác đã được định nghĩa trước:
+\begin{itemize}
+	\item \textit Quảng cáo
+	\item \textit Tuyển dụng
+	\item \textit Chia sẻ
+\end{itemize}
 
 \section{Thiết kế hệ thống} 
 
@@ -94,29 +83,24 @@ Hệ thống xây dựng theo kiến trúc 3 tầng gồm: Presentation Layer, B
 \section{Cài đặt hệ thống}%các packages
 Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với các thành phần sau:
 	\begin{itemize}
-		\item Ngôn ngữ: Java, HTML, CSS, JavaScript.
+		\item Ngôn ngữ: Java, HTML, CSS, JavaScript, React.
 		\item Hệ cơ sở dữ liệu: MongoDB và MySQL.
-		\item Thư viện, framework: Apache Struts 2, Apache Lucene, TPSegmenter
+		\item Thư viện, framework: Apache Struts 2, Apache Lucene, TPSegmenter, Weka
 		\item Server: Apache Tomcat
 	\end{itemize}
 
 	\subsection{Các package}
 	Source code chương trình được tổ chức thành các package như sau:
 	\begin{itemize}
-		\item admicro.eds.action: Chứa các lớp action điều khiển view của Struts 2
-		\item admicro.eds.bo: Chứa các business object của hệ thống
-		\item admicro.eds.clustering: Chứa các lớp của thuật toán gom cụm
-		\item admicro.eds.config: Các file config cho hệ thống
-		\item admicro.eds.constant: Các hằng số dùng chung trong chương trình
-		\item admicro.eds.crawler: Duyệt các trang tin được chia sẻ trong tweet và lấy thêm thông tin bổ sung
-		\item admicro.eds.dao: Data Access Object, thực hiện các tác vụ đọc, ghi database
-		\item admicro.eds.dbconnection: Cung cấp kết nối đến database
-		\item admicro.eds.dto: Data Transfer Object, các đối tượng để vận chuyển dữ liệu từ database
-		\item admicro.eds.interceptor: Chứa các lớp interceptor của Struts 2
-		\item admicro.eds.lucene: Gồm các tác vụ sử dụng thư viện Apache Lucene như index dữ liệu, tính toán tf-idf,…
-		\item admicro.eds.statistics: Chạy thống kê dữ liệu offline
-		\item admicro.eds.thread: Các lớp bao đóng để tạo thread chạy song song các tác vụ
-		\item admicro.eds.utility: Các công cụ hỗ trợ trong hệ thống
+		\item vn.vccorp.crawler.bo: Chứa các business object của hệ thống
+		\item vn.vccorp.crawler.config: Các file config cho hệ thống
+		\item vn.vccorp.crawler.constant: Các file constant của hệ thống
+		\item vn.vccorp.crawler.dao: Data Access Object, thực hiện các tác vụ đọc, ghi database
+		\item vn.vccorp.crawler.dbconnection: Cung cấp kết nối đến database
+		\item vn.vccorp.crawler.dto: Data Transfer Object, các đối tượng để vận chuyển dữ liệu từ database
+		\item vn.vccorp.crawler.main: Các lớp bao đóng để tạo thread chạy song song các tác vụ
+		\item vn.vccorp.crawler.thread: Các lớp bao đóng để tạo thread chạy song song các tác vụ
+		\item vn.vccorp.crawler.util: Các công cụ hỗ trợ trong hệ thống
 	\end{itemize}
 	
 	\subsection{Cơ sở dữ liệu MongoDB}
@@ -140,8 +124,8 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 		\label{tab:table_3_1}
 	\end{table}
 	
-		\subsubsection{Collection Streaming}
-		Collection này chứa thông tin về các bài viết thu thập được từ Twitter, cũng là nơi lưu trữ tất cả thông tin về tweet trong hệ thống. Khi dữ liệu được stream từ Twitter về, mỗi tweet chỉ có 8 trường, các trường khác sẽ được thêm vào trong quá trình hệ thống xử lý.
+		\subsubsection{Collection News}
+		Collection này chứa thông tin về các tin lấy từ cơ sở dữ liệu MySQL, cũng là nơi lưu trữ tất cả thông tin về tweet trong hệ thống. Khi dữ liệu được stream từ MySQL về, mỗi tin chỉ có 12 trường, các trường khác sẽ được thêm vào trong quá trình hệ thống xử lý.
 		\begin{table}[H]
 			%				\centering
 			\setlength\extrarowheight{3pt}
@@ -149,32 +133,26 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 				\hline
 				\textbf{Thuộc tính}     & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
 				\_id           & ObjectID       & ID trong MongoDB của document \\\hline
-				TweetID        & Long           & ID của tweet do Twitter tạo ra\\\hline
-				UserID         & Long           & ID của người dùng Twitter\\\hline
-				UserScreenName & String         & Tên tài khoản của người dùng Twitter \\\hline
-				TweetContent   & String         & Nội dung của tweet, bao gồm nội dung chữ và đường link được chia sẻ\\\hline
-				TweetPostDate  & Date           & Thời gian đăng của tweet\\\hline
-				CollectDate    & Date           & Thời gian tweet được thu thập vào hệ thống\\\hline
-				FavoriteCount  & Integer        & Số lượng favorite của tweet\\\hline
-				RetweetCount   & Integer        & Số lượng retweet của tweet\\\hline
-				TrackingNumber & Integer        & \\\hline
-				LinkPostDate   & String         & Ngày đăng của bài viết được share trong tweet (nếu có)\\\hline
-				clusterID      & Integer        &  ID cụm mà tweet được phân vào, là TweetID của tweet đại diện cụm\\\hline
-				category       & String         & Chủ đề của tweet\\\hline
-				breakingLabel  & String         & Nhãn phân lớp của Tweet sau khi chạy bộ phân lớp\\\hline
-				probabilityForNo & Double       & Xác suất tweet thuộc lớp "Không" (nóng)\\\hline
-				probabilityForIrrelevant & Double         &  Xác suất tweet thuộc lớp "Không liên quan"\\\hline
-				probabilityForYes & Double         &  Xác suất tweet thuộc lớp "Có" (nóng)\\\hline
-				feedback      & String        & Phản hồi về nhãn phân lớp của biên tập viên\\\hline
-				
+				Id        & Int           & ID của tin tức lấy về\\\hline
+				Title         & String           & Title của tin tức\\\hline
+				Content & String         & Nội dung của tin tức\\\hline
+				Source   & String         & Nguồn trang báo điện tử của tin tức\\\hline
+				CreateTime  & Date           & Thời gian đăng của tin\\\hline
+				GetTime    & Date           & Thời gian tin tức được thu thập vào cơ sở dữ liệu MySQL\\\hline
+				CollectDate    & Date           & Thời gian tweet được thu thập vào cơ sở dữ liệu MongoDB\\\hline
+				Author  & String        & Người viết bài báo(nếu có)\\\hline
+				Category   & Integer        & Chủ đề của bài báo\\\hline
+				SpamLabel & String        & Nhãn đã gán cho tin tức\\\hline
+				SpamCategory   & String         & Nhãn đã gán cho loại tin rác\\\hline
+				SpamLabelFeedback      & Integer        & Feedback của nhãn đã gán cho tin tức đó\\\hline
 			\end{tabular}%
 			
-			\caption{Các trường của collection Streaming}
+			\caption{Các trường của collection News}
 			\label{tab:table_3_2}%
 		\end{table}%
 		
-		\subsubsection{Collection Cluster}
-		Collection cluster chứa thông tin các cụm bài viết. Mỗi Mongo document là một cụm và bao gồm các thông tin tổng quan của cụm.
+		\subsubsection{Collection HashCode}
+		Collection cluster chứa các hash code cho bài báo để kiểm tra trùng cho tin tức đó.
 		\begin{table}[H]
 			%				\centering
 			\setlength\extrarowheight{3pt}
@@ -182,15 +160,9 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 				\hline
 				\textbf{Thuộc tính}     & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
 				\_id           & ObjectID       &  ID trong MongoDB của cụm\\\hline
-				ClusterID      & Long           &  ID cụm, là TweetID của tweet đại diện cụm\\\hline
-				Size	       & Long           &  Số bài viết trong cụm\\\hline
-				TotalFavorite	& String         & Tổng số favorite của các tweet trong cụm\\\hline
-				TotalRetweet	& String         & Tổng số retweet của các tweet trong cụm\\\hline
-				TotalFollower	& String         & Tổng số người theo dõi của những người đăng bài trong cụm\\\hline
-				RankingScore	& String         & Điểm xếp hạng của cụm\\\hline
-				
+				HashCode      & String           & Hash code của tin tức\\\hline
 			\end{tabular}%
-			\caption{Các trường của collection Cluster}
+			\caption{Các trường của collection HashCode}
 			\label{tab:table_3_3}%
 		\end{table}%
 
@@ -215,125 +187,6 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 				\caption{Bảng User}
 				\label{tab:usertable}
 			\end{table}
-	
-		\subsubsection{Bảng UserType}
-		Bảng chứa thông tin loại người dùng.
-			\begin{table}[H]
-				\centering
-				\setlength\extrarowheight{3pt}
-				\begin{tabular}{|l|l|l|}
-					\hline
-					\textbf{Thuộc tính} & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
-					ID      	& int(11)           &  Khóa chính của bảng\\\hline
-					UserType	& varchar(100)      &  Loại tài khoản (admin hay biên tập viên)\\\hline
-
-				\end{tabular}
-				\caption{Bảng UserType}
-				\label{tab:usertypetable}
-			\end{table}
-		
-		\subsubsection{Bảng Topic}
-		Bảng chứa danh sách từ khóa cho việc stream dữ liệu từ Twitter về
-			\begin{table}[H]
-				\centering
-				\setlength\extrarowheight{3pt}
-				\begin{tabular}{|l|l|l|}
-					\hline
-					\textbf{Thuộc tính}     & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
-					ID      	& int(11)       &  Khóa chính của bảng\\\hline
-					Topic	& varchar(100)      &  Tên chủ đề\\\hline
-					Keyword	& varchar(1000)    	&  Danh sách từ khóa\\\hline
-				\end{tabular}
-				\caption{Bảng Label}
-				\label{tab:topic}
-			\end{table}
-\section{Giao diện}
-Giao diện hệ thống được xây dựng sử dụng thư viện React, với kiến trúc Redux. Giao diện tương tác với hệ thống thông qua ajax request.
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/FrontEndArch}
-		\caption{Kiến trúc giao diện hệ thống}
-		\label{fig:layers}
-	\end{figure}
-
-  \subsection{Giao diện danh sách tin đã phân lớp}
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      fetchSpam &  Action   & Truy xuất danh sách các tin đã phân lớp \\
-      sendFeedback & Action & Gửi phản hồi người dùng về label của tin đã phân lớp \\
-      spamList     & State       & Danh sách các tin đã phân lớp  \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các thuộc tính}
-  \end{table}
-
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      Date  &  Date Picker & Chọn ngày để lấy danh sách tin đã phân lớp \\
-      SpamTable  & Table & Hiển thị danh sách các tin đã phân lớp \\
-      FeedbackBox & Select & Chọn và gửi phản hồi về label của tin đã phân lớp \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các đối tượng hiển thị}
-  \end{table}
-
-  \subsection{Giao diện phân lớp tin}
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      fetchLabels &  Action   &  Gửi danh sách các tin cần phân lớp và lấy về các label tương ứng \\
-      spamLabels  &  State  & Danh sách các tin và label tương ứng \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các thuộc tính}
-  \end{table}
-
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      InputTable   &  Table & Bảng chứa các tin cần hoặc đã phân lớp \\
-      DatatypeMenu   & Tabs & Chuyển kiễu dữ liệu của input: text hoặc URL \\
-      ClassifyButton  & Button  & Thực hiện phân lớn các input \\
-      InputButton   & Button & Hiển thị input form \\
-      InputForm   & Form, Popup & Form để thêm input mới \\
-      ContentText & Input & Nội dung input \\
-      ExpectedLabel & Select & Label mong đợi của input \\
-      ConfirmButton & Button & Thêm input mới vào table của tab hiện tại \\
-      ImportButton & Button & Truyền dữ liệu input từ file \\
-      ClearAllButton & Button & Xóa hết dữ liệu input từ table của tab hiện tại \\
-      DeleteButton & Button & Xóa một dòng input trên bảng \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các đối tượng hiển thị}
-  \end{table}
-  \subsection{Giao diện phân thống kê dữ liệu phân lớp}
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      fetchSpamStatistics &  Action   &  Truy xuất dữ liệu thống kê phân lớp \\
-      spamStatistics  &  State  & Dữ liệu thống kê phân lớp \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các thuộc tính}
-  \end{table}
-
-  \begin{table}[H]
-    \centering
-    \setlength{\tabcolstep}{12pt}
-    \begin{tabular}{@{}lll@{}} \toprule
-      Tên  & Loại   & Mô tả \\ \midrule
-      DateRange   &  Select & Chọn khung thời gian để lấy dữ liệu thống kê \\
-      ChartsSlider   & Slider &  Danh sách các đồ thị hiển thị dữ liệu thống kê \\ \bottomrule
-    \end{tabular}
-    \caption{Bảng các đối tượng hiển thị}
-  \end{table}
 \section{Kết quả}
 Hệ thống đã hoàn thiện các chức năng: Thu thập dữ liệu từ Twitter, điều khiển chạy luồng của thuật toán phát hiện tin nóng, và hiển thị kết quả cho biên tập viên. Dưới đây là một số hình ảnh của hệ thống:
 

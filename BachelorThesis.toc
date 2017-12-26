@@ -1,8 +1,8 @@
 \select@language {vietnam}
 \contentsline {chapter}{M\d {u}c l\d {u}c}{v}{section*.1}
-\contentsline {chapter}{Danh m\IeC {\d u}c c\IeC {\'a}c k\IeC {\'y} hi\IeC {\d \ecircumflex }u, thu\IeC {\d \acircumflex }t ng\IeC {\~\uhorn } v\IeC {\`a} ch\IeC {\~\uhorn } vi\IeC {\'\ecircumflex }t t\IeC {\'\abreve }t}{ix}{chapter*.2}
-\contentsline {chapter}{Danh s\'ach b\h {a}ng}{x}{section*.3}
-\contentsline {chapter}{Danh s\'ach h\`inh v\~e}{xi}{section*.4}
+\contentsline {chapter}{Danh m\IeC {\d u}c c\IeC {\'a}c k\IeC {\'y} hi\IeC {\d \ecircumflex }u, thu\IeC {\d \acircumflex }t ng\IeC {\~\uhorn } v\IeC {\`a} ch\IeC {\~\uhorn } vi\IeC {\'\ecircumflex }t t\IeC {\'\abreve }t}{viii}{chapter*.2}
+\contentsline {chapter}{Danh s\'ach b\h {a}ng}{ix}{section*.3}
+\contentsline {chapter}{Danh s\'ach h\`inh v\~e}{x}{section*.4}
 \contentsline {chapter}{T\IeC {\'O}M T\IeC {\'\ABREVE }T KH\IeC {\'O}A LU\IeC {\d \ACIRCUMFLEX }N}{1}{chapter*.5}
 \contentsline {chapter}{\numberline {1}M\IeC {\h \OHORN } \IeC {\DJ }\IeC {\`\ACIRCUMFLEX }U}{3}{chapter.8}
 \contentsline {section}{\numberline {1.1}D\IeC {\~\acircumflex }n nh\IeC {\d \acircumflex }p}{3}{section.9}
@@ -46,38 +46,32 @@
 \contentsline {section}{\numberline {3.1}M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{24}{section.72}
 \contentsline {section}{\numberline {3.2}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{24}{section.73}
 \contentsline {section}{\numberline {3.3}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u (Data Streaming)}{25}{section.75}
-\contentsline {section}{\numberline {3.4}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u (Data Preprocessor)}{25}{section.79}
-\contentsline {section}{\numberline {3.5}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } thu\IeC {\d \acircumflex }t to\IeC {\'a}n gom c\IeC {\d u}m (Clustering Algorithm)}{26}{section.84}
-\contentsline {section}{\numberline {3.6}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } hi\IeC {\h \ecircumflex }n th\IeC {\d i} tin n\IeC {\'o}ng (Top Stories)}{26}{section.85}
-\contentsline {section}{\numberline {3.7}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{27}{section.86}
-\contentsline {section}{\numberline {3.8}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{28}{section.88}
-\contentsline {subsection}{\numberline {3.8.1}C\IeC {\'a}c package}{28}{subsection.89}
-\contentsline {subsection}{\numberline {3.8.2}C\IeC {\ohorn } s\IeC {\h \ohorn } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u MongoDB}{29}{subsection.90}
-\contentsline {subsubsection}{\numberline {3.8.2.1}Collection Streaming}{29}{subsubsection.92}
-\contentsline {subsubsection}{\numberline {3.8.2.2}Collection Cluster}{30}{subsubsection.94}
-\contentsline {subsection}{\numberline {3.8.3}C\IeC {\ohorn } s\IeC {\h \ohorn } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u MySQL}{31}{subsection.96}
-\contentsline {subsubsection}{\numberline {3.8.3.1}B\IeC {\h a}ng User}{31}{subsubsection.97}
-\contentsline {subsubsection}{\numberline {3.8.3.2}B\IeC {\h a}ng UserType}{31}{subsubsection.99}
-\contentsline {subsubsection}{\numberline {3.8.3.3}B\IeC {\h a}ng Topic}{32}{subsubsection.101}
-\contentsline {section}{\numberline {3.9}Giao di\IeC {\d \ecircumflex }n}{32}{section.103}
-\contentsline {subsection}{\numberline {3.9.1}Giao di\IeC {\d \ecircumflex }n danh s\IeC {\'a}ch tin \IeC {\dj }\IeC {\~a} ph\IeC {\^a}n l\IeC {\'\ohorn }p}{32}{subsection.105}
-\contentsline {subsection}{\numberline {3.9.2}Giao di\IeC {\d \ecircumflex }n ph\IeC {\^a}n l\IeC {\'\ohorn }p tin}{33}{subsection.108}
-\contentsline {subsection}{\numberline {3.9.3}Giao di\IeC {\d \ecircumflex }n ph\IeC {\^a}n th\IeC {\'\ocircumflex }ng k\IeC {\^e} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u ph\IeC {\^a}n l\IeC {\'\ohorn }p}{33}{subsection.111}
-\contentsline {section}{\numberline {3.10}K\IeC {\'\ecircumflex }t qu\IeC {\h a}}{34}{section.114}
-\contentsline {section}{\numberline {3.11}K\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{36}{section.120}
-\contentsline {chapter}{\numberline {4}TH\IeC {\d \UHORN }C NGHI\IeC {\d \ECIRCUMFLEX }M V\IeC {\`A} \IeC {\DJ }\IeC {\'A}NH GI\IeC {\'A}}{37}{chapter.121}
-\contentsline {section}{\numberline {4.1}M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{37}{section.122}
-\contentsline {section}{\numberline {4.2}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } b\IeC {\d \ocircumflex } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{37}{section.123}
-\contentsline {section}{\numberline {4.3}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m, c\IeC {\'a}ch \IeC {\dj }\IeC {\'a}nh gi\IeC {\'a}}{38}{section.125}
-\contentsline {section}{\numberline {4.4}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{38}{section.126}
-\contentsline {subsection}{\numberline {4.4.1}Thay \IeC {\dj }\IeC {\h \ocircumflex }i MergeThreshold}{38}{subsection.127}
-\contentsline {subsection}{\numberline {4.4.2}Thay \IeC {\dj }\IeC {\h \ocircumflex }i c\IeC {\'a}c th\IeC {\^o}ng s\IeC {\'\ocircumflex } c\IeC {\h u}a thu\IeC {\d \acircumflex }t to\IeC {\'a}n LSH}{40}{subsection.137}
-\contentsline {section}{\numberline {4.5}Nh\IeC {\d \acircumflex }n x\IeC {\'e}t}{42}{section.139}
-\contentsline {subsection}{\numberline {4.5.1}Nh\IeC {\d \acircumflex }n \IeC {\dj }\IeC {\d i}nh v\IeC {\`\ecircumflex } MergeThreshold}{42}{subsection.140}
-\contentsline {subsection}{\numberline {4.5.2}Nh\IeC {\d \acircumflex }n \IeC {\dj }\IeC {\d i}nh v\IeC {\`\ecircumflex } c\IeC {\'a}c tham s\IeC {\'\ocircumflex } c\IeC {\h u}a LSH}{44}{subsection.145}
-\contentsline {section}{\numberline {4.6}K\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{44}{section.147}
-\contentsline {chapter}{K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\`A} H\IeC {\UHORN }\IeC {\'\OHORN }NG PH\IeC {\'A}T TRI\IeC {\h \ECIRCUMFLEX }N}{47}{chapter*.148}
-\contentsline {section}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d a}t \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{47}{section*.149}
-\contentsline {section}{H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{47}{section*.150}
-\contentsline {chapter}{T\IeC {\`A}I LI\IeC {\d \ECIRCUMFLEX }U THAM KH\IeC {\h A}O}{49}{chapter*.151}
-\contentsline {chapter}{Ph\IeC {\d u} l\IeC {\d u}c. Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n Apache Lucene}{51}{section*.153}
+\contentsline {section}{\numberline {3.4}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u (Data Preprocessor)}{25}{section.76}
+\contentsline {section}{\numberline {3.5}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } ph\IeC {\^a}n lo\IeC {\d a}i tin t\IeC {\'\uhorn }c}{26}{section.81}
+\contentsline {section}{\numberline {3.6}Ph\IeC {\^a}n h\IeC {\d \ecircumflex } ph\IeC {\^a}n lo\IeC {\d a}i lo\IeC {\d a}i r\IeC {\'a}c}{26}{section.82}
+\contentsline {section}{\numberline {3.7}Thi\IeC {\'\ecircumflex }t k\IeC {\'\ecircumflex } h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{27}{section.83}
+\contentsline {section}{\numberline {3.8}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}{28}{section.85}
+\contentsline {subsection}{\numberline {3.8.1}C\IeC {\'a}c package}{28}{subsection.86}
+\contentsline {subsection}{\numberline {3.8.2}C\IeC {\ohorn } s\IeC {\h \ohorn } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u MongoDB}{29}{subsection.87}
+\contentsline {subsubsection}{\numberline {3.8.2.1}Collection News}{29}{subsubsection.89}
+\contentsline {subsubsection}{\numberline {3.8.2.2}Collection HashCode}{30}{subsubsection.91}
+\contentsline {subsection}{\numberline {3.8.3}C\IeC {\ohorn } s\IeC {\h \ohorn } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u MySQL}{30}{subsection.93}
+\contentsline {subsubsection}{\numberline {3.8.3.1}B\IeC {\h a}ng User}{30}{subsubsection.94}
+\contentsline {section}{\numberline {3.9}K\IeC {\'\ecircumflex }t qu\IeC {\h a}}{31}{section.96}
+\contentsline {section}{\numberline {3.10}K\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{33}{section.102}
+\contentsline {chapter}{\numberline {4}TH\IeC {\d \UHORN }C NGHI\IeC {\d \ECIRCUMFLEX }M V\IeC {\`A} \IeC {\DJ }\IeC {\'A}NH GI\IeC {\'A}}{34}{chapter.103}
+\contentsline {section}{\numberline {4.1}M\IeC {\h \ohorn } \IeC {\dj }\IeC {\`\acircumflex }u}{34}{section.104}
+\contentsline {section}{\numberline {4.2}T\IeC {\h \ocircumflex }ng quan v\IeC {\`\ecircumflex } b\IeC {\d \ocircumflex } d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{34}{section.105}
+\contentsline {section}{\numberline {4.3}Thi\IeC {\'\ecircumflex }t l\IeC {\d \acircumflex }p th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m, c\IeC {\'a}ch \IeC {\dj }\IeC {\'a}nh gi\IeC {\'a}}{35}{section.107}
+\contentsline {section}{\numberline {4.4}K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\d \uhorn }c nghi\IeC {\d \ecircumflex }m}{35}{section.108}
+\contentsline {subsection}{\numberline {4.4.1}Thay \IeC {\dj }\IeC {\h \ocircumflex }i MergeThreshold}{35}{subsection.109}
+\contentsline {subsection}{\numberline {4.4.2}Thay \IeC {\dj }\IeC {\h \ocircumflex }i c\IeC {\'a}c th\IeC {\^o}ng s\IeC {\'\ocircumflex } c\IeC {\h u}a thu\IeC {\d \acircumflex }t to\IeC {\'a}n LSH}{37}{subsection.119}
+\contentsline {section}{\numberline {4.5}Nh\IeC {\d \acircumflex }n x\IeC {\'e}t}{39}{section.121}
+\contentsline {subsection}{\numberline {4.5.1}Nh\IeC {\d \acircumflex }n \IeC {\dj }\IeC {\d i}nh v\IeC {\`\ecircumflex } MergeThreshold}{39}{subsection.122}
+\contentsline {subsection}{\numberline {4.5.2}Nh\IeC {\d \acircumflex }n \IeC {\dj }\IeC {\d i}nh v\IeC {\`\ecircumflex } c\IeC {\'a}c tham s\IeC {\'\ocircumflex } c\IeC {\h u}a LSH}{41}{subsection.127}
+\contentsline {section}{\numberline {4.6}K\IeC {\'\ecircumflex }t ch\IeC {\uhorn }\IeC {\ohorn }ng}{41}{section.129}
+\contentsline {chapter}{K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\`A} H\IeC {\UHORN }\IeC {\'\OHORN }NG PH\IeC {\'A}T TRI\IeC {\h \ECIRCUMFLEX }N}{44}{chapter*.130}
+\contentsline {section}{K\IeC {\'\ecircumflex }t qu\IeC {\h a} \IeC {\dj }\IeC {\d a}t \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c}{44}{section*.131}
+\contentsline {section}{H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{44}{section*.132}
+\contentsline {chapter}{T\IeC {\`A}I LI\IeC {\d \ECIRCUMFLEX }U THAM KH\IeC {\h A}O}{46}{chapter*.133}
+\contentsline {chapter}{Ph\IeC {\d u} l\IeC {\d u}c. Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n Apache Lucene}{48}{section*.135}
