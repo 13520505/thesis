@@ -187,8 +187,95 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 				\caption{Bảng User}
 				\label{tab:usertable}
 			\end{table}
+\section{Giao diện}
+Giao diện hệ thống được xây dựng sử dụng thư viện React, với kiến trúc Redux. Giao diện tương tác với hệ thống thông qua ajax request.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/FrontEndArch}
+		\caption{Kiến trúc giao diện hệ thống}
+		\label{fig:layers}
+	\end{figure}
+
+  \subsection{Giao diện danh sách tin đã phân lớp}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchSpam &  Action   & Truy xuất danh sách các tin đã phân lớp \\
+      sendFeedback & Action & Gửi phản hồi người dùng về label của tin đã phân lớp \\
+      spamList     & State       & Danh sách các tin đã phân lớp  \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      Date  &  Date Picker & Chọn ngày để lấy danh sách tin đã phân lớp \\
+      SpamTable  & Table & Hiển thị danh sách các tin đã phân lớp \\
+      FeedbackBox & Select & Chọn và gửi phản hồi về label của tin đã phân lớp \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
+
+  \subsection{Giao diện phân lớp tin}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchLabels &  Action   &  Gửi danh sách các tin cần phân lớp và lấy về các label tương ứng \\
+      spamLabels  &  State  & Danh sách các tin và label tương ứng \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      InputTable   &  Table & Bảng chứa các tin cần hoặc đã phân lớp \\
+      DatatypeMenu   & Tabs & Chuyển kiễu dữ liệu của input: text hoặc URL \\
+      ClassifyButton  & Button  & Thực hiện phân lớn các input \\
+      InputButton   & Button & Hiển thị input form \\
+      InputForm   & Form, Popup & Form để thêm input mới \\
+      ContentText & Input & Nội dung input \\
+      ExpectedLabel & Select & Label mong đợi của input \\
+      ConfirmButton & Button & Thêm input mới vào table của tab hiện tại \\
+      ImportButton & Button & Truyền dữ liệu input từ file \\
+      ClearAllButton & Button & Xóa hết dữ liệu input từ table của tab hiện tại \\
+      DeleteButton & Button & Xóa một dòng input trên bảng \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
+  \subsection{Giao diện thống kê dữ liệu phân lớp}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      fetchSpamStatistics &  Action   &  Truy xuất dữ liệu thống kê phân lớp \\
+      spamStatistics  &  State  & Dữ liệu thống kê phân lớp \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các thuộc tính}
+  \end{table}
+
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolstep}{12pt}
+    \begin{tabular}{@{}lll@{}} \toprule
+      Tên  & Loại   & Mô tả \\ \midrule
+      DateRange   &  Select & Chọn khung thời gian để lấy dữ liệu thống kê \\
+      ChartsSlider   & Slider &  Danh sách các đồ thị hiển thị dữ liệu thống kê \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng các đối tượng hiển thị}
+  \end{table}
 \section{Kết quả}
-Hệ thống đã hoàn thiện các chức năng: Thu thập dữ liệu từ Twitter, điều khiển chạy luồng của thuật toán phát hiện tin nóng, và hiển thị kết quả cho biên tập viên. Dưới đây là một số hình ảnh của hệ thống:
+Hệ thống đã hoàn thiện các chức năng: lọc rác tin tức trên Crawler, hiển thị danh sách tin đã qua phân lớp bằng bộ lọc rác, bộ phân lớp lọc rác thủ công, thống kê dữ liệu đã phân lớp. Dưới đây là một số hình ảnh của hệ thống:
 
 \begin{figure}[H]
 	\centering

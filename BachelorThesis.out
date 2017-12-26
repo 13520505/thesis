@@ -56,21 +56,25 @@
 \BOOKMARK [3][]{subsubsection.91}{3.8.2.2 Collection HashCode}{subsection.87}% 56
 \BOOKMARK [2][]{subsection.93}{3.8.3 C s d liu MySQL}{section.85}% 57
 \BOOKMARK [3][]{subsubsection.94}{3.8.3.1 Bang User}{subsection.93}% 58
-\BOOKMARK [1][]{section.96}{3.9 Kt qua}{chapter.71}% 59
-\BOOKMARK [1][]{section.102}{3.10 Kt chng}{chapter.71}% 60
-\BOOKMARK [0][]{chapter.103}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 61
-\BOOKMARK [1][]{section.104}{4.1 M u}{chapter.103}% 62
-\BOOKMARK [1][]{section.105}{4.2 Tng quan v b d liu}{chapter.103}% 63
-\BOOKMARK [1][]{section.107}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.103}% 64
-\BOOKMARK [1][]{section.108}{4.4 Kt qua thc nghim}{chapter.103}% 65
-\BOOKMARK [2][]{subsection.109}{4.4.1 Thay i MergeThreshold}{section.108}% 66
-\BOOKMARK [2][]{subsection.119}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.108}% 67
-\BOOKMARK [1][]{section.121}{4.5 Nhn x\351t}{chapter.103}% 68
-\BOOKMARK [2][]{subsection.122}{4.5.1 Nhn inh v MergeThreshold}{section.121}% 69
-\BOOKMARK [2][]{subsection.127}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.121}% 70
-\BOOKMARK [1][]{section.129}{4.6 Kt chng}{chapter.103}% 71
-\BOOKMARK [0][]{chapter*.130}{KT LUN V\300 HNG PH\301T TRIN}{}% 72
-\BOOKMARK [1][]{section*.131}{Kt qua at c}{chapter*.130}% 73
-\BOOKMARK [1][]{section*.132}{Hng ph\341t trin}{chapter*.130}% 74
-\BOOKMARK [0][]{chapter*.133}{T\300I LIU THAM KHAO}{}% 75
-\BOOKMARK [0][]{section*.135}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 76
+\BOOKMARK [1][]{section.96}{3.9 Giao din}{chapter.71}% 59
+\BOOKMARK [2][]{subsection.98}{3.9.1 Giao din danh s\341ch tin \343 ph\342n lp}{section.96}% 60
+\BOOKMARK [2][]{subsection.101}{3.9.2 Giao din ph\342n lp tin}{section.96}% 61
+\BOOKMARK [2][]{subsection.104}{3.9.3 Giao din thng k\352 d liu ph\342n lp}{section.96}% 62
+\BOOKMARK [1][]{section.107}{3.10 Kt qua}{chapter.71}% 63
+\BOOKMARK [1][]{section.113}{3.11 Kt chng}{chapter.71}% 64
+\BOOKMARK [0][]{chapter.114}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 65
+\BOOKMARK [1][]{section.115}{4.1 M u}{chapter.114}% 66
+\BOOKMARK [1][]{section.116}{4.2 Tng quan v b d liu}{chapter.114}% 67
+\BOOKMARK [1][]{section.118}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.114}% 68
+\BOOKMARK [1][]{section.119}{4.4 Kt qua thc nghim}{chapter.114}% 69
+\BOOKMARK [2][]{subsection.120}{4.4.1 Thay i MergeThreshold}{section.119}% 70
+\BOOKMARK [2][]{subsection.130}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.119}% 71
+\BOOKMARK [1][]{section.132}{4.5 Nhn x\351t}{chapter.114}% 72
+\BOOKMARK [2][]{subsection.133}{4.5.1 Nhn inh v MergeThreshold}{section.132}% 73
+\BOOKMARK [2][]{subsection.138}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.132}% 74
+\BOOKMARK [1][]{section.140}{4.6 Kt chng}{chapter.114}% 75
+\BOOKMARK [0][]{chapter*.141}{KT LUN V\300 HNG PH\301T TRIN}{}% 76
+\BOOKMARK [1][]{section*.142}{Kt qua at c}{chapter*.141}% 77
+\BOOKMARK [1][]{section*.143}{Hng ph\341t trin}{chapter*.141}% 78
+\BOOKMARK [0][]{chapter*.144}{T\300I LIU THAM KHAO}{}% 79
+\BOOKMARK [0][]{section*.146}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 80
