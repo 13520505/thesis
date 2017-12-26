@@ -3,21 +3,19 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces \IeC {\DJ }\IeC {\d \ocircumflex } t\IeC {\uhorn }\IeC {\ohorn }ng \IeC {\dj }\IeC {\`\ocircumflex }ng cosine gi\IeC {\~\uhorn }a c\IeC {\'a}c document}}{11}{table.33}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces So s\IeC {\'a}nh c\IeC {\'a}c thu\IeC {\d \acircumflex }t ng\IeC {\~\uhorn } gi\IeC {\~\uhorn }a SQL v\IeC {\`a} MongoDB}}{32}{table.93}
-\contentsline {table}{\numberline {3.2}{\ignorespaces C\IeC {\'a}c tr\IeC {\uhorn }\IeC {\`\ohorn }ng c\IeC {\h u}a collection Streaming}}{33}{table.95}
-\contentsline {table}{\numberline {3.3}{\ignorespaces C\IeC {\'a}c tr\IeC {\uhorn }\IeC {\`\ohorn }ng c\IeC {\h u}a collection Cluster}}{34}{table.97}
-\contentsline {table}{\numberline {3.4}{\ignorespaces B\IeC {\h a}ng User}}{34}{table.100}
-\contentsline {table}{\numberline {3.5}{\ignorespaces B\IeC {\h a}ng UserType}}{34}{table.102}
-\contentsline {table}{\numberline {3.6}{\ignorespaces B\IeC {\h a}ng Topic}}{35}{table.104}
+\contentsline {table}{\numberline {3.1}{\ignorespaces So s\IeC {\'a}nh c\IeC {\'a}c thu\IeC {\d \acircumflex }t ng\IeC {\~\uhorn } gi\IeC {\~\uhorn }a SQL v\IeC {\`a} MongoDB}}{32}{table.90}
+\contentsline {table}{\numberline {3.2}{\ignorespaces C\IeC {\'a}c tr\IeC {\uhorn }\IeC {\`\ohorn }ng c\IeC {\h u}a collection News}}{33}{table.92}
+\contentsline {table}{\numberline {3.3}{\ignorespaces C\IeC {\'a}c tr\IeC {\uhorn }\IeC {\`\ohorn }ng c\IeC {\h u}a collection HashCode}}{33}{table.94}
+\contentsline {table}{\numberline {3.4}{\ignorespaces B\IeC {\h a}ng User}}{34}{table.97}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Danh s\IeC {\'a}ch t\IeC {\`\uhorn } kh\IeC {\'o}a \IeC {\dj }\IeC {\h \ecircumflex } thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}}{40}{table.115}
-\contentsline {table}{\numberline {4.2}{\ignorespaces MergeThreshold = 0.1}}{41}{table.119}
-\contentsline {table}{\numberline {4.3}{\ignorespaces MergeThreshold = 0.2}}{42}{table.120}
-\contentsline {table}{\numberline {4.4}{\ignorespaces MergeThreshold = 0.3}}{42}{table.121}
-\contentsline {table}{\numberline {4.5}{\ignorespaces MergeThreshold = 0.4}}{42}{table.122}
-\contentsline {table}{\numberline {4.6}{\ignorespaces MergeThreshold = 0.5}}{42}{table.123}
-\contentsline {table}{\numberline {4.7}{\ignorespaces MergeThreshold = 0.6}}{43}{table.124}
-\contentsline {table}{\numberline {4.8}{\ignorespaces MergeThreshold = 0.7}}{43}{table.125}
-\contentsline {table}{\numberline {4.9}{\ignorespaces MergeThreshold = 0.8}}{43}{table.126}
-\contentsline {table}{\numberline {4.10}{\ignorespaces MergeThreshold = 0.9}}{43}{table.127}
-\contentsline {table}{\numberline {4.11}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m LSH+ khi thay \IeC {\dj }\IeC {\h \ocircumflex }i s\IeC {\'\ocircumflex } hash table v\IeC {\`a} s\IeC {\'\ocircumflex } si\IeC {\^e}u ph\IeC {\h \abreve }ng }}{44}{table.129}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Danh s\IeC {\'a}ch t\IeC {\`\uhorn } kh\IeC {\'o}a \IeC {\dj }\IeC {\h \ecircumflex } thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}}{39}{table.108}
+\contentsline {table}{\numberline {4.2}{\ignorespaces MergeThreshold = 0.1}}{40}{table.112}
+\contentsline {table}{\numberline {4.3}{\ignorespaces MergeThreshold = 0.2}}{41}{table.113}
+\contentsline {table}{\numberline {4.4}{\ignorespaces MergeThreshold = 0.3}}{41}{table.114}
+\contentsline {table}{\numberline {4.5}{\ignorespaces MergeThreshold = 0.4}}{41}{table.115}
+\contentsline {table}{\numberline {4.6}{\ignorespaces MergeThreshold = 0.5}}{41}{table.116}
+\contentsline {table}{\numberline {4.7}{\ignorespaces MergeThreshold = 0.6}}{42}{table.117}
+\contentsline {table}{\numberline {4.8}{\ignorespaces MergeThreshold = 0.7}}{42}{table.118}
+\contentsline {table}{\numberline {4.9}{\ignorespaces MergeThreshold = 0.8}}{42}{table.119}
+\contentsline {table}{\numberline {4.10}{\ignorespaces MergeThreshold = 0.9}}{42}{table.120}
+\contentsline {table}{\numberline {4.11}{\ignorespaces K\IeC {\'\ecircumflex }t qu\IeC {\h a} th\IeC {\h \uhorn } nghi\IeC {\d \ecircumflex }m LSH+ khi thay \IeC {\dj }\IeC {\h \ocircumflex }i s\IeC {\'\ocircumflex } hash table v\IeC {\`a} s\IeC {\'\ocircumflex } si\IeC {\^e}u ph\IeC {\h \abreve }ng }}{43}{table.122}
