@@ -12,47 +12,50 @@ A level-1 auxiliary file: Conclusions/conclusions.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Appendix/appendix.aux
 Database file #1: References/PhDResearch.bib
-Warning--empty booktitle in Fiscus:TDTDefinition
-Warning--empty booktitle in Allan:2002:ITD:772260.772262
-You've used 11 entries,
+Warning--empty booktitle in An:2017
+Warning--empty publisher in An:2017
+Warning--empty booktitle in zechner:history
+Warning--empty booktitle in Sahami1998ABA
+Warning--empty journal in mikolov:word2vec
+You've used 14 entries,
             1791 wiz_defined-function locations,
-            533 strings with 6037 characters,
-and the built_in function-call counts, 3033 in all, are:
-= -- 293
-> -- 97
-< -- 9
-+ -- 37
-- -- 26
-* -- 171
-:= -- 425
-add.period$ -- 38
-call.type$ -- 11
-change.case$ -- 9
+            555 strings with 6335 characters,
+and the built_in function-call counts, 3538 in all, are:
+= -- 334
+> -- 120
+< -- 7
++ -- 46
+- -- 32
+* -- 210
+:= -- 512
+add.period$ -- 47
+call.type$ -- 14
+change.case$ -- 12
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 166
-empty$ -- 315
-format.name$ -- 26
-if$ -- 740
+cite$ -- 19
+duplicate$ -- 185
+empty$ -- 368
+format.name$ -- 32
+if$ -- 840
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 12
-newline$ -- 58
-num.names$ -- 10
-pop$ -- 54
+int.to.str$ -- 14
+missing$ -- 15
+newline$ -- 73
+num.names$ -- 13
+pop$ -- 62
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 93
+skip$ -- 99
 stack$ -- 0
-substring$ -- 174
-swap$ -- 60
-text.length$ -- 9
+substring$ -- 208
+swap$ -- 56
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 28
-width$ -- 13
-write$ -- 132
-(There were 2 warnings)
+warning$ -- 5
+while$ -- 32
+width$ -- 16
+write$ -- 159
+(There were 5 warnings)

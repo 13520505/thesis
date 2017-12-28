@@ -1,24 +1,49 @@
 \begin{thebibliography}{10}
 
-\bibitem{Fiscus:TDTDefinition}
-Jonathan~G. Fiscus and George~R. Doddington.
-\newblock Topic detection and tracking.
-\newblock chapter Topic Detection and Tracking Evaluation Overview, pages
-  17--31. Kluwer Academic Publishers, Norwell, MA, USA, 2002.
+\bibitem{An:2017}
+An~K. Le.
+\newblock Vietnamese hot news detection from twitter.
+\newblock chapter The Hot News Detection Problem and Approaches, pages 6--26.
+  Ho Chi Minh, Vietnam, 2017.
 
-\bibitem{Allan:2002:ITD:772260.772262}
-James Allan.
-\newblock Topic detection and tracking.
-\newblock chapter Introduction to Topic Detection and Tracking, pages 1--16.
-  Kluwer Academic Publishers, Norwell, MA, USA, 2002.
+\bibitem{zechner:history}
+Niklas Zechner.
+\newblock The past, present and future of text classification.
+\newblock Intelligence and Security Informatics Conference (EISIC), 2013
+  European. IEEE, 2013.
 
-\bibitem{TwiterStand:Sankaranarayanan}
-Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
-  and Jon Sperling.
-\newblock Twitterstand: News in tweets.
-\newblock In {\em Proceedings of the 17th ACM SIGSPATIAL International
-  Conference on Advances in Geographic Information Systems}, GIS '09, pages
-  42--51, New York, NY, USA, 2009. ACM.
+\bibitem{Sahami1998ABA}
+Mehran Sahami, Susan~T. Dumais, David Heckerman, and Eric Horvitz.
+\newblock A bayesian approach to filtering junk e-mail.
+\newblock 1998.
+
+\bibitem{Gyongyi:2004:CWS:1316689.1316740}
+Zolt\'{a}n Gy\"{o}ngyi, Hector Garcia-Molina, and Jan Pedersen.
+\newblock Combating web spam with trustrank.
+\newblock In {\em Proceedings of the Thirtieth International Conference on Very
+  Large Data Bases - Volume 30}, VLDB '04, pages 576--587. VLDB Endowment,
+  2004.
+
+\bibitem{rajaraman_ullman_2011}
+Anand Rajaraman and Jeffrey~David Ullman.
+\newblock {\em Mining of Massive Datasets}.
+\newblock Cambridge University Press, 2011.
+
+\bibitem{Beel2016}
+Joeran Beel, Bela Gipp, Stefan Langer, and Corinna Breitinger.
+\newblock Research-paper recommender systems: a literature survey.
+\newblock {\em International Journal on Digital Libraries}, 17(4):305--338, Nov
+  2016.
+
+\bibitem{mikolov:word2vec}
+Tomas Mikolov, Kai Chen, G.s Corrado, and Jeffrey Dean.
+\newblock Efficient estimation of word representations in vector space.
+\newblock 2013, 01 2013.
+
+\bibitem{Cortes1995}
+Corinna Cortes and Vladimir Vapnik.
+\newblock Support-vector networks.
+\newblock {\em Machine Learning}, 20(3):273--297, Sep 1995.
 
 \bibitem{SwitPhuvipadawat}
 S.~Phuvipadawat and T.~Murata.
@@ -26,17 +51,6 @@ S.~Phuvipadawat and T.~Murata.
 \newblock In {\em 2010 IEEE/WIC/ACM International Conference on Web
   Intelligence and Intelligent Agent Technology}, volume~3, pages 120--123, Aug
   2010.
-
-\bibitem{IntroToIR}
-Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Sch\"{u}tze.
-\newblock {\em Introduction to Information Retrieval}.
-\newblock Cambridge University Press, New York, NY, USA, 2008.
-
-\bibitem{Allan00detectionsbounds}
-James Allan, Victor Lavrenko, Daniella Malin, and Russell Swan.
-\newblock Detections, bounds, and timelines: Umass and tdt-3.
-\newblock In {\em In Proceedings of Topic Detection and Tracking Workshop
-  (TDT-3)}, 2000.
 
 \bibitem{Indyk:LSH-Definition}
 Piotr Indyk and Rajeev Motwani.

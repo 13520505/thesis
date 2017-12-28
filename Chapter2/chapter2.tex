@@ -6,86 +6,89 @@
 \fi
 
 \section{Mở đầu}
-Chương này sẽ giới thiệu bài toán lọc rác tin tức. Trình bày cơ sở lý thuyết và phát biểu bài toán lọc rác tin tức. Cuối cùng trình bày một số phương pháp tiếp cận bài toán lọc rác tin tức  và các kiến thức liên quan.
+Chương này sẽ giới thiệu bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng. Trình bày cơ sở lý thuyết và phát biểu bài toán lọc rác tin tức. Cuối cùng trình bày một số phương pháp tiếp cận bài toán lọc rác tin tức  và các kiến thức liên quan.
 \section{Giới thiệu bài toán} %Topic Detection and Tracking}
 	\subsection{Các khái niệm cơ bản}
-	Để có thể xác định khái niệm tin nóng, trước hết ta cần xem xét định nghĩa của "sự kiện" và "mẩu tin". Fiscus và Doddington \cite{Fiscus:TDTDefinition} đã tóm tắt định nghĩa về event và story như sau:
+  Để có thể xác định khái niệm rác, ta phải hiểu được khái nhiệm "tin nóng". Le \cite{An:2017} đã định nghĩa khái niệm "tin nóng" như sau:
 	\begin{itemize}
-		\item \textit{Sự kiện (event)} là một sự việc bất kì, xảy ra tại một địa điểm cụ thể vào thời điểm xác định, cùng với những điều kiện dẫn đến nó và các hậu quả kéo theo.
-		
-		\item \textit{Mẩu tin (story)} là một bài viết liên quan đến một chủ đề nhất định. Có ít nhất 2 câu trần thuật độc lập với nhau.
+    \item \textit{Tin nóng (Hot news)}: những tin viết về một sự kiện mới xảy ra, có tính thời sự, có tầm ảnh hưởng rộng, thu hút được sự chú ý, quan tâm của cộng đồng.
 	\end{itemize}
-	
-	Dựa trên quan điểm trên, ta định nghĩa tin nóng như sau:
-	
-	\textbf{Định nghĩa:} Tin nóng là những tin viết về một sự kiện mới xảy ra, có tính thời sự, có tầm ảnh hưởng rộng, thu hút được sự chú ý, quan tâm của cộng đồng.
 
-%
-	\subsection{Bài toán Topic Detection and Tracking}
-	Topic Detection and Tracking (TDT) là một dự án bao quát được khởi xướng từ năm 1996, với mục tiêu nghiên cứu, phát triển công nghệ cho việc lưu trữ, tổ chức, tìm kiếm dữ liệu từ các nguồn \textit{tin tức} \cite{Fiscus:TDTDefinition}.
-	
-	Nhiệm vụ của TDT là xử lý luồng dữ liệu văn bản liên tục (từ báo chí, từ đài phát thanh, đài truyền hình thông qua các bộ chuyển giọng nói thành văn bản), từ đó theo dõi và phát hiện được các sự kiện đang diễn ra, cũng như tổ chức các bài viết thành những nhóm cùng bàn về một sự kiện nào đó.
-	
-	Theo Fiscus và Doddington \cite{Fiscus:TDTDefinition}, TDT được chia làm 5 tác vụ chính: 
+  Ngoài ra Gy ̈ongyi và Garcia-Molina định nghĩa "đăng rác" như sau: 
+	\begin{itemize}
+    \item \textit{Đăng rác (Spamming)}: các hành động có chủ đích của con người nhầm thiên vị tính liên quan của một trang web nào đó, làm sai lệch giá trị của trang web.
+	\end{itemize}
+
+  Từ các khái niệm trên ta có định nghĩa "rác" cho bài toán như sau:
+
+  \textbf{Định nghĩa:} Rác là các tin không mang tính chất sự kiện, thời sự, và làm sai lệch kết quả phân tích và xử lý dữ liệu của hệ thống phân loại tin tức. 
+
+  Từ định nghĩa trên ta có thể xác định được các loại tin sẽ được xem là rác:
+  \begin{itemize}
+    \item \textit{Quảng cáo}: các bài quảng cáo, giới thiệu sản phẩm, các chương trình khuyển mãi, trúng thưởng.
+    \item \textit{Tuyển dụng}: các bài đăng tuyển dụng, giới thiệu việc làm của các tổ chức, doanh nghiệp.
+    \item \textit{Chia sẻ}: các bài chia sẻ mẹo vặt, thủ thuật, tâm sự, chuyện đời tư, giới thiệu ẩm thực, thời trang, hoặc các kiến thức chung.
+  \end{itemize}
+
+	\subsection{Bài toán phân lớp văn bản}
+  Bài toán phân lớp văn bản là bài toán có lịch sử lâu đời, một số ghi nhận cho thấy nó bắt đầu từ những năm 1800s, tuy nhiên tới nay vẫn chưa có một sự thống nhất nào về phương pháp tốt nhất cho bài toán phân lớp \cite{zechner:history}. 
+  
+	Theo Zechner \cite{zechner:history}, bài toán phân lớp văn bản gồm các thành phần chính cần quan tâm: 
 		\begin{itemize}
-			\item Story segmentation: phân đoạn dữ liệu từ đài phát thanh thành những mẩu tin riêng biệt.
-			\item Topic detection: Gom nhóm các bài viết theo sự kiện, chủ đề chúng đề cập tới.
-			\item Topic tracking: Theo dõi những chuyển biến của sự kiện đã diễn ra.
-			\item First story detection: Phát hiện tin tức đầu tiên nói về sự kiện vừa xảy ra.
-			\item Link detection: Xác định xem một cặp bài viết ngẫu nhiên có đang đề cập về cùng sự kiện không.
+			\item Loại phân lớp: supervised hoặc unsupervised.
+			\item Mục tiêu: đối tượng thành phần của văn bản mà ta muốn quan tâm.
+			\item Kho từ vựng: kích thước và chất lượng của kho từ vựng ảnh hưởng lớn đến việc phân lớp.
+			\item Features: đặc trưng của văn bản dùng cho việc phân lớp.
+			\item Bộ phân lớp: thuật toán máy học dùng cho việc phân lớp.
 		\end{itemize}
 
-	\subsection{Bài toán phát hiện tin nóng}
-	Bài toán phát hiện tin nóng có thể xem là sự kết hợp giữa hai bài toán Topic Detection và First Story Detection (FSD) của TDT\@. Theo James Allan \cite{Allan:2002:ITD:772260.772262}, bài toán First Story Detection, hay còn gọi là New Event Detection, được đặt ra với mục tiêu phát hiện các tin tức, bài viết đầu tiên trên báo chí về các sự kiện vừa xảy ra, chưa từng được báo cáo trước đó. Ví dụ như bài viết đầu tiên đưa thông tin về một vụ tai nạn, khủng bố, hay một vụ scandal chính trị nào đó. Một hệ thống có khả năng phát hiện các first story có thể cung cấp thông tin hữu ích cho các nhà phân tích, các biên tập viên báo chí một cách nhanh chóng, kịp thời.
-	
-	Đối với bài toán Topic Detection, nhiệm vụ chính là gom các bài viết về cùng một sự kiện thành từng cụm, mỗi cụm là đại diện cho một sự kiện cụ thể nào đó. Do tính chất của bài toán, ta không được biết trước số lượng sự kiện (số cụm) hay nội dung từng sự kiện như thế nào, điều này hoàn toàn bởi hệ thống tự động xác định. So với FSD, bài toán này tập trung nhiều hơn vào việc nhóm được phần lớn các bài viết liên quan lại với nhau, hơn là việc phát hiện bài viết đầu tiên. Tuy nhiên trên thực tế, nhiều nhà nghiên cứu sử dụng chung một hướng giải quyết cho cả 2 bài toán này \cite{Allan:2002:ITD:772260.772262}.
-	
-	Ngoài nguồn dữ liệu từ báo đài, các bài viết từ mạng xã hội cũng là một nguồn tin có tiềm năng khai thác rất lớn. Tuy chất lượng bài viết và tính xác thực về nội dung có thể không tốt bằng các nguồn chính thống, các tin tức từ mạng xã hội thường có lợi thế về mặt tốc độ đưa tin. Một ví dụ nổi bật cho tính chất này là sự kiện Osama Bin Laden bị ám sát vào năm 2011, khi đó một người dùng là Keith Urbahn đã đưa thông tin lên Twitter nhanh hơn giới truyền thông đến 21 phút.
+	\subsection{Bài toán lọc rác tin tức}
+  Bài toán lọc rác hay còn được biết đến như là bài toán phát hiện rác (Spam detection) là một dạng bài toán phân lớp văn bản nhị phân. Tức là chỉ có hai lớp: "rác" và "không rác". Đối với hệ thống phát hiện tin nóng cũng như các hệ thống phân tích và xữ lý dữ liệu khác, việc phát hiện và lọc rác phải được diễn ra trước khi quá trình phân tích và xử lý dữ liệu bắt đầu để đảm bảo quá trình phân tích và xử lý dữ liệu chính xác và đáng tin cậy.
 
-	\subsection{Phát biểu bài toán phát hiện tin nóng từ Twitter}
-	Cho trước $D = (d_1, d_2, d_3,… d_n)$: chuỗi các bài viết từ Twitter được sắp xếp theo thứ tự thời gian.
+  Mặc dù nguồn dữ liệu mà chúng ta quan tâm là tin tức từ các trang báo điện tử chính thống, số lượng nguồn tin, chủ đề tin và số lượng tin rất lớn dẫn đến việc chất lượng dữ liệu tin tức không được đảm bảo cũng như tính chất dữ liệu không được phù hợp với nhu cầu của hệ thống. Do đó việc lọc rác tin tức là cần thiết cho việc khai thác và sử dụng nguồn dữ liệu tin tức một các hiệu quả.
+
+  \subsection{Phát biếu bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng}
+  Cho trước một bài báo $d_i$i. Mục tiêu của bài toán là tìm ra được nhãn $l_i$ của bài báo $d_i$ và nhãn đó nhận một trong hai giá trị: "rác" và "không rác".
 	
-	Mục tiêu của bài toán là phát hiện được các cụm tin $C = (c_1, c_2,… c_m)$, với mỗi phần tử $c_i = (d_{i1}, d_{i2},… d_{ik})$ là chuỗi các bài viết bàn về cùng một sự kiện cụ thể, và $d_{i1}$ là bài viết đầu tiên viết về sự kiện đó. Danh sách các chuỗi tin $C$  được sắp xếp theo thứ tự độ nóng giảm dần, với độ nóng được tính toán dựa trên thời gian đăng tin, tầm ảnh hưởng và mức độ quan tâm cộng đồng đối với sự kiện được đề cập.
-	
-%	Input: Tập bài viết theo thứ tự thời gian $D = \{d_1, d_2, d_3,... d_n\}$ từ nguồn Twitter.
-%	Output: Tập cụm bài viết $C = \{c_1, c_2, c_3,... c_k\}$, có sắp xếp thứ tự độ quan trọng, mỗi cụm đại diện cho một sự kiện vừa diễn ra, và bài viết đầu tiên trong cụm là first story.
-	
-%\section{Biểu diễn dữ liệu bằng Vector space model và tf-idf}
 \section{Các nghiên cứu liên quan}
-Twitter đã thu hút sự chú ý của nhiều nhà nghiên cứu trong thời gian gần đây. Nhờ vào sự phổ biến rộng rãi trên nhiều quốc gia, cùng với vai trò là một mạng xã hội cho phép người dùng chia sẻ thông tin một cách nhanh chóng và ngắn gọn.
+Vấn đề phát hiện và lọc rác là một vấn đề lâu đời và kinh điển đối với bài toán phân lớp văn bản. Do đó số lượng nghiên cứu xoay quan vấn đề này cũng rất lớn và đa dạng. Phần lớn các nghiên cứu cho đến ngày nay tập trung vào việc phát hiện rác cho email và web. 
 
-Jagan Sankaranarayanan và cộng sự \cite{TwiterStand:Sankaranarayanan} đã xây dựng một hệ thống xử lý tin tức trên Twitter, với tên là Twitter Stand. Hệ thống biểu diễn dữ liệu dưới dạng tf-idf, và sử dụng thuật toán phân lớp Naive Bayes để lọc bỏ các tin rác. Sau đó dùng một thuật toán online clustering để gom các tin thành từng câu chuyện.
+Sahami và cộng sự \cite{Sahami1998ABA} sử dụng các tiếp cận Bayesian vào vấn đề lọc rác cho email. Thực nghiệm cho thấy các bộ phân lớp đạt được hiệu suất cao hơn khi ta cân nhắc các tính năng đặc trưng theo domain và nội dung văn bản của email. Ngày nay thì các phương pháp phát hiện và lọc rác cho email đã khá hoàn thiện, và các phương pháp phát hiện và lọc rác Bayesian được áp dụng rộng rãi trong các email client và server.
 
-Phuvipadawat và cộng sự \cite{SwitPhuvipadawat} đưa ra phương pháp phát hiện tin nóng trên Twitter dựa vào tiếp cận gom cụm. Các tweet được thu thập thông qua Twitter Search API với một số từ khóa (VD: "breaking news", "\#breakingnews"). Độ tương đồng giữa các bài viết được tính theo công thức dựa trên tf-idf, với các danh từ riêng, các hashtag và tên người dùng được tăng trọng số. Tác giả nhấn mạnh việc tăng trọng số như vậy giúp tăng độ chính xác của thuật toán, bởi độ dài tweet giới hạn.
+Vấn đề phát hiện rác cho web thì khó khăn hơn vì độ lớn và tốc độ thay đổi nhanh chóng. Gy\"{o}ngyi và cộng sự \cite{Gyongyi:2004:CWS:1316689.1316740} đề xuất sử dụng thuật toán TrustRank để đo kiểm điểm tin cậy của đồ thị Web. Dựa trên điểm tin cậy, các trang web tốt sẽ được đánh giá cao hơn va những trang web xấu có thể được search engine bỏ qua. 
 
-\section{Giới thiệu một số độ đo khoảng cách/sự tương đồng} \label{distances}
-Một thành phần tất yếu của tiếp cận gom cụm là tiêu chí, độ đo được sử dụng để định lượng sự tương đồng giữa các đối tượng. Dưới đây là một số độ đo phổ biến.
-	\subsection*{Euclidean Distance}
-	Euclidean Distance là độ đo khoảng cách tiêu chuẩn trong các vấn đề liên quan đến hình học, và cũng thường được sử dụng trong các bài toán gom cụm. Công thức tính Euclidean distance \cite{IntroToIR}:
-		\begin{equation}
-		D_{Euclidean}(\vec{x}, \vec{y}) = \sqrt{\sum_{i=1}^n (x_i-y_i)^2}
-		\end{equation}
-	với n là số chiều của vector biểu diễn document, $x_i$ và $y_i$ lần lượt là giá trị tọa độ thứ i của document x và y\\
-	
-	\subsection*{Cosine Similarity}
-	Cosine Similarity phản ánh góc chênh lệch giữa 2 vector, mà không cân nhắc đến độ lớn của vector. Độ đo này được áp dụng rộng rãi đối với dữ liệu văn bản. Cách tính \cite{IntroToIR}: 
-		\begin{equation}
-		Similarity_{Cosine}(\vec{x}, \vec{y}) = \frac {\vec{x} \cdot \vec{y}}{||\vec{x}|| \cdot ||\vec{y}||} = \frac{\sum_{i=1}^{n}x_iy_i}{\sqrt{\sum_{i=1}^{n}x_i^2} \sqrt{\sum_{i=1}^{n}y_i^2}}	
-		\end{equation}
-	với  $x_i$ và $y_i$ lần lượt là giá trị tọa độ thứ i của document x và y
+\section{Giới thiệu một số phương phát trừu tượng hóa dữ liệu văn bản} \label{distances}
+Do máy tính không thể đọc hiểu và xử lý được dữ liệu thuần văn bản, ta cần có một phương pháp trừu tượng hóa dữ liệu văn bản thành các con số mà máy tính có thể hiểu được.
+\subsection*{Term Frequency - Inverse Document Frequency (TF-IDF)}
+Trong lĩnh vực thu thập thông tin, TF-IDF là một dữ liệu số dùng để thể hiện độ quan trọng của một từ trong một một tập hợp hoạc một kho từ vựng \cite{rajaraman_ullman_2011}. Nó thường được dùng trong việc thu thập thông tin, text mining và user modeling. Giá trị của TF-IDF tăng theo tỉ lệ với số lần một từ xuất hiện trong một văn bản, nhưng thường bị giảm lại theo tần xuất của từ đó trong toàn kho từ vựng, vì một từ có thể chỉ đơn giản là nó phổ biến hơn các từ khác. Ngày nay, TF-IDF là một trong những phương pháp tính trọng số cho các từ phổ biến nhất; 83\% các hệ thống khuyến nghị dựa trên văn bản trong lĩnh vực thư viện điện tử sử dụng TF-IDF \cite{Beel2016}.
+
+TF-IDF gồm có hai thành phần chính Term Frequency (TF) và Inverse Document Frequency (IDF).
+
+TF của từ $t$ trong văn bản $d$ được thể hiện dưới dạng $tf(t,d)$. Ta có nhiều cách tính TF, trong đó cách đơn giản nhất là đếm số lần một từ xuất hiện trong một văn bản. Nếu ta gọi số lần từ $t$ xuất hiện trong văn bản $d$ là $f_{t,d}$ thì ta có $tf(t,d) = f_{t,d}$
+
+IDF là thước đo lượng thông tin một từ cung cấp, có nghĩa là liệu từ đó hiếm gặp hay xuất hiện xuyên suốt trong kho từ vựng. IDF được tính bằng công thức:
+\begin{equation}
+  idf(t, D) = \log\frac{N}{1 + \abs{\{d \in D: t \in d\}}}
+\end{equation}
+
+Trong đó:
+\begin{itemize}
+  \item $D$: kho từ vựng.
+  \item $N$: số lượng văn bản trong kho từ vựng.
+  \item $\abs{\{d \in D: t \in d \}}$: số lượng văn bản và có xuất hiện từ $t$. 
+\end{itemize}
+	\subsection*{Word Vector}
+  Word vector là một hình thức biểu diễn các từ trong một kho từ vựng dưới dạng các vector. Các từ thường xuất hiện cùng nhau trong các nhiều ngữ cảnh khác nhau thì sẽ được biểu diễn bằng các vector gần với nhau trong không gian vector \cite{mikolov:word2vec}. Tập hợp các kỹ thuật để nhận vào input là một kho từ vựng và cho ra một không gian vector tương ứng được gọi là word2vec.
+
+  Word vector thường được sử dụng trong các công cụ tìm kiếm và dịch thuật do nó cung cấp thông tin về sự tương qua ngữ nghĩa giữa các từ và các ngữ cảnh cũng như giữa các từ với nhau.
 
 \section{Các phương pháp tiếp cận phổ biến}
-Gom cụm, gom nhóm là quá trình nhóm các đối tượng thành những nhóm/cụm/lớp, qua đó phát hiện được cấu trúc, ý nghĩa tiềm ẩn của dữ liệu. Các đối tượng trong cùng một nhóm có nhiều tính chất chung và có những tính chất khác với các đối tượng ở nhóm khác. Đây là một trong những tác vụ chính của ngành khai thác dữ liệu, và được dùng trong nhiều lĩnh vực như: máy học, nhận diện mẫu, phân tích ảnh,…
+Phân lớp là quá trình xác định xem một đối tượng sẽ thuộc về lớp nào dựa trên việc quan sát các đối tượng khác mà lớp của chúng đã được xác định từ trước. Thông thường, các đối tượng cần phân lớp sẽ được phân tích thành các thuộc tính có thể đo đếm được. Một thuật toán dùng để phân lớp, hay còn được gọi là một bộ phân lớp, sẽ dựa trên các thuộc tính đó để ánh xạ các đối tượng input mới vào lớp của chúng. Đây là một trong những tác vụ chính của lĩnh vực khai thác dữ liệu.
 
-Bài toán gom cụm bao gồm nhiều phương pháp khác nhau như: phân hoạch, phân cấp, dựa trên mật độ, dựa trên mô hình,… Trong khóa luận này chỉ sử dụng đến \textit{phương pháp phân hoạch}.
-	
-\subsection{Thuật toán gom cụm k-láng giềng gần (k-Nearest Neighbor)}
-	\subsubsection{Ý tưởng}
-		%sửa lại chỉ nói về NNS thôi chứ không nói ý tưởng giải FSD?
-		Hướng tiếp cận truyền thống của bài toán FSD là sử dụng phương pháp gom cụm k-láng giềng gần nhất, với k = 1 \cite{Allan00detectionsbounds}. Theo trực quan ta có thể thấy nếu một bài viết có nội dung tương tự nhiều với những bài có sẵn, thì khả năng nó là một first story rất thấp. Ngược lại, khi nội dung của một bài viết mới lạ, khác hẳn những bài viết trước đây, thì có thể xem đó là một first story.
-		
-		Thuật toán gom cụm này hoạt động như sau: Mỗi document mới sẽ được so sánh với tất cả các document hiện có trong hệ thống và tìm ra một document tương đồng nhất. Nếu độ tương đồng của chúng cao hơn một ngưỡng cho trước, thì document mới này sẽ được gán vào cụm của document tương đồng nhất, ngược lại tạo cụm mới và xem document mới như một first story.
-		
+Bài toán phân lớp bao gồm nhiều thuật toán khác nhau, trong phạm vi của khóa luận chúng ta sẽ chỉ quan tâm đến các thuật toán: Support vector machine, Naive Bayes, và J48 decision tree.
+\subsection{Thuật toán phân lớp Support Vector Machine (SVM)}
+\subsubsection{Ý tưởng}
+Support vector machine hay còn gọi là support vector network là một thuật toán phân lớp dành cho các bài toán phân lớp nhịphân. SVM thực hiện phân lớp bằng việc ánh xạ các vector lên một không gian nhiều chiều. Trên không gian này sẽ sinh ra một mặt phẳng quyết định tuyến tính phân tách hai lớp dữ liệu \cite{Cortes1995}.
 	\subsubsection{Minh họa thuật toán}
 		Giả sử ta có dữ liệu như hình vẽ. Đường tròn thể hiện ngưỡng khoảng cách để một document được xem là first story hay không, chọn ngưỡng giá trị 0.8. Ta có sẵn 4 document và 1 document mới vào hệ thống như sau:
 		\begin{center}
