@@ -62,13 +62,14 @@
 \BOOKMARK [1][]{section.109}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.103}% 62
 \BOOKMARK [1][]{section.110}{4.4 Kt qua thc nghim}{chapter.103}% 63
 \BOOKMARK [2][]{subsection.111}{4.4.1 Kt qua train model ph\342n loai tin tc}{section.110}% 64
-\BOOKMARK [2][]{subsection.116}{4.4.2 Thay i c\341c th\364ng s cua thut to\341n LSH}{section.110}% 65
-\BOOKMARK [1][]{section.118}{4.5 Nhn x\351t}{chapter.103}% 66
-\BOOKMARK [2][]{subsection.119}{4.5.1 Nhn inh v MergeThreshold}{section.118}% 67
-\BOOKMARK [2][]{subsection.124}{4.5.2 Nhn inh v c\341c tham s cua LSH}{section.118}% 68
-\BOOKMARK [1][]{section.126}{4.6 Kt chng}{chapter.103}% 69
-\BOOKMARK [0][]{chapter*.127}{KT LUN V\300 HNG PH\301T TRIN}{}% 70
-\BOOKMARK [1][]{section*.128}{Kt qua at c}{chapter*.127}% 71
-\BOOKMARK [1][]{section*.129}{Hng ph\341t trin}{chapter*.127}% 72
-\BOOKMARK [0][]{chapter*.130}{T\300I LIU THAM KHAO}{}% 73
-\BOOKMARK [0][]{section*.132}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 74
+\BOOKMARK [3][]{subsubsection.112}{4.4.1.1 Kt qua da tr\352n ni dung cua tin cua tp mu}{subsection.111}% 65
+\BOOKMARK [3][]{subsubsection.116}{4.4.1.2 Kt qua da tr\352n ti\352u \040cua tin cua tp mu}{subsection.111}% 66
+\BOOKMARK [2][]{subsection.120}{4.4.2 Kt qua train model ph\342n loai loai tin r\341c}{section.110}% 67
+\BOOKMARK [1][]{section.124}{4.5 Nhn x\351t}{chapter.103}% 68
+\BOOKMARK [2][]{subsection.125}{4.5.1 Nhn inh v c\341c thut to\341n ph\342n lp cho b\340i to\341n}{section.124}% 69
+\BOOKMARK [1][]{section.126}{4.6 Kt chng}{chapter.103}% 70
+\BOOKMARK [0][]{chapter*.127}{KT LUN V\300 HNG PH\301T TRIN}{}% 71
+\BOOKMARK [1][]{section*.128}{Kt qua at c}{chapter*.127}% 72
+\BOOKMARK [1][]{section*.129}{Hng ph\341t trin}{chapter*.127}% 73
+\BOOKMARK [0][]{chapter*.130}{T\300I LIU THAM KHAO}{}% 74
+\BOOKMARK [0][]{section*.132}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 75
