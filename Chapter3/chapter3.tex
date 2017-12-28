@@ -17,7 +17,7 @@ Dưới đây là mô hình của các thành phần chính hệ thống:
 	\label{fig:systemarchitecture}
 \end{figure}
 
-Hệ thống có 2 loại người dùng chính: quản trị viên hệ thống (admin) và biên tập viên. Quản trị viên có nhiệm vụ theo dõi hệ thống, điều khiển bật tắt, thay đổi thông số của các tác vụ trong hệ thống. Biên tập viên sử dụng hệ thống thông qua giao diện Spam Filtering để xem các sự kiện phát hiện được và các thông tin liên quan.
+Hệ thống chủ yếu phục vụ cho biên tập viên. Biên tập viên sử dụng hệ thống thông qua giao diện Spam Filtering để sử dụng chức năng phân lớp tin tức hoặc xem các số liệu thống kê về tin tức đã phân lớp lưu trong cơ sở dữ liệu.
 %\begin{itemize}
 %	\item \textit{Data Streaming}: Module này sử dụng Twitter Streaming API để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước.
 %	\item \textit{Data Preprocessor}: Module tiền xử lý (loại bỏ link, stopwords; tách từ) và biểu diễn dữ liệu thành vector trọng số tf-idf.
@@ -61,19 +61,26 @@ Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân
 \end{itemize}
 
 \section{Thiết kế hệ thống} 
-
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{Chapter3/Chapter3Figs/CrawlerSystem}
+		\caption{Kiến trúc hệ thống crawler tin tức}
+		\label{fig:crawlersystem}
+	\end{figure}
+Hệ thống Crawler được xây dựng độc lập bao gồm phân hệ thu thập dữ liệu, phân hệ tiền xử lý và phân hệ phân lớp để chạy ngầm nhằm thu thập và phân loại thông tin
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\linewidth]{Chapter3/Chapter3Figs/Layers}
 		\caption{Kiến trúc hệ thống kết hợp Multilayer architecture kết hợp với mô hình MVC}
 		\label{fig:layers}
 	\end{figure}
+%Hệ thống xây dựng theo kiến trúc client-server và sử dụng struts 2 framework áp dụng mô hình Model - View - Controller (MVC) với View tách biệt(sử dụng framework React) và cung cấp api để trả về kết quả dạng JSON. Cụ thể:
 Hệ thống xây dựng theo kiến trúc 3 tầng gồm: Presentation Layer, Business Logic Layer và Data Access Layer. Trong đó, Presentation Layer áp dụng mô hình Model - View - Controller (MVC). Cụ thể:
 	\begin{itemize}
 		\item Presentation Layer: Có trách nhiệm hiển thị thông tin, tương tác với người dùng hệ thống. Gồm 2 thành phần:
 			\begin{itemize}
 				\item Controller: Điều khiển các luồng của hệ thống web, nhận các tín hiệu từ người dùng và xử lý tương ứng.
-				\item View: Có nhiệm vụ hiển thị các giao diện hệ thống cho người dùng.
+				\item View: Có nhiệm vụ hiển thị các giao diện hệ thống cho người dùng, hệ thống sử dụng React để gọi api trả về dữ liệu cho giao diện người dùng.
 			\end{itemize}
 		\item Model: Đối tượng chứa dữ liệu để xử lý và hiển thị.
 		\item Business Layer: Chứa các nghiệp vụ của hệ thống. Bao gồm các bước xử lý dữ liệu, thuật toán gom cụm, các tác vụ thống kê,…
@@ -90,7 +97,8 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 	\end{itemize}
 
 	\subsection{Các package}
-	Source code chương trình được tổ chức thành các package như sau:
+	Source code chương trình được tổ chức thành các package như sau:\\
+	Hệ thống crawler:
 	\begin{itemize}
 		\item vn.vccorp.crawler.bo: Chứa các business object của hệ thống
 		\item vn.vccorp.crawler.config: Các file config cho hệ thống
@@ -102,9 +110,28 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 		\item vn.vccorp.crawler.thread: Các lớp bao đóng để tạo thread chạy song song các tác vụ
 		\item vn.vccorp.crawler.util: Các công cụ hỗ trợ trong hệ thống
 	\end{itemize}
+	Hệ thống HotNewsDetector:
+	\begin{itemize}
+		\item vn.vccorp.hotnewsdetector.action.general: lớp ảo chứa các phương thức của action.
+		\item vn.vccorp.hotnewsdetector.action.news: chứa các action cho tin tức
+		\item vn.vccorp.hotnewsdetector.action.twitter: chứa các action cho twitter
+		\item vn.vccorp.hotnewsdetector.bo: Chứa các business object của hệ thống
+		\item vn.vccorp.hotnewsdetector.config: Các file config cho hệ thống
+		\item vn.vccorp.hotnewsdetector.constant: Các file constant của hệ thống
+		\item vn.vccorp.hotnewsdetector.context: chứa các action context của hệ thống
+		\item vn.vccorp.hotnewsdetector.crawler.news: Dùng để lấy dữ liệu từ trang web tin tức
+		\item vn.vccorp.hotnewsdetector.dao: Data Access Object, thực hiện các tác vụ đọc, ghi database
+		\item vn.vccorp.hotnewsdetector.dbconnection: Cung cấp kết nối đến database
+		\item vn.vccorp.hotnewsdetector.dto: Data Transfer Object, các đối tượng để vận chuyển dữ liệu từ database
+		\item vn.vccorp.hotnewsdetector.exception: Quản lý lỗi và đưa ra thông báo của hệ thống
+		%\item vn.vccorp.hotnewsdetector.lucence: 
+		%\item vn.vccorp.hotnewsdetector.luceneindex:
+		\item vn.vccorp.hotnewsdetector.thread
+		\item vn.vccorp.hotnewsdetector.utils
+	\end{itemize}
 	
 	\subsection{Cơ sở dữ liệu MongoDB}
-	Hệ thống sử dụng MongoDB để lưu trữ dữ liệu tin tức và quản lý kết quả gom cụm. Đây là một hệ cơ sở dữ liệu NoSQL, cung cấp khả năng mở rộng, sao lưu, phân mảnh dữ liệu tốt, và có thể thay đổi cấu trúc dữ liệu một cách linh hoạt.
+	Hệ thống sử dụng MongoDB để lưu trữ dữ liệu tin tức và quản lý kết quả phân lớp. Đây là một hệ cơ sở dữ liệu NoSQL, cung cấp khả năng mở rộng, sao lưu, phân mảnh dữ liệu tốt, và có thể thay đổi cấu trúc dữ liệu một cách linh hoạt.
 	
 	Dưới đây là bảng so sánh một số thuật ngữ cơ bản giữa các cơ sở dữ liệu SQL truyền thống và MongoDB:
 	\begin{table}[H]
@@ -165,6 +192,7 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 			\caption{Các trường của collection HashCode}
 			\label{tab:table_3_3}%
 		\end{table}%
+<<<<<<< HEAD
 
 	\subsection{Cơ sở dữ liệu MySQL}
 	MySQL được dùng để lưu trữ các dữ liệu khác của hệ thống như dữ liệu người dùng, các từ khóa dùng cho việc streaming dữ liệu Twitter,…
@@ -276,6 +304,10 @@ Giao diện hệ thống được xây dựng sử dụng thư viện React, v�
   \end{table}
 \section{Kết quả}
 Hệ thống đã hoàn thiện các chức năng: lọc rác tin tức trên Crawler, hiển thị danh sách tin đã qua phân lớp bằng bộ lọc rác, bộ phân lớp lọc rác thủ công, thống kê dữ liệu đã phân lớp. Dưới đây là một số hình ảnh của hệ thống:
+=======
+\section{Kết quả}
+Hệ thống đã hoàn thiện các chức năng: Thu thập dữ liệu từ trang tin tức, điều khiển chạy luồng của thuật toán phân loại tin nóng, và hiển thị thống kê cho biên tập viên, hệ thống còn cung cấp giao diện phân loại tin tức bằng url hoặc title của tin tức. Dưới đây là một số hình ảnh của hệ thống:
+>>>>>>> Minh
 
 \begin{figure}[H]
 	\centering
