@@ -1,8 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.12.5)  28 DEC 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.24)  28 DEC 2017 17:16
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./BachelorThesis.tex
+**BachelorThesis.tex
 (./BachelorThesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
@@ -12,9 +13,9 @@ LaTeX Warning: You have requested document class `Classes/uitPhD',
                but the document class provides `uitPhD'.
 
 Document Class: uitPhD 2010/07/14 v1.1 CUED thesis class
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/book.cls
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -29,34 +30,28 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(./subfigure.sty
+)) (./subfigure.sty
 \c@subfigure=\count88
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 \f@nch@headwidth=\skip43
 \f@nch@O@elh=\skip44
 \f@nch@O@erh=\skip45
@@ -66,27 +61,21 @@ s
 \f@nch@O@erf=\skip49
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsfonts/eucal.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/eucal.sty
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/12/07 v1.0i Graphics/color driver for pdftex
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/footmisc/footmisc.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks15
 \footnotemargin=\dimen103
@@ -96,40 +85,29 @@ Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
 Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
-
 Package footmisc Info: Declaring symbol style lamport* on input line 903.
-Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
-.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip52
 \bibsep=\skip53
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count91
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/hologo.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hologo.sty
 Package: hologo 2016/05/16 v1.12 A logo collection with bookmark support (HO)
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -137,38 +115,29 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-))
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 ))
 Package hologo Info: Using driver `pdftex'.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen104
 \extrarowheight=\dimen105
@@ -183,18 +152,16 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@delta=\dimen110
 \TX@cols=\count92
 \TX@ftn=\toks18
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip56
 \multirow@cntb=\count93
 \multirow@dima=\skip57
 \bigstrutjot=\dimen111
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
 
-(d:/Program/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -210,16 +177,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip60
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
 Package: algcompatible 
 
-Document Style - algorithmic compatible environments for the `algorithmicx' sty
-le
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/float/float.sty
+Document Style - algorithmic compatible environments for the `algorithmicx' style
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count101
 \float@exts=\toks19
@@ -229,16 +193,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@algorithm=\toks21
 \c@algorithm=\count102
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
 \pltopsep=\skip61
 \plpartopsep=\skip62
 \plitemsep=\skip63
 \plparsep=\skip64
 \pl@lab=\toks22
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count103
 \lst@gtempboxa=\box28
 \lst@token=\toks23
@@ -251,36 +213,30 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 \lst@newlines=\count107
 \lst@lineno=\count108
 \lst@maxwidth=\dimen115
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count109
 \lst@skipnumbers=\count110
 \lst@framebox=\box29
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip65
 
 For additional information on amsmath, use the `?' option.
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen116
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen117
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count111
@@ -320,20 +276,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks29
 \inpenc@posthook=\toks30
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -573,8 +526,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -614,8 +566,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -638,33 +589,26 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(d:/Program/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2017/11/03 3.15 The Babel package
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/11/03 3.15 Babel switching mechanism
-)
-(./vietnam.ldf
+) (./vietnam.ldf
 Language: vietnam 2005/04/21 v1.2 Vietnamese support from the babel system
- (d:/Program/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2017/11/03 3.15 Babel common definitions
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/babel/switch.def
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2017/11/03 3.15 Babel switching mechanism
 )
 \babel@savecnt=\count123
 \U@D=\dimen125
 )
 \l@vietnam = a dialect from \language0
-
-Loading definitions for the Vietnamese font encoding
-(d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.def
+ Loading definitions for the Vietnamese font encoding (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.dfu
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.dfu
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -817,11 +761,9 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/vncaps.tex
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
-)))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/nomencl/nomencl.sty
+))) (/usr/local/texlive/2017/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen126
 \nom@tempdim=\dimen127
@@ -832,14 +774,11 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 
 
 Writing nomenclature file BachelorThesis.nlo
-(d:/Program/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -853,8 +792,7 @@ Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
 Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -867,30 +805,26 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen128
 \Hy@linkcounter=\count124
 \Hy@pagecounter=\count125
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count126
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `plainpages' set `false' on input line 4374.
 Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4374.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 4374.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374
-.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4374.
 Package hyperref Info: Option `breaklinks' set `true' on input line 4374.
 Package hyperref Info: Option `linktocpage' set `true' on input line 4374.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
@@ -903,18 +837,14 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing ON on input line 4516.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/hyperref/backref.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2016/05/21 v1.39 Bibliographical back referencing
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 ))
 \c@Hy@tempcnt=\count127
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/url/url.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -939,22 +869,18 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver: hpdftex.
 
-(d:/Program/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count132
 \c@bookmark@seq@number=\count133
 \Hy@SectionHShift=\skip69
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -963,8 +889,7 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@width=\dimen133
 )
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 184.
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 184.
 
 ) (./StyleFiles/watermark.sty
 
@@ -972,15 +897,13 @@ LaTeX Warning: You have requested package `StyleFiles/watermark',
                but the package provides `watermark'.
 
 Package: watermark 2002/01/29 v1.00 Watermarks (NCC)
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/changepage/changepage.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count134
 \cp@tempcnt=\count135
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count136
 \calc@Bcount=\count137
@@ -992,14 +915,12 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count138
 \calc@Cskip=\skip72
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
 \AM@pagewidth=\dimen136
 \AM@pageheight=\dimen137
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box32
@@ -1007,8 +928,7 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks32
 \c@AM@survey=\count139
 \AM@templatesizebox=\box33
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count140
 \Gm@cntv=\count141
@@ -1022,8 +942,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen144
 \Gm@layoutvoffset=\dimen145
 \Gm@dimlist=\toks33
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip73
@@ -1062,31 +981,24 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip104
 \cfttabindent=\skip105
 \cfttabnumwidth=\skip106
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5enc.def
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 LaTeX Font Info:    Redeclaring font encoding T5 on input line 75.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2012/11/12 v1.1 Defining Unicode characters
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/placeins/placeins.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks34
 \thm@bodyfont=\toks35
 \thm@headfont=\toks36
@@ -1098,32 +1010,23 @@ Package: amsthm 2015/03/04 v2.20.2
 \dth@everypar=\toks39
 )
 \c@definition=\count145
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/multirow/bigstrut.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/multirow/bigstrut.sty
 Package: bigstrut 2016/11/25 v2.2 Provide larger struts in tabulars
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(d:/Program/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks40
 \XKV@tempa@toks=\toks41
 )
 \XKV@depth=\count146
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/adjustbox/trimclip.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/collectbox/collectbox.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \collectedbox=\box34
 )
@@ -1132,45 +1035,35 @@ Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
 \tc@urx=\dimen148
 \tc@ury=\dimen149
 Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen150
 \adjbox@Height=\dimen151
 \adjbox@Depth=\dimen152
 \adjbox@Totalheight=\dimen153
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count147
 LaTeX Info: Redefining \checkoddpage on input line 45.
-)
-(d:/Program/texlive/2017/texmf-dist/tex/latex/varwidth/varwidth.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box35
 \sift@deathcycles=\count148
 \@vwid@loff=\dimen154
 \@vwid@roff=\dimen155
-))
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count149
 \rotFPtop=\skip110
 \rotFPbot=\skip111
 \rot@float@box=\box36
 \rot@mess@toks=\toks42
-)
-(./BachelorThesis.aux
+) (./BachelorThesis.aux
 LaTeX Font Info:    Try loading font information for T5+cmr on input line 22.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/t5cmr.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-(./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux)
-(./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
-(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
-(./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
+) (./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
 \openout1 = `BachelorThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -1189,8 +1082,7 @@ LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
-
-(d:/Program/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count150
 \scratchdimen=\dimen156
@@ -1203,31 +1095,25 @@ LaTeX Font Info:    ... okay on input line 62.
 \MPnumerator=\count154
 \makeMPintoPDFobject=\count155
 \everyMPtoPDFconversion=\toks44
-) (d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.jpg,.pdf,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count156
 \AtBeginShipoutBox=\box38
 Package backref Info: ** backref set up for natbib ** on input line 62.
 Package hyperref Info: Link coloring ON on input line 62.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(d:/Program/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count157
@@ -1235,16 +1121,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
 LaTeX Info: Redefining \nameref on input line 62.
-
-(./BachelorThesis.out) (./BachelorThesis.out)
+ (./BachelorThesis.out) (./BachelorThesis.out)
 \@outlinefile=\write4
 \openout4 = `BachelorThesis.out'.
 
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -1285,58 +1168,42 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 
 
-pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=309, pagebox=cropbox, 597.55246pt x 845.07718pt>
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=305, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf>
-Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 63. on input line 
-63.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 63.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf>
-Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 63. on input line 
-63.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 63.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=312, page=1, pagebox=cropbox, 597.55246pt x 845.07718pt>
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=308, page=1, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1344,29 +1211,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 [1
 
  <./BiaKhoaLuan.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
- version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=351, page=2, pagebox=cropbox, 597.55246pt x 845.07718pt>
+pdfTeX warning: pdflatex (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<BiaKhoaLuan.pdf, id=347, page=2, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 2>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 2>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1374,51 +1234,35 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 2>
-Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63. on inpu
-t line 63.
-Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
-63.
+Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63.
+(pdftex.def)             Requested size: 591.57877pt x 836.629pt.
 [2 <./BiaKhoaLuan.pdf>]
-<General/danhsachhoidong.pdf, id=357, pagebox=cropbox, 597.55246pt x 845.07718p
-t>
+<General/danhsachhoidong.pdf, id=353, 597.55246pt x 845.07718pt>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf>
-Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 68. on
- input line 68.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-68.
+Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 68.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf>
-Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 68. on
- input line 68.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-68.
-<General/danhsachhoidong.pdf, id=360, page=1, pagebox=cropbox, 597.55246pt x 84
-5.07718pt>
+Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 68.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<General/danhsachhoidong.pdf, id=356, page=1, 597.55246pt x 845.07718pt>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
-Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line
- 68. on input line 68.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-68.
+Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
-Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line
- 68. on input line 68.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 68.
+Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
-Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line
- 68. on input line 68.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 68.
+Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
-Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line
- 68. on input line 68.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 68.
+Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1426,52 +1270,37 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
-Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line
- 68. on input line 68.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 68.
+Package pdftex.def Info: General/danhsachhoidong.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [1
 
  <./General/danhsachhoidong.pdf>]
-<General/nhanxetCBHD.pdf, id=394, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<General/nhanxetCBHD.pdf, id=390, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf>
-Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69. on inp
-ut line 69.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-69.
+Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf>
-Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69. on inp
-ut line 69.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-69.
-<General/nhanxetCBHD.pdf, id=397, page=1, pagebox=cropbox, 597.55246pt x 845.07
-718pt>
+Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<General/nhanxetCBHD.pdf, id=393, page=1, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
- on input line 69.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-69.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
- on input line 69.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 69.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
- on input line 69.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 69.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
- on input line 69.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 69.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1480,49 +1309,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
- on input line 69.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 69.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [2 <./General/nhanxetCBHD.pdf>]
-<General/nhanxetCBPB.pdf, id=427, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<General/nhanxetCBPB.pdf, id=423, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf>
-Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70. on inp
-ut line 70.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-70.
+Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf>
-Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70. on inp
-ut line 70.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-70.
-<General/nhanxetCBPB.pdf, id=430, page=1, pagebox=cropbox, 597.55246pt x 845.07
-718pt>
+Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<General/nhanxetCBPB.pdf, id=426, page=1, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 70.
- on input line 70.
-Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
-70.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 70.
- on input line 70.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 70.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 70.
- on input line 70.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 70.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 70.
- on input line 70.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 70.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
@@ -1531,9 +1345,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
 Package pdftex.def Info: General/nhanxetCBPB.pdf , page1 used on input line 70.
- on input line 70.
-Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
- 70.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 [3 <./General/nhanxetCBPB.pdf>]
 \openout2 = `Acknowledgement/acknowledgement.aux'.
 
@@ -1544,7 +1356,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [4
 
-{d:/Program/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
@@ -1557,13 +1369,11 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 
 (./BachelorThesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(d:/Program/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5
 \FN@pp@footnotehinttrue 
@@ -1687,7 +1497,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
- (d:/Program/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -1695,8 +1505,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 ) [2]
 \openout2 = `Chapter1/chapter1.aux'.
 
-
-(./Chapter1/chapter1.tex
+ (./Chapter1/chapter1.tex
 Ch\uhorn \ohorn ng 1.
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
@@ -2215,21 +2024,17 @@ Overfull \hbox (1.69891pt too wide) in paragraph at lines 107--108
  []
 
 [10]
-<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=713, pagebox=cropbox, 409.53pt x 294.098
-75pt>
+<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=698, 409.53pt x 294.09875pt>
 File: Chapter2/Chapter2Figs/PDF/NNS.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/NNS.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/NNS.pdf  used on input line 
-118. on input line 118.
-Package pdftex.def Info: Requested size: 396.91325pt x 285.05554pt on input lin
-e 118.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/NNS.pdf  used on input line 118.
+(pdftex.def)             Requested size: 396.91325pt x 285.05554pt.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 123.
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 125.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 125.
 [11 <./Chapter2/Chapter2Figs/PDF/NNS.pdf>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
@@ -2322,14 +2127,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
  []
 
 [13]
-<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=734, pagebox=cropbox, 530.98
-375pt x 533.995pt>
+<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=719, 530.98375pt x 533.995pt>
 File: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf  used on
- input line 201. on input line 201.
-Package pdftex.def Info: Requested size: 286.65883pt x 288.28783pt on input lin
-e 201.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf  used on input line 201.
+(pdftex.def)             Requested size: 286.65883pt x 288.28783pt.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
@@ -2393,14 +2195,11 @@ Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 287.
 
-<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=758, pagebox=cropbox, 538.01pt x 529.98p
-t>
+<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=743, 538.01pt x 529.98pt>
 File: Chapter2/Chapter2Figs/PDF/LSH.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/LSH.pdf>
-Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/LSH.pdf  used on input line 
-300. on input line 300.
-Package pdftex.def Info: Requested size: 286.65883pt x 282.38411pt on input lin
-e 300.
+Package pdftex.def Info: Chapter2/Chapter2Figs/PDF/LSH.pdf  used on input line 300.
+(pdftex.def)             Requested size: 286.65883pt x 282.38411pt.
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 305.
@@ -2703,14 +2502,11 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 11.
 
-<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=829, pagebox=cropbox, 706
-.64pt x 310.15875pt>
+<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=814, 706.64pt x 310.15875pt>
 File: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf Graphic file (type pdf)
 <use Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf>
-Package pdftex.def Info: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf  used
- on input line 15. on input line 15.
-Package pdftex.def Info: Requested size: 396.91325pt x 174.21303pt on input lin
-e 15.
+Package pdftex.def Info: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf  used on input line 15.
+(pdftex.def)             Requested size: 396.91325pt x 174.21303pt.
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -2875,22 +2671,17 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 63.
 
-<Chapter3/Chapter3Figs/CrawlerSystem.png, id=845, 414.54875pt x 359.3425pt>
+<Chapter3/Chapter3Figs/CrawlerSystem.png, id=830, 414.54875pt x 359.3425pt>
 File: Chapter3/Chapter3Figs/CrawlerSystem.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/CrawlerSystem.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/CrawlerSystem.png  used on input
- line 66. on input line 66.
-Package pdftex.def Info: Requested size: 220.50887pt x 191.14148pt on input lin
-e 66.
-<Chapter3/Chapter3Figs/Layers.png, id=847, 1174.3875pt x 1767.60374pt>
+Package pdftex.def Info: Chapter3/Chapter3Figs/CrawlerSystem.png  used on input line 66.
+(pdftex.def)             Requested size: 220.50887pt x 191.14148pt.
+<Chapter3/Chapter3Figs/Layers.png, id=832, 1174.3875pt x 1767.60374pt>
 File: Chapter3/Chapter3Figs/Layers.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Layers.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/Layers.png  used on input line 7
-3. on input line 73.
-Package pdftex.def Info: Requested size: 220.50887pt x 331.8834pt on input line
- 73.
-[29 <./Chapter3/Chapter3Figs/CrawlerSystem.png>] [30 <./Chapter3/Chapter3Figs/L
-ayers.png>]
+Package pdftex.def Info: Chapter3/Chapter3Figs/Layers.png  used on input line 73.
+(pdftex.def)             Requested size: 220.50887pt x 331.8834pt.
+[29 <./Chapter3/Chapter3Figs/CrawlerSystem.png>] [30 <./Chapter3/Chapter3Figs/Layers.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 90.
@@ -2924,8 +2715,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 
 [31]
 Overfull \hbox (3.71901pt too wide) in paragraph at lines 126--127
-[]\T5/cmr/m/n/12 vn.vccorp.hotnewsdetector.dto: Data Trans-fer Ob-ject, c¡c ^^_
-èi t÷ñng ^^_º vªn chuyºn
+[]\T5/cmr/m/n/12 vn.vccorp.hotnewsdetector.dto: Data Trans-fer Ob-ject, c¡c ^^_èi t÷ñng ^^_º vªn chuyºn
  []
 
 
@@ -2972,46 +2762,75 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 196.
 
-<Chapter3/Chapter3Figs/StreamingNonwide.png, id=872, 1078.0275pt x 700.86844pt>
 
-File: Chapter3/Chapter3Figs/StreamingNonwide.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/StreamingNonwide.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/StreamingNonwide.png  used on in
-put line 201. on input line 201.
-Package pdftex.def Info: Requested size: 441.01773pt x 286.72694pt on input lin
-e 201.
-<Chapter3/Chapter3Figs/StreamingKeywords.png, id=873, 1061.46562pt x 685.05937p
-t>
-File: Chapter3/Chapter3Figs/StreamingKeywords.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/StreamingKeywords.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/StreamingKeywords.png  used on i
-nput line 208. on input line 208.
-Package pdftex.def Info: Requested size: 423.37997pt x 273.24536pt on input lin
-e 208.
-[34 <./Chapter3/Chapter3Figs/StreamingNonwide.png>]
-<Chapter3/Chapter3Figs/StartClustering.png, id=879, 993.7125pt x 661.72218pt>
-File: Chapter3/Chapter3Figs/StartClustering.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/StartClustering.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/StartClustering.png  used on inp
-ut line 215. on input line 215.
-Package pdftex.def Info: Requested size: 423.37997pt x 281.92995pt on input lin
-e 215.
-<Chapter3/Chapter3Figs/TopStories2.png, id=880, 1012.5328pt x 703.12688pt>
-File: Chapter3/Chapter3Figs/TopStories2.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/TopStories2.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/TopStories2.png  used on input l
-ine 222. on input line 222.
-Package pdftex.def Info: Requested size: 423.37997pt x 294.01308pt on input lin
-e 222.
- [35 <./Chapter3/Chapter3Figs/StreamingKeywords.png> <./Chapter3/Chapter3Figs/S
-tartClustering.png>]
-<Chapter3/Chapter3Figs/StoryDetails2.png, id=887, 1008.76875pt x 697.10437pt>
-File: Chapter3/Chapter3Figs/StoryDetails2.png Graphic file (type png)
-<use Chapter3/Chapter3Figs/StoryDetails2.png>
-Package pdftex.def Info: Chapter3/Chapter3Figs/StoryDetails2.png  used on input
- line 229. on input line 229.
-Package pdftex.def Info: Requested size: 423.37997pt x 292.56909pt on input lin
-e 229.
+./Chapter3/chapter3.tex:201: LaTeX Error: File `Chapter3/Chapter3Figs/StreamingNonwide' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 ...]{Chapter3/Chapter3Figs/StreamingNonwide}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.jpg,.pdf,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter3/chapter3.tex:208: LaTeX Error: File `Chapter3/Chapter3Figs/StreamingKeywords' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 ...{Chapter3/Chapter3Figs/StreamingKeywords}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.jpg,.pdf,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter3/chapter3.tex:215: LaTeX Error: File `Chapter3/Chapter3Figs/StartClustering' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 ...h]{Chapter3/Chapter3Figs/StartClustering}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.jpg,.pdf,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter3/chapter3.tex:222: LaTeX Error: File `Chapter3/Chapter3Figs/TopStories2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...width]{Chapter3/Chapter3Figs/TopStories2}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.jpg,.pdf,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Chapter3/chapter3.tex:229: LaTeX Error: File `Chapter3/Chapter3Figs/StoryDetails2' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...dth]{Chapter3/Chapter3Figs/StoryDetails2}
+                                                  
+I could not locate the file with any of these extensions:
+.png,.jpg,.pdf,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
@@ -3030,8 +2849,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 234.
 
-) [36 <./Chapter3/Chapter3Figs/TopStories2.png> <./Chapter3/Chapter3Figs/StoryD
-etails2.png>] [37]
+) [34]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex
@@ -3129,13 +2947,13 @@ Underfull \hbox (badness 5022) in paragraph at lines 74--74
 []|\T5/cmr/m/n/12 Legal and Crim-i-nal
  []
 
-[38
+[35
 
 
 
-] [39]
+] [36]
 LaTeX Font Info:    Try loading font information for T5+cmtt on input line 94.
- (d:/Program/texlive/2017/texmf-dist/tex/latex/vntex/t5cmtt.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
@@ -3178,7 +2996,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\dj' on input line 96.
 
-[40]
+[37]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -3294,7 +3112,7 @@ Package hyperref Warning: Composite letter `\texttilde+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 108.
 
-[41]
+[38]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -3356,7 +3174,7 @@ Package hyperref Warning: Composite letter `\texttilde+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 154.
 
-[42] [43]
+[39] [40]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -3380,11 +3198,10 @@ Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 201.
 
-[44] [45]
+[41] [42]
 Overfull \vbox (31.53825pt too high) has occurred while \output is active []
 
-
-[46]
+ [43]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -3456,7 +3273,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ohorn' on input line 252.
 
-) [47]
+) [44]
 \openout2 = `Conclusions/conclusions.aux'.
 
  (./Conclusions/conclusions.tex
@@ -3559,11 +3376,11 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 40.
 
-[48
+[45
 
 
 
-]) [49] (./BachelorThesis.bbl (./BachelorThesis.brf)
+]) [46] (./BachelorThesis.bbl (./BachelorThesis.brf)
 \tf@brf=\write8
 \openout8 = `BachelorThesis.brf'.
 
@@ -3581,21 +3398,14 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1.
 
-[50
+[47
 
 
 
-]
-Underfull \hbox (badness 3769) in paragraph at lines 72--72
-[]\T5/cmr/m/n/12 Tdt 2004: An-no-ta-tion man-ual.  [][]$\T5/cmtt/m/n/12 https :
- / / catalog . ldc . upenn . edu / docs /
- []
-
-) [51]
+]) [48]
 \openout2 = `Appendix/appendix.aux'.
 
- (./Appendix/appendix.tex
-(d:/Program/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+ (./Appendix/appendix.tex (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 
@@ -3648,94 +3458,38 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 37.
 
-[52
+[49
 
 
-] [53] [54]) [55]
+] [50] [51]) [52]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
- (./BachelorThesis.aux
-(./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux)
-(./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
-(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
-(./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
+ (./BachelorThesis.aux (./Acknowledgement/acknowledgement.aux) (./Terms/terms.aux) (./Abstract/abstract.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
-
-
-Package rerunfilecheck Warning: File `BachelorThesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BachelorThesis.out':
-(rerunfilecheck)             Before: 0636E63F47B621E2D6ADBF390F36F5CA;5911
-(rerunfilecheck)             After:  C2E632A47DF3FE8A5296B2343EB9E355;5823.
+Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
+(rerunfilecheck)             Checksum: C2E632A47DF3FE8A5296B2343EB9E355;5823.
 Package rerunfilecheck Info: File `BachelorThesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D12CFB1FFB20FD064C1A40757AB1FA7A;927.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 14822 strings out of 492985
- 213880 string characters out of 6132564
- 369928 words of memory out of 5000000
- 17667 multiletter control sequences out of 15000+600000
+ 14777 strings out of 492985
+ 212663 string characters out of 6132570
+ 368076 words of memory out of 5000000
+ 17633 multiletter control sequences out of 15000+600000
  23391 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,19n,74p,1182b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.131} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.129} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.127} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.126} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.128} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.138} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.136} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.135} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.133} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.132} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.130} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:
-/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/P
-rogram/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Prog
-ram/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program/texl
-ive/2017/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><d:/Program/texlive/2017/t
-exmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><d:/Program/texlive/2017/texmf-dist/f
-onts/type1/vntex/vnr/vnr12.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/
-vntex/vnr/vnr7.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vn
-r8.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb><d:
-/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on BachelorThesis.pdf (67 pages, 1262344 bytes).
+ 41i,19n,74p,1180b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on BachelorThesis.pdf (64 pages, 997476 bytes).
 PDF statistics:
- 1179 PDF objects out of 1200 (max. 8388607)
- 1029 compressed objects within 11 object streams
- 272 named destinations out of 1000 (max. 500000)
- 749 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1129 PDF objects out of 1200 (max. 8388607)
+ 993 compressed objects within 10 object streams
+ 257 named destinations out of 1000 (max. 500000)
+ 716 words of extra memory for PDF output out of 10000 (max. 10000000)
 
