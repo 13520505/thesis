@@ -1,0 +1,21 @@
+\select@language {vietnam}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i trong thu\IeC {\d \acircumflex }t to\IeC {\'a}n Nearest Neighbor Search}}{11}{figure.31}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i theo thu\IeC {\d \acircumflex }t to\IeC {\'a}n Boost Named Entity}}{14}{figure.38}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces C\IeC {\'a}ch t\IeC {\'\i }nh hash code cho m\IeC {\d \ocircumflex }t document trong m\IeC {\d \ocircumflex }t hash table}}{17}{figure.48}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces C\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n ch\IeC {\'\i }nh c\IeC {\h u}a h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}}{24}{figure.73}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p Multilayer architecture k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p v\IeC {\'\ohorn }i m\IeC {\^o} h\IeC {\`\i }nh MVC}}{27}{figure.83}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c giao di\IeC {\d \ecircumflex }n h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}}{31}{figure.96}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Giao di\IeC {\d \ecircumflex }n danh s\IeC {\'a}ch tin \IeC {\dj }\IeC {\~a} ph\IeC {\^a}n l\IeC {\'\ohorn }p}}{33}{figure.107}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Giao di\IeC {\d \ecircumflex }n th\IeC {\'\ocircumflex }ng k\IeC {\^e} bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\'\uhorn } 1 v\IeC {\`a} th\IeC {\'\uhorn } 2}}{34}{figure.108}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Giao di\IeC {\d \ecircumflex }n th\IeC {\'\ocircumflex }ng k\IeC {\^e} bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\'\uhorn } 3}}{34}{figure.109}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Giao di\IeC {\d \ecircumflex }n th\IeC {\'\ocircumflex }ng k\IeC {\^e} bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\'\uhorn } 4}}{35}{figure.110}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Giao di\IeC {\d \ecircumflex }n b\IeC {\d \ocircumflex } ph\IeC {\^a}n l\IeC {\'\ohorn }p tin t\IeC {\'\uhorn }c}}{35}{figure.111}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \IeC {\h A}nh h\IeC {\uhorn }\IeC {\h \ohorn }ng c\IeC {\h u}a gi\IeC {\'a} tr\IeC {\d i} threshold \IeC {\dj }\IeC {\'\ecircumflex }n intercluster distance}}{41}{figure.135}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \IeC {\h A}nh h\IeC {\uhorn }\IeC {\h \ohorn }ng c\IeC {\h u}a gi\IeC {\'a} tr\IeC {\d i} threshold \IeC {\dj }\IeC {\'\ecircumflex }n s\IeC {\'\ocircumflex } c\IeC {\d u}m}}{42}{figure.133}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \IeC {\h A}nh h\IeC {\uhorn }\IeC {\h \ohorn }ng c\IeC {\h u}a gi\IeC {\'a} tr\IeC {\d i} threshold \IeC {\dj }\IeC {\'\ecircumflex }n intracluster distance}}{43}{figure.134}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \IeC {\h A}nh h\IeC {\uhorn }\IeC {\h \ohorn }ng c\IeC {\h u}a gi\IeC {\'a} tr\IeC {\d i} threshold \IeC {\dj }\IeC {\'\ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c thi}}{44}{figure.136}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \IeC {\h A}nh h\IeC {\uhorn }\IeC {\h \ohorn }ng c\IeC {\h u}a c\IeC {\'a}c tham s\IeC {\'\ocircumflex } \IeC {\dj }\IeC {\'\ecircumflex }n th\IeC {\`\ohorn }i gian th\IeC {\d \uhorn }c thi v\IeC {\`a} s\IeC {\'\ocircumflex } c\IeC {\d u}m c\IeC {\h u}a LSH}}{45}{figure.138}
