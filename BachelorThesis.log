@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.12.5)  28 DEC 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.12.5)  29 DEC 2017 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1287,7 +1287,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=309, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<BiaKhoaLuan.pdf, id=305, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf>
 Package pdftex.def Info: BiaKhoaLuan.pdf  used on input line 63. on input line 
@@ -1312,7 +1312,7 @@ pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
 
 pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=312, page=1, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<BiaKhoaLuan.pdf, id=308, page=1, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 1>
 Package pdftex.def Info: BiaKhoaLuan.pdf , page1 used on input line 63. on inpu
@@ -1354,7 +1354,7 @@ Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line
 
 pdfTeX warning: pdflatex.exe (file ./BiaKhoaLuan.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<BiaKhoaLuan.pdf, id=351, page=2, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<BiaKhoaLuan.pdf, id=347, page=2, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: BiaKhoaLuan.pdf Graphic file (type pdf)
 <use BiaKhoaLuan.pdf, page 2>
 Package pdftex.def Info: BiaKhoaLuan.pdf , page2 used on input line 63. on inpu
@@ -1379,7 +1379,7 @@ t line 63.
 Package pdftex.def Info: Requested size: 591.57877pt x 836.629pt on input line 
 63.
 [2 <./BiaKhoaLuan.pdf>]
-<General/danhsachhoidong.pdf, id=357, pagebox=cropbox, 597.55246pt x 845.07718p
+<General/danhsachhoidong.pdf, id=353, pagebox=cropbox, 597.55246pt x 845.07718p
 t>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf>
@@ -1393,7 +1393,7 @@ Package pdftex.def Info: General/danhsachhoidong.pdf  used on input line 68. on
  input line 68.
 Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
 68.
-<General/danhsachhoidong.pdf, id=360, page=1, pagebox=cropbox, 597.55246pt x 84
+<General/danhsachhoidong.pdf, id=356, page=1, pagebox=cropbox, 597.55246pt x 84
 5.07718pt>
 File: General/danhsachhoidong.pdf Graphic file (type pdf)
 <use General/danhsachhoidong.pdf, page 1>
@@ -1433,7 +1433,7 @@ Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
 [1
 
  <./General/danhsachhoidong.pdf>]
-<General/nhanxetCBHD.pdf, id=394, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<General/nhanxetCBHD.pdf, id=390, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf>
 Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69. on inp
@@ -1446,7 +1446,7 @@ Package pdftex.def Info: General/nhanxetCBHD.pdf  used on input line 69. on inp
 ut line 69.
 Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
 69.
-<General/nhanxetCBHD.pdf, id=397, page=1, pagebox=cropbox, 597.55246pt x 845.07
+<General/nhanxetCBHD.pdf, id=393, page=1, pagebox=cropbox, 597.55246pt x 845.07
 718pt>
 File: General/nhanxetCBHD.pdf Graphic file (type pdf)
 <use General/nhanxetCBHD.pdf, page 1>
@@ -1484,7 +1484,7 @@ Package pdftex.def Info: General/nhanxetCBHD.pdf , page1 used on input line 69.
 Package pdftex.def Info: Requested size: 597.57834pt x 845.1138pt on input line
  69.
 [2 <./General/nhanxetCBHD.pdf>]
-<General/nhanxetCBPB.pdf, id=427, pagebox=cropbox, 597.55246pt x 845.07718pt>
+<General/nhanxetCBPB.pdf, id=423, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf>
 Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70. on inp
@@ -1497,7 +1497,7 @@ Package pdftex.def Info: General/nhanxetCBPB.pdf  used on input line 70. on inp
 ut line 70.
 Package pdftex.def Info: Requested size: 597.551pt x 845.07512pt on input line 
 70.
-<General/nhanxetCBPB.pdf, id=430, page=1, pagebox=cropbox, 597.55246pt x 845.07
+<General/nhanxetCBPB.pdf, id=426, page=1, pagebox=cropbox, 597.55246pt x 845.07
 718pt>
 File: General/nhanxetCBPB.pdf Graphic file (type pdf)
 <use General/nhanxetCBPB.pdf, page 1>
@@ -2215,7 +2215,7 @@ Overfull \hbox (1.69891pt too wide) in paragraph at lines 107--108
  []
 
 [10]
-<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=713, pagebox=cropbox, 409.53pt x 294.098
+<Chapter2/Chapter2Figs/PDF/NNS.pdf, id=698, pagebox=cropbox, 409.53pt x 294.098
 75pt>
 File: Chapter2/Chapter2Figs/PDF/NNS.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/NNS.pdf>
@@ -2322,7 +2322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
  []
 
 [13]
-<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=734, pagebox=cropbox, 530.98
+<Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf, id=719, pagebox=cropbox, 530.98
 375pt x 533.995pt>
 File: Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/Clustering_NER2.pdf>
@@ -2393,7 +2393,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+o'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 287.
 
-<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=758, pagebox=cropbox, 538.01pt x 529.98p
+<Chapter2/Chapter2Figs/PDF/LSH.pdf, id=743, pagebox=cropbox, 538.01pt x 529.98p
 t>
 File: Chapter2/Chapter2Figs/PDF/LSH.pdf Graphic file (type pdf)
 <use Chapter2/Chapter2Figs/PDF/LSH.pdf>
@@ -2703,7 +2703,7 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 11.
 
-<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=829, pagebox=cropbox, 706
+<Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf, id=814, pagebox=cropbox, 706
 .64pt x 310.15875pt>
 File: Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf Graphic file (type pdf)
 <use Chapter3/Chapter3Figs/PDF/SystemArchitecture.pdf>
@@ -2875,14 +2875,14 @@ Package hyperref Warning: Composite letter `\textacute+\ocircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ocircumflex' on input line 63.
 
-<Chapter3/Chapter3Figs/CrawlerSystem.png, id=845, 414.54875pt x 359.3425pt>
+<Chapter3/Chapter3Figs/CrawlerSystem.png, id=830, 414.54875pt x 359.3425pt>
 File: Chapter3/Chapter3Figs/CrawlerSystem.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/CrawlerSystem.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/CrawlerSystem.png  used on input
  line 66. on input line 66.
 Package pdftex.def Info: Requested size: 220.50887pt x 191.14148pt on input lin
 e 66.
-<Chapter3/Chapter3Figs/Layers.png, id=847, 1174.3875pt x 1767.60374pt>
+<Chapter3/Chapter3Figs/Layers.png, id=832, 1174.3875pt x 1767.60374pt>
 File: Chapter3/Chapter3Figs/Layers.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/Layers.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/Layers.png  used on input line 7
@@ -2972,7 +2972,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 196.
 
-<Chapter3/Chapter3Figs/StreamingNonwide.png, id=872, 1078.0275pt x 700.86844pt>
+<Chapter3/Chapter3Figs/StreamingNonwide.png, id=857, 1078.0275pt x 700.86844pt>
 
 File: Chapter3/Chapter3Figs/StreamingNonwide.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/StreamingNonwide.png>
@@ -2980,7 +2980,7 @@ Package pdftex.def Info: Chapter3/Chapter3Figs/StreamingNonwide.png  used on in
 put line 201. on input line 201.
 Package pdftex.def Info: Requested size: 441.01773pt x 286.72694pt on input lin
 e 201.
-<Chapter3/Chapter3Figs/StreamingKeywords.png, id=873, 1061.46562pt x 685.05937p
+<Chapter3/Chapter3Figs/StreamingKeywords.png, id=858, 1061.46562pt x 685.05937p
 t>
 File: Chapter3/Chapter3Figs/StreamingKeywords.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/StreamingKeywords.png>
@@ -2989,14 +2989,14 @@ nput line 208. on input line 208.
 Package pdftex.def Info: Requested size: 423.37997pt x 273.24536pt on input lin
 e 208.
 [34 <./Chapter3/Chapter3Figs/StreamingNonwide.png>]
-<Chapter3/Chapter3Figs/StartClustering.png, id=879, 993.7125pt x 661.72218pt>
+<Chapter3/Chapter3Figs/StartClustering.png, id=864, 993.7125pt x 661.72218pt>
 File: Chapter3/Chapter3Figs/StartClustering.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/StartClustering.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/StartClustering.png  used on inp
 ut line 215. on input line 215.
 Package pdftex.def Info: Requested size: 423.37997pt x 281.92995pt on input lin
 e 215.
-<Chapter3/Chapter3Figs/TopStories2.png, id=880, 1012.5328pt x 703.12688pt>
+<Chapter3/Chapter3Figs/TopStories2.png, id=865, 1012.5328pt x 703.12688pt>
 File: Chapter3/Chapter3Figs/TopStories2.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/TopStories2.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/TopStories2.png  used on input l
@@ -3005,7 +3005,7 @@ Package pdftex.def Info: Requested size: 423.37997pt x 294.01308pt on input lin
 e 222.
  [35 <./Chapter3/Chapter3Figs/StreamingKeywords.png> <./Chapter3/Chapter3Figs/S
 tartClustering.png>]
-<Chapter3/Chapter3Figs/StoryDetails2.png, id=887, 1008.76875pt x 697.10437pt>
+<Chapter3/Chapter3Figs/StoryDetails2.png, id=872, 1008.76875pt x 697.10437pt>
 File: Chapter3/Chapter3Figs/StoryDetails2.png Graphic file (type png)
 <use Chapter3/Chapter3Figs/StoryDetails2.png>
 Package pdftex.def Info: Chapter3/Chapter3Figs/StoryDetails2.png  used on input
@@ -3661,81 +3661,41 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 (./Conclusions/conclusions.aux) (./Appendix/appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
-
-
-Package rerunfilecheck Warning: File `BachelorThesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BachelorThesis.out':
-(rerunfilecheck)             Before: 0636E63F47B621E2D6ADBF390F36F5CA;5911
-(rerunfilecheck)             After:  C2E632A47DF3FE8A5296B2343EB9E355;5823.
+Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
+(rerunfilecheck)             Checksum: C2E632A47DF3FE8A5296B2343EB9E355;5823.
 Package rerunfilecheck Info: File `BachelorThesis.brf' has not changed.
 (rerunfilecheck)             Checksum: D12CFB1FFB20FD064C1A40757AB1FA7A;927.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 14822 strings out of 492985
- 213880 string characters out of 6132564
- 369928 words of memory out of 5000000
- 17667 multiletter control sequences out of 15000+600000
+ 14802 strings out of 492985
+ 213612 string characters out of 6132564
+ 369421 words of memory out of 5000000
+ 17658 multiletter control sequences out of 15000+600000
  23391 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,19n,74p,1182b,1919s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.131} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.129} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.127} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.126} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.128} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.138} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.136} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.135} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.133} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.132} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.130} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:
-/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/P
-rogram/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Prog
-ram/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Program
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Program/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program/texl
-ive/2017/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><d:/Program/texlive/2017/t
-exmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><d:/Program/texlive/2017/texmf-dist/f
-onts/type1/vntex/vnr/vnr12.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/
-vntex/vnr/vnr7.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vn
-r8.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb><d:
-/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on BachelorThesis.pdf (67 pages, 1262344 bytes).
+<d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
+pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+><d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+d:/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:
+/Program/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/Pr
+ogram/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/Progr
+am/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/Progra
+m/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/Program/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/Program/te
+xlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><d:/Program/texlive/2017
+/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><d:/Program/texlive/2017/texmf-dist
+/fonts/type1/vntex/vnr/vnr12.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type
+1/vntex/vnr/vnr7.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/
+vnr8.pfb><d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb><
+d:/Program/texlive/2017/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on BachelorThesis.pdf (67 pages, 1261612 bytes).
 PDF statistics:
- 1179 PDF objects out of 1200 (max. 8388607)
- 1029 compressed objects within 11 object streams
- 272 named destinations out of 1000 (max. 500000)
- 749 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1157 PDF objects out of 1200 (max. 8388607)
+ 1007 compressed objects within 11 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 741 words of extra memory for PDF output out of 10000 (max. 10000000)
 
