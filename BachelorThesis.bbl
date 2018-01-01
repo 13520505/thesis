@@ -12,6 +12,12 @@ James Allan.
 \newblock chapter Introduction to Topic Detection and Tracking, pages 1--16.
   Kluwer Academic Publishers, Norwell, MA, USA, 2002.
 
+\bibitem{dimitoglou2012comparison}
+George Dimitoglou, James~A Adams, and Carol~M Jim.
+\newblock Comparison of the c4. 5 and a na{\"\i}ve bayes classifier for the
+  prediction of lung cancer survivability.
+\newblock {\em arXiv preprint arXiv:1206.1121}, 2012.
+
 \bibitem{TwiterStand:Sankaranarayanan}
 Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
   and Jon Sperling.

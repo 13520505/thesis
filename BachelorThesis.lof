@@ -1,16 +1,18 @@
 \select@language {vietnam}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i trong thu\IeC {\d \acircumflex }t to\IeC {\'a}n Nearest Neighbor Search}}{11}{figure.34}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i theo thu\IeC {\d \acircumflex }t to\IeC {\'a}n Boost Named Entity}}{14}{figure.41}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces C\IeC {\'a}ch t\IeC {\'\i }nh hash code cho m\IeC {\d \ocircumflex }t document trong m\IeC {\d \ocircumflex }t hash table}}{18}{figure.51}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces V\IeC {\'\i } d\IeC {\d u} v\IeC {\`\ecircumflex } c\IeC {\^a}y quy\IeC {\'\ecircumflex }t \IeC {\dj }\IeC {\d i}nh}}{14}{figure.53}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i trong thu\IeC {\d \acircumflex }t to\IeC {\'a}n Nearest Neighbor Search}}{18}{figure.66}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces C\IeC {\'a}ch x\IeC {\h \uhorn } l\IeC {\'y} m\IeC {\d \ocircumflex }t document m\IeC {\'\ohorn }i theo thu\IeC {\d \acircumflex }t to\IeC {\'a}n Boost Named Entity}}{21}{figure.73}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces C\IeC {\'a}ch t\IeC {\'\i }nh hash code cho m\IeC {\d \ocircumflex }t document trong m\IeC {\d \ocircumflex }t hash table}}{25}{figure.83}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces C\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n ch\IeC {\'\i }nh c\IeC {\h u}a h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}}{27}{figure.76}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng crawler tin t\IeC {\'\uhorn }c}}{29}{figure.86}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p Multilayer architecture k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p v\IeC {\'\ohorn }i m\IeC {\^o} h\IeC {\`\i }nh MVC}}{30}{figure.87}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Giao di\IeC {\d \ecircumflex }n \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u Twitter}}{34}{figure.97}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Giao di\IeC {\d \ecircumflex }n th\IeC {\^e}m x\IeC {\'o}a t\IeC {\`\uhorn } kh\IeC {\'o}a \IeC {\dj }\IeC {\h \ecircumflex } thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u Twitter}}{34}{figure.98}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Giao di\IeC {\d \ecircumflex }n \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n thu\IeC {\d \acircumflex }t to\IeC {\'a}n ph\IeC {\'a}t hi\IeC {\d \ecircumflex }n tin n\IeC {\'o}ng}}{34}{figure.99}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Giao di\IeC {\d \ecircumflex }n hi\IeC {\h \ecircumflex }n th\IeC {\d i} c\IeC {\'a}c c\IeC {\d u}m b\IeC {\`a}i vi\IeC {\'\ecircumflex }t cho bi\IeC {\^e}n t\IeC {\d \acircumflex }p vi\IeC {\^e}n}}{34}{figure.100}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Chi ti\IeC {\'\ecircumflex }t m\IeC {\d \ocircumflex }t c\IeC {\d u}m b\IeC {\`a}i vi\IeC {\'\ecircumflex }t}}{34}{figure.101}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces C\IeC {\'a}c th\IeC {\`a}nh ph\IeC {\`\acircumflex }n ch\IeC {\'\i }nh c\IeC {\h u}a h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng}}{34}{figure.108}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ti\IeC {\'\ecircumflex }n tr\IeC {\`\i }nh ph\IeC {\^a}n l\IeC {\'\ohorn }p}}{35}{figure.111}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng crawler tin t\IeC {\'\uhorn }c}}{38}{figure.121}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c h\IeC {\d \ecircumflex } th\IeC {\'\ocircumflex }ng Spam Filter k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p Multilayer architecture k\IeC {\'\ecircumflex }t h\IeC {\d \ohorn }p v\IeC {\'\ohorn }i m\IeC {\^o} h\IeC {\`\i }nh MVC}}{39}{figure.122}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Giao di\IeC {\d \ecircumflex }n \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u Twitter}}{49}{figure.207}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Giao di\IeC {\d \ecircumflex }n th\IeC {\^e}m x\IeC {\'o}a t\IeC {\`\uhorn } kh\IeC {\'o}a \IeC {\dj }\IeC {\h \ecircumflex } thu th\IeC {\d \acircumflex }p d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u Twitter}}{49}{figure.208}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Giao di\IeC {\d \ecircumflex }n \IeC {\dj }i\IeC {\`\ecircumflex }u khi\IeC {\h \ecircumflex }n thu\IeC {\d \acircumflex }t to\IeC {\'a}n ph\IeC {\'a}t hi\IeC {\d \ecircumflex }n tin n\IeC {\'o}ng}}{49}{figure.209}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Giao di\IeC {\d \ecircumflex }n hi\IeC {\h \ecircumflex }n th\IeC {\d i} c\IeC {\'a}c c\IeC {\d u}m b\IeC {\`a}i vi\IeC {\'\ecircumflex }t cho bi\IeC {\^e}n t\IeC {\d \acircumflex }p vi\IeC {\^e}n}}{49}{figure.210}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Chi ti\IeC {\'\ecircumflex }t m\IeC {\d \ocircumflex }t c\IeC {\d u}m b\IeC {\`a}i vi\IeC {\'\ecircumflex }t}}{49}{figure.211}
 \addvspace {10\p@ }
