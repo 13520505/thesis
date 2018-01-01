@@ -1,4 +1,4 @@
-\chapter{HIỆN THỰC HỆ THỐNG PHÁT HIỆN TIN NÓNG}
+\chapter{HIỆN THỰC HỆ THỐNG LỌC RÁC TIN TỨC}
 \ifpdf
     \graphicspath{{Chapter3/Chapter3Figs/PNG/}{Chapter3/Chapter3Figs/PDF/}{Chapter3/Chapter3Figs/}}
 \else
@@ -178,43 +178,6 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 			\label{tab:table_3_2}%
 		\end{table}%
 		
-		\subsubsection{Collection HashCode}
-		Collection cluster chứa các hash code cho bài báo để kiểm tra trùng cho tin tức đó.
-		\begin{table}[H]
-			%				\centering
-			\setlength\extrarowheight{3pt}
-			\begin{tabular}{|l|l|p{9cm}|}
-				\hline
-				\textbf{Thuộc tính}     & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
-				\_id           & ObjectID       &  ID trong MongoDB của cụm\\\hline
-				HashCode      & String           & Hash code của tin tức\\\hline
-			\end{tabular}%
-			\caption{Các trường của collection HashCode}
-			\label{tab:table_3_3}%
-		\end{table}%
-<<<<<<< HEAD
-
-	\subsection{Cơ sở dữ liệu MySQL}
-	MySQL được dùng để lưu trữ các dữ liệu khác của hệ thống như dữ liệu người dùng, các từ khóa dùng cho việc streaming dữ liệu Twitter,…
-		\subsubsection{Bảng User}
-		Bảng này dùng để quản lý danh sách người dùng hệ thống.
-			\begin{table}[H]
-				\centering
-				\setlength\extrarowheight{3pt}
-				\begin{tabular}{|l|l|l|}
-					\hline
-					\textbf{Thuộc tính} & \textbf{Loại} & \textbf{Ý nghĩa} \\ \hline
-					ID & int(11) & ID của người dùng\\\hline
-					Username & varchar(100) &  Tên tài khoản\\\hline
-					Password & Long &  Mật khẩu\\\hline
-					Email & varchar(100) &  Địa chỉ email người dùng\\\hline
-					Fullname & varchar(100) &  Họ tên đầy đủ của người dùng\\\hline
-					Phone & varchar(20) &  Số điện thoại\\\hline
-					UserTypeId & int(11) &  ID phân loại người dùng\\\hline
-				\end{tabular}
-				\caption{Bảng User}
-				\label{tab:usertable}
-			\end{table}
 \section{Giao diện}
 Giao diện hệ thống được xây dựng sử dụng thư viện React, với kiến trúc Redux. Giao diện tương tác với hệ thống thông qua ajax request.
 	\begin{figure}[H]
@@ -304,43 +267,38 @@ Giao diện hệ thống được xây dựng sử dụng thư viện React, v�
   \end{table}
 \section{Kết quả}
 Hệ thống đã hoàn thiện các chức năng: lọc rác tin tức trên Crawler, hiển thị danh sách tin đã qua phân lớp bằng bộ lọc rác, bộ phân lớp lọc rác thủ công, thống kê dữ liệu đã phân lớp. Dưới đây là một số hình ảnh của hệ thống:
-=======
-\section{Kết quả}
-Hệ thống đã hoàn thiện các chức năng: Thu thập dữ liệu từ trang tin tức, điều khiển chạy luồng của thuật toán phân loại tin nóng, và hiển thị thống kê cho biên tập viên, hệ thống còn cung cấp giao diện phân loại tin tức bằng url hoặc title của tin tức. Dưới đây là một số hình ảnh của hệ thống:
->>>>>>> Minh
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/Classified.png}
-	\caption{Giao diện danh sách tin đã phân lớp}
+	\caption{Giao diện danh sách tin đã phân lớp. Người dùng có thể chọn ngày để hiển thị tin và gửi phản hồi về nhãn của tin.}
 	\label{fig:streaming}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart1.png}
-	\caption{Giao diện thống kê biểu đồ thứ 1 và thứ 2}
+  \caption{Giao diện thống kê biểu đồ với hai biểu đồ. Biểu đồ thứ nhất thể hiện tổng số tin đã phân lớp phân theo nhãn "Rác" và "Không rác". Biểu đồ thứ hai thể hiện số lượng và tỉ lệ số lượng tin rác của mỗi nguồn tin so với tổng số tin rác và số tin rác của các nguồn tin khác (biểu đồ chỉ hiển thị top 20, nguồn tin có số lượng tin rác nhiều nhất)}
 	\label{fig:streamingkeywords}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart2.png}
-	\caption{Giao diện thống kê biểu đồ thứ 3}
+	\caption{Giao diện thống kê. Biểu đồ thể hiện số lượng tin "Rác" và "Không rác" và tỉ lệ tin "Rác" so với tổng số tin theo thời gian. Người dùng có thể chọn hiển thị số liệu thống kê trong hôm nay, 7 ngày trước, 30 ngày trước, hoặc 12 tháng trước }
 	\label{fig:streamingkeywords}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart3.png}
-  \caption{Giao diện thống kê biểu đồ thứ 4}
+  \includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart3.png}
+  \caption{Giao diện thống kê. Biểu đồ thể hiện tỉ lệ tin rác của một nguồn tin trên tổng số các tin của nguồn tin đó. Biểu đồ chỉ hiển thị top 20 nguồn tin với tỉ lệ lớn nhất và khác 0}
 	\label{fig:streamingkeywords}
 \end{figure}
 
 \begin{figure}[H]
 		\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Filter.png}
-	\caption{Giao diện bộ phân lớp tin tức}
+	\caption{Giao diện bộ phân lớp tin tức. Người dùng có thể thực hiện phân lớp một cách thủ công bằng cách cho cho vào input là văn bản hoặc các đường dẫn đến các bài báo cần phân lớp, kèm theo là nhãn mà người dùng gán cho tin đó. Input có thể được truyền vào bằng cách nhập từ bàn phím hoặc truyền vào từ một file. Sao khi đã hoàn thành việc phân lớp, hệ thống sẽ trả về các nhãn tương ứng kèm theo độ chính xác của việc phân lớp và confusion matrix}
 	\label{fig:startclustering}
 \end{figure}
 

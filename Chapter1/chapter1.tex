@@ -6,7 +6,9 @@
 \fi
 
 \section{Dẫn nhập}
-Trong thời đại bùng bổ về thông tin, báo chí điện tử là một trong những nguồn thông tin lớn và quan trọng cần được khai thác và phân tích một cách hiệu quả. Hệ thống phát hiện tin nóng hiện đang được triển khai và hoạt động tại VCCorp là một trong các hệ thống phân tích và xử lý dữ liệu tin tức, được phát triển nhằm mục đích xác định tin nóng từ các trang báo điện tử Việt Nam. Tuy nhiên, sự đa dạng và phong phú của nguồn tin dẫn đến việc bản chất của nhiều bài thu thập được không phù hợp với mục tiêu của hệ thống. Những bài đó, đối với hệ thống, được hiểu là "rác". Số lượng "rác" lớn sẽ gây nhiễu và làm cho việc phân tích và xử lý trở nên kém chính xác. Một cơ chế lọc rác hiệu quả sẽ giúp cải thiện độ chính xác cũng như giảm tải  cho hệ thống từ việc phân tích và xử lý các dữ liệu không có giá trị sử dụng.
+Trong thời đại bùng bổ về thông tin, thông tin trên mạng internet được sinh ra với lưu lượng và khối lượng khổng lồ. Cụ thể, trong năm 2017, cứ mỗi phút lại có 149,513 email được gửi đi, 3.3 triệu bài Facebook được đăng lên, 3.8 triệu lượt tìm kiếm trên Google được sinh ra\footnote{https://www.smartinsights.com/internet-marketing-statistics/happens-online-60-seconds/},… Ngày nay, để tận dụng triệt để nguồn thông tin khổng lồ đó, rất nhiều hệ thống phân tích và xử lý dữ liệu được sinh ra. Tuy nhiên ngân hàng dữ liệu càng lớn thì sự đồng bộ về chất lượng của dữ liệu càng không được đảm bảo, thêm vào đó, sự đa dạng của các nguồn dữ liệu cũng đồng nghĩa với việc không phải mẫu dữ liệu nào cũng phù hợp với nhu cầu của tất cả hệ thống phân tích và xử lý khác nhau. Việc phân tích và xử lý các mẫu dữ liệu kém chất lượng hay không phù hợp sẽ làm gia tăng chi phí, cũng như làm suy giảm hiệu suất và tính hiệu quả của hệ thống. Do đó việc sàng lọc dữ liệu trước khi đưa vào hệ thống để phân tích và xử lý là cần thiết.
+
+Hệ thống phát hiện tin nóng hiện đang được triển khai và hoạt động tại VCCorp là một trong các hệ thống phân tích và xử lý dữ liệu tin tức, được phát triển nhằm mục đích xác định tin nóng từ các trang báo điện tử Việt Nam. Tuy nhiên, sự đa dạng và phong phú của nguồn tin dẫn đến việc bản chất của nhiều bài thu thập được không phù hợp với mục tiêu của hệ thống. Những bài đó, đối với hệ thống, được hiểu là "rác". Số lượng "rác" lớn sẽ gây nhiễu và làm cho việc phân tích và xử lý trở nên kém chính xác. Một cơ chế lọc rác hiệu quả sẽ giúp cải thiện độ chính xác cũng như giảm tải cho hệ thống từ việc phân tích và xử lý các dữ liệu không có giá trị sử dụng.
 
 Bài toán đặt ra là làm thể nào để có thể lọc "rác" trong quá trình thu thập tin tức một các chính xác. Với nhu cầu và điều kiện thuận lời từ công ty VCCorp, khóa luận này hướng đến việc xây dựng một hệ thống có khả năng lọc "rác" để tăng hiệu quả cho hệ thống phát hiện tin nóng và giúp đánh giá độ đáng tin cậy của các nguồn tin.
 
@@ -47,7 +49,7 @@ Bài toán đặt ra là làm thể nào để có thể lọc "rác" trong quá
 Luận văn được bố cục thành chương mục như sau:
 \begin{itemize}
 	\item \textbf{Chương 1}: Mở đầu: Giới thiệu về đề tài.
-	\item \textbf{Chương 2}: Bài toán lọc rác và các phương pháp tiếp cận phổ biến: Trình bày cơ sở lý thuyết, các khái niệm, phương pháp tiếp cận liên quan đến bài toán lọc rác.
+  \item \textbf{Chương 2}: Bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng. Trình bày cơ sở lý thuyết, các khái niệm, phương pháp tiếp cận liên quan đến bài toán lọc rác.
 	\item \textbf{Chương 3}: Hiện thực hệ thống lọc rác: Trình bày về kiến trúc, cài đặt hệ thống phát hiện tin nóng.
 	\item \textbf{Chương 4}: Thực nghiệm và đánh giá: Trình bày về bộ dữ liệu thu thập được, đánh giá và so sánh các thuật toán.
 	\item \textbf{Mục Tài liệu tham khảo}

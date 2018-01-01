@@ -17,12 +17,43 @@ Mehran Sahami, Susan~T. Dumais, David Heckerman, and Eric Horvitz.
 \newblock A bayesian approach to filtering junk e-mail.
 \newblock 1998.
 
+\bibitem{rothwell2004intelligent}
+A.C. Rothwell, L.D. Jagger, W.R. Dennis, and D.R. Clarke.
+\newblock Intelligent spam detection system using an updateable neural analysis
+  engine, July~27 2004.
+\newblock US Patent 6,769,016.
+
+\bibitem{IDRIS201533}
+Ismaila Idris, Ali Selamat, Ngoc~Thanh Nguyen, Sigeru Omatu, Ondrej Krejcar,
+  Kamil Kuca, and Marek Penhaker.
+\newblock A combined negative selection algorithm–particle swarm optimization
+  for an email spam detection system.
+\newblock {\em Engineering Applications of Artificial Intelligence},
+  39(Supplement C):33 -- 44, 2015.
+
 \bibitem{Gyongyi:2004:CWS:1316689.1316740}
 Zolt\'{a}n Gy\"{o}ngyi, Hector Garcia-Molina, and Jan Pedersen.
 \newblock Combating web spam with trustrank.
 \newblock In {\em Proceedings of the Thirtieth International Conference on Very
   Large Data Bases - Volume 30}, VLDB '04, pages 576--587. VLDB Endowment,
   2004.
+
+\bibitem{benczur}
+András Benczúr, Károly Csalogány, Tamás Sarlós, and Máté Uher.
+\newblock Spamrank - fully automatic link spam detection work in progress.
+\newblock 12 2017.
+
+\bibitem{jin}
+Xin Jin, Cindy Xide~Lin, Jiebo Luo, and Jiawei Han.
+\newblock Socialspamguard: A data mining-based spam detection system for social
+  media networks.
+\newblock 4:1458--1461, 08 2011.
+
+\bibitem{5741690}
+A.~H. Wang.
+\newblock Don't follow me: Spam detection in twitter.
+\newblock In {\em 2010 International Conference on Security and Cryptography
+  (SECRYPT)}, pages 1--10, July 2010.
 
 \bibitem{rajaraman_ullman_2011}
 Anand Rajaraman and Jeffrey~David Ullman.
@@ -45,37 +76,15 @@ Corinna Cortes and Vladimir Vapnik.
 \newblock Support-vector networks.
 \newblock {\em Machine Learning}, 20(3):273--297, Sep 1995.
 
-\bibitem{SwitPhuvipadawat}
-S.~Phuvipadawat and T.~Murata.
-\newblock Breaking news detection and tracking in twitter.
-\newblock In {\em 2010 IEEE/WIC/ACM International Conference on Web
-  Intelligence and Intelligent Agent Technology}, volume~3, pages 120--123, Aug
-  2010.
+\bibitem{dimitoglou2012comparison}
+George Dimitoglou, James~A Adams, and Carol~M Jim.
+\newblock Comparison of the c4. 5 and a na{\"\i}ve bayes classifier for the
+  prediction of lung cancer survivability.
+\newblock {\em arXiv preprint arXiv:1206.1121}, 2012.
 
-\bibitem{Indyk:LSH-Definition}
-Piotr Indyk and Rajeev Motwani.
-\newblock Approximate nearest neighbors: Towards removing the curse of
-  dimensionality.
-\newblock In {\em Proceedings of the Thirtieth Annual ACM Symposium on Theory
-  of Computing}, STOC '98, pages 604--613, New York, NY, USA, 1998. ACM.
-
-\bibitem{Petrovic:LSH}
-Sa\v{s}a Petrovi\'{c}, Miles Osborne, and Victor Lavrenko.
-\newblock Streaming first story detection with application to twitter.
-\newblock In {\em Human Language Technologies: The 2010 Annual Conference of
-  the North American Chapter of the Association for Computational Linguistics},
-  HLT '10, pages 181--189, Stroudsburg, PA, USA, 2010. Association for
-  Computational Linguistics.
-
-\bibitem{IntroToDM}
-P.N. Tan, M.~Steinbach, and V.~Kumar.
-\newblock {\em Introduction to Data Mining}.
-\newblock Pearson Education, Limited, 2014.
-
-\bibitem{dunn1973fuzzy2}
-J.~C. Dunn.
-\newblock A fuzzy relative of the isodata process and its use in detecting
-  compact well-separated clusters.
-\newblock {\em Journal of Cybernetics}, 3(3):32--57, 1973.
+\bibitem{Fawcett:2006:IRA:1159473.1159475}
+Tom Fawcett.
+\newblock An introduction to roc analysis.
+\newblock {\em Pattern Recogn. Lett.}, 27(8):861--874, June 2006.
 
 \end{thebibliography}

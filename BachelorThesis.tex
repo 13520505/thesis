@@ -23,6 +23,8 @@
 \renewcommand{\cftchappresnum}{Chương }
 \renewcommand{\cftchapaftersnum}{.}
 \renewcommand{\cftchapnumwidth}{6em}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
 
 \usepackage[T5,T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -36,6 +38,7 @@
 \usepackage{placeins}
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{amsfonts}
 \usepackage{algpseudocode}
 \usepackage{algorithm}
 \algnewcommand\algorithmicforeach{\textbf{foreach}}
@@ -55,7 +58,9 @@
 \usepackage{color}
 \usepackage{booktabs}
 \usepackage{physics}
-
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{tikz}
 \usepackage{url} % url in bib file
 
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
