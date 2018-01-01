@@ -12,6 +12,12 @@ James Allan.
 \newblock chapter Introduction to Topic Detection and Tracking, pages 1--16.
   Kluwer Academic Publishers, Norwell, MA, USA, 2002.
 
+\bibitem{dimitoglou2012comparison}
+George Dimitoglou, James~A Adams, and Carol~M Jim.
+\newblock Comparison of the c4. 5 and a na{\"\i}ve bayes classifier for the
+  prediction of lung cancer survivability.
+\newblock {\em arXiv preprint arXiv:1206.1121}, 2012.
+
 \bibitem{TwiterStand:Sankaranarayanan}
 Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
   and Jon Sperling.
@@ -63,11 +69,5 @@ J.~C. Dunn.
 \newblock A fuzzy relative of the isodata process and its use in detecting
   compact well-separated clusters.
 \newblock {\em Journal of Cybernetics}, 3(3):32--57, 1973.
-
-\bibitem{TDT2004Annotation}
-Tdt 2004: Annotation manual.
-\newblock \url{https://catalog.ldc.upenn.edu/docs/LDC2006T19/TDT2004V1.2.pdf},
-  2004.
-\newblock Accessed: 2016-12-6.
 
 \end{thebibliography}

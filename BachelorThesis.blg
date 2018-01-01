@@ -16,30 +16,30 @@ Warning--empty booktitle in Fiscus:TDTDefinition
 Warning--empty booktitle in Allan:2002:ITD:772260.772262
 You've used 11 entries,
             1791 wiz_defined-function locations,
-            533 strings with 6037 characters,
-and the built_in function-call counts, 3033 in all, are:
-= -- 293
-> -- 97
+            532 strings with 6103 characters,
+and the built_in function-call counts, 3080 in all, are:
+= -- 294
+> -- 107
 < -- 9
-+ -- 37
-- -- 26
-* -- 171
-:= -- 425
++ -- 40
+- -- 29
+* -- 178
+:= -- 443
 add.period$ -- 38
 call.type$ -- 11
 change.case$ -- 9
 chr.to.int$ -- 0
 cite$ -- 13
-duplicate$ -- 166
-empty$ -- 315
-format.name$ -- 26
-if$ -- 740
+duplicate$ -- 169
+empty$ -- 311
+format.name$ -- 29
+if$ -- 744
 int.to.chr$ -- 0
 int.to.str$ -- 11
-missing$ -- 12
+missing$ -- 13
 newline$ -- 58
-num.names$ -- 10
-pop$ -- 54
+num.names$ -- 11
+pop$ -- 50
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
@@ -52,7 +52,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 28
+while$ -- 29
 width$ -- 13
 write$ -- 132
 (There were 2 warnings)

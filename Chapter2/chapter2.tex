@@ -51,13 +51,157 @@ Chương này sẽ giới thiệu bài toán phát hiện và theo dõi tin tứ
 %	Output: Tập cụm bài viết $C = \{c_1, c_2, c_3,... c_k\}$, có sắp xếp thứ tự độ quan trọng, mỗi cụm đại diện cho một sự kiện vừa diễn ra, và bài viết đầu tiên trong cụm là first story.
 	
 %\section{Biểu diễn dữ liệu bằng Vector space model và tf-idf}
+\section{Thuật toán Naive Bayes}
+\subsection{Giới thiệu thuật toán Naive Bayes}
+	 Thuật toán Naive Bayes là một thuật toán phân lớp xác suất đơn giản dùng để tính một tập các xác suất bằng cách đếm tần suất và kết hợp của các giá trị trong một tập cho trước. Thuật toán sử dụng định luật Bayes sẽ giả định rằng tất cả các chiều(attributes) của dữ liệu là độc lập với nhau. Các giả định rằng các chiều là độc lập với nhau rất khó để có thể xuất hiện trong thực tế. Tuy nhiên giả thiết ngây ngô này lại mang lại những kết quả phân lớp tốt cho nhiều bài toán phân lớp \cite{dimitoglou2012comparison}.
+\subsection{Lý thuyết Bayes}
+    Định lý Bayes cho phép tính xác suất xảy ra của một sự kiện ngẫu nhiên A khi biết sự kiện liên quan B đã xảy ra. Xác suất này được ký hiệu là P(A|B), và đọc là “xác suất của A nếu có B”. Đại lượng này được gọi xác suất có điều kiện hay xác suất hậu nghiệm vì nó được rút ra từ giá trị được cho của B hoặc phụ thuộc vào giá trị đó.
+
+	Theo định lí Bayes, xác suất xảy ra A khi biết B sẽ phụ thuộc vào 3 yếu tố:
+	
+	Xác suất xảy ra A của riêng nó, không quan tâm đến B. Kí hiệu là P(A) và đọc là xác suất của A. Đây được gọi là xác suất biên duyên hay xác suất tiên nghiệm, nó là “tiên nghiệm” theo nghĩa rằng nó không quan tâm đến bất kỳ thông tin nào về B.
+	
+	Xác suất xảy ra B của riêng nó, không quan tâm đến A. Kí hiệu là P(B) và đọc là “xác suất của B”. Đại lượng này còn gọi là hằng số chuẩn hóa (normalising constant), vì nó luôn giống nhau, không phụ thuộc vào sự kiện A đang muốn biết.
+	
+	Xác suất xảy ra B khi biết A xảy ra. Kí hiệu là P(B|A) và đọc là “xác suất của B nếu có A”. Đại lượng này gọi là khả năng (likelihood) xảy ra B khi biết A đã xảy ra. Chú ý không nhầm lẫn giữa khả năng xảy ra B khi biết A và xác suất xảy ra A khi biết B.
+	
+	Tóm lại định lý Bayes sẽ giúp ta tính ra xác suất xảy ra của một giả thuyết bằng cách thu thập các bằng chứng nhất quán hoặc không nhất quán với một giả thuyết nào đó. Khi các bằng chứng tích lũy, mức độ tin tưởng vào một giả thuyết thay đổi. Khi có đủ bằng chứng, mức độ tin tưởng này thường trở nên rất cao hoặc rất thấp, tức là xác xuất sảy ra giả thuyết sẽ thay đổi thì các bằng chứng liên quan đến nó thay đổi.
+	
+	Công thức của định luật Bayes được phát biểu như sau:
+\begin{equation}
+	P(A \mid B) = \frac{P(B \mid A) \, P(A)}{P(B)}
+\end{equation}
+Trong đó:
+\begin{itemize}
+	\item P(A|B) là  xác suất xảy ra của một sự kiện ngẫu nhiên A khi biết sự kiện liên quan B đã xảy ra.
+	\item P(B|A) là xác suất xảy ra B khi biết A xảy ra
+	\item P(A) là xác suất sảy ra của riêng A mà không quan tâm đến B.
+	\item P(B) là xác suất xảy ra của riêng B mà không quan tâm đến A.
+\end{itemize}
+	Ở trên ta có thể thấy xác suất sảy ra của giả thuyết A phụ thuộc và xác suất của giả thuyết B, nhưng trong thực tế xác suất A có thể phụ thuộc vào xác suất của nhiều các giác thuyết khác có thể là B1, B2, B3 … Bn. Vậy định luật Bayes có thể được mở rộng bằng công thức sau:
+\begin{equation}
+	P(A \mid B) = \frac{\left(P(B_1 \mid A) \times P(B_2 \mid A) \times P(B_3 \mid A)... \times P(B_n \mid A)\right) \times P(A)}{P(B_1) \times P(B_2) \times P(B_3)... \times P(B_n)}
+\end{equation}
+\subsection{Naive Bayes Classifier}
+	Xét bài toán classification với C classes 1,2,…,C. Giả sử có một điểm dữ liệu $x \in \mathbb{R}^d $. Hãy tính xác suất để điểm dữ liệu này rơi vào class c. Nói cách khác, hãy tính:
+\begin{equation}
+	p(y = c \mid x)
+\end{equation}
+	hoặc viết gọn là $p(c \mid x)$
+	Tức tính xác suất để đầu ra là class c biết rằng đầu vào là vector x.
+	Biểu thức này, nếu tính được, sẽ giúp chúng ta xác định được xác suất để điểm dữ liệu rơi vào mỗi class. Từ đó có thể giúp xác định class của điểm dữ liệu đó bằng cách chọn ra class có xác suất cao nhất:
+\begin{equation}
+	c = \arg\max_{c \in \left\{1,..,C \right\}} p(c \mid x)
+\end{equation}
+Biểu thức (2) thường khó được tính trực tiếp. Thay vào đó, quy tắc Bayes thường được sử dụng:
+\begin{align}
+	c = \arg\max_{c } p(c \mid x) \label{NB1} \\
+	  = \arg\max_{c }\frac{p(x \mid c) p(c)}{p(x)} \label{NB2} \\
+	  = \arg\max_{c } p(x \mid c) p(c) \label{NB3}
+\end{align}
+	Từ \eqref{NB1} sang \eqref{NB2} là vì quy tắc Bayes. Từ \eqref{NB2} sang \eqref{NB3} là vì mẫu số p(x) không phụ thuộc vào c.
+	Tiếp tục xét biểu thức \eqref{NB3}, p(c) có thể được hiểu là xác suất để một điểm rơi vào class c. Giá trị này có thể được tính bằng MLE, tức tỉ lệ số điểm dữ liệu trong tập training rơi vào class này chia cho tổng số lượng dữ liệu trong tập traing; hoặc cũng có thể được đánh giá bằng MAP estimation. Trường hợp thứ nhất thường được sử dụng nhiều hơn.
+	
+	Thành phần còn lại p(x|c), tức phân phối của các điểm dữ liệu trong class c, thường rất khó tính toán vì x là một biến ngẫu nhiên nhiều chiều, cần rất rất nhiều dữ liệu training để có thể xây dựng được phân phối đó. Để giúp cho việc tính toán được đơn giản, người ta thường giả sử một cách đơn giản nhất rằng các thành phần của biến ngẫu nhiên x là độc lập với nhau, nếu biết c (given c..) Tức là:
+\begin{equation}
+	p(x \mid c) = p(x_1,x_2,...,x_d \mid c) = \displaystyle \prod_{i=1}^d p(x_i \mid c)
+\end{equation}
+	Khi một dữ liệu mới được thêm vào, Naive Bayes sẽ xác định lớp của điểm dữ liệu x bởi:
+\begin{equation}
+	c = \arg\max_{c \in \left\{ 1,...,C\right\}} p(c) \prod_{i=1}^{d}p(x_i \mid c) 
+	\label{NB4}
+\end{equation}
+Khi d lớn và các xác suất nhỏ, biểu thức ở vế phải của \ref{NB4} sẽ là một số rất nhỏ, khi tính toán có thể gặp sai số. Để giải quyết việc này, \ref{NB4} thường được viết lại dưới dạng tương đương bằng cách lấy log của vế phải:
+ \begin{equation}
+ 	c = \arg\max_{c \in \left\{ 1,...,C\right\}} = \log(p(c) + \sum_{i=1}^{d}\log(p(x_i \mid c)))
+ \end{equation}
+	Việc này không ảnh hưởng tới kết quả vì log là một hàm đồng biến trên tập các số dương.
+	 
+	Mặc dù giả thiết mà Naive Bayes Classifiers sử dụng là quá phi thực tế, chúng vẫn hoạt động khá hiệu quả trong nhiều bài toán thực tế, đặc biệt là trong các bài toán phân loại văn bản, ví dụ như lọc tin nhắn rác hay lọc email spam. Trong phần sau của bài viết, chúng ta cùng xây dựng một bộ lọc email spam tiếng Anh đơn giản.
+	 
+	Cả việc training và test của NBC là cực kỳ nhanh khi so với các phương pháp classification phức tạp khác. Việc giả sử các thành phần trong dữ liệu là độc lập với nhau, nếu biết class, khiến cho việc tính toán mỗi phân phối p(xi|c) trở nên cực kỳ nhanh.
+	 
+	Mỗi giá trị p(c),c=1,2,…,C có thể được xác định như là tần suất xuất hiện của class c trong training data.
+	 
+	Việc tính toán p(xi|c) phụ thuộc vào loại dữ liệu. Có ba loại được sử dụng phổ biến là: Gaussian Naive Bayes, Multinomial Naive Bayes, và Bernoulli Naive.
+\subsection{Một số phân phối thường dùng}
+	\subsubsection{Gaussian Naive Bayes}
+		Mô hình này được sử dụng chủ yếu trong loại dữ liệu mà các thành phần là các biến liên tục. Với mỗi chiều dữ liệu i và một class c, xi tuân theo một phân phối chuẩn có kỳ vọng $ \mu_{ci} $ và phương sai $\sigma_{ci}^2$:
+	\begin{equation}
+		p(x_i \mid c) = p(x_i \mid \mu_{ci}, \sigma_{ci}^2)=\frac{1}{\sqrt{2\pi\sigma_{ci}^2}}\exp(\frac{(x_i - \mu_{ci})^2}{2 \sigma_{ci}^2})  
+	\end{equation}
+		Trong đó, bộ tham số $\theta = { \mu_{ci}, \sigma_{ci}^2}$ được xác định bằng Maximum Likehood
+	\begin{equation}
+		(\mu_{ci}, \sigma_{ci}^2)=\arg\max_{\mu_{ci}, \sigma_{ci}^2}\prod_{i=1}^n p(x_i^(n) \mid \mu_{ci},\sigma_{ci}^2 )
+	\end{equation}
+	\subsubsection{Multinominal Naive Bayes}
+	Mô hình này chủ yếu được sử dụng trong phân loại văn bản mà feature vectors được tính bằng Bags of Words. Lúc này, mỗi văn bản được biểu diễn bởi một vector có độ dài d chính là số từ trong từ điển. Giá trị của thành phần thứ i trong mỗi vector chính là số lần từ thứ i xuất hiện trong văn bản đó.
+	
+	Khi đó, p(xi|c) tỉ lệ với tần suất từ thứ i (hay feature thứ i cho trường hợp tổng quát) xuất hiện trong các văn bản của class c. Giá trị này có thể được tính bằng cách:
+	\begin{equation}
+		\lambda_{ci}=p(x_i \mid c) = \frac{N_ci}{N_c}
+	\end{equation}
+	Trong đó:
+	\begin{itemize}
+		\item $N_ci$ là tổng số lần từ thứ i xuất hiện trong các văn bản của class c, nó được tính là tổng của tất cả các thành phần thứ i của các feature vectors ứng với class c
+		\item $N_c$ là tổng số từ (kể cả lặp) xuất hiện trong class c. Nói cách khác, nó bằng tổng độ dài của toàn bộ các văn bản thuộc vào class c. Có thể suy ra rằng $N_c$=$ \sum_{i=1}^d=N_ci$, từ đó =$ \sum_{i=1}^d \lambda_{ci}=1$.
+	\end{itemize}
+		
+	Cách tính này có một hạn chế là nếu có một từ mới chưa bao giờ xuất hiện trong class c
+	thì biểu thức (10) sẽ bằng 0, điều này dẫn đến vế phải của (7) bằng 0 bất kể các giá trị còn lại có lớn thế nào. Việc này sẽ dẫn đến kết quả không chính xác (xem thêm ví dụ ở mục sau).
+	Để giải quyết việc này, một kỹ thuật được gọi là Laplace smoothing được áp dụng:
+	\begin{equation}
+		\hat{\lambda_{ci}} = \frac{N_{ci}+ \alpha}{N_c+d_\alpha}
+	\end{equation}
+	Với $\alpha$ là một số dương, thường bằng 1, để tránh trường hợp tử số bằng 0. Mẫu số được cộng với $d_\alpha$ để đảm bảo tổng xác suất $ \sum_{i=1}^d \hat{\lambda_{ci}}=1$.
+	Như vậy, mỗi class c sẽ được mô tả bởi bộ các số dương có tổng bằng 1: $ \hat{\lambda_{c}}= \left\{\hat{\lambda_{c1}}+,...,+\hat{\lambda_{cd}}\right\}$.
+	\subsubsection{Bernoulli Naive}
+	Mô hình này được áp dụng cho các loại dữ liệu mà mỗi thành phần là một giá trị binary - bẳng 0 hoặc 1. Ví dụ: cũng với loại văn bản nhưng thay vì đếm tổng số lần xuất hiện của 1 từ trong văn bản, ta chỉ cần quan tâm từ đó có xuất hiện hay không.
+	
+	Khi đó, $p(x_i \mid c $ được tính bằng:
+	\begin{equation}
+		p(x_i \mid c) = p(i \mid c)x_i + 1-p(i\mid c)(1- x_i)
+	\end{equation}
+	với p(i|c) có thể được hiểu là xác suất từ thứ i xuất hiện trong các văn bản của class c.
+	 
+	\subsection{Ưu điểm thuật toán Naive Bayes}
+	\subsection{Nhược điểm điểm thuật toán Naive Bayes}
+	\subsection{Naive Bayes với bài toán lọc rác tin tức}
+\section{Thuật toán J48}
+	\subsection{Giới thiệu thuật toán J48}
+		Thuật toán J48(C4.5) là một thuật toán sử dụng cây quyết định(decision tree) cho việc phân lớp. Thuật toán sẽ tạo ra môn cây nhị phân. Bằng cách sử dụng cây quyết định, cách tiếp cận này cũng thường đước sử dụng trong bài toán phân lớp. Cây quyết định sẽ được xây dựng để mô hình hóa quá trình phân lớp.
+	\subsection{Lý thuyết cây quyết định}
+		Cây quyết định (Decision Tree) là một cây phân cấp có cấu trúc được dùng để phân lớp các đối tượng dựa vào dãy các luật (series of rules). Các thuộc tính của đối tượng (ngoại trừ thuộc tính phân lớp – Category attribute) có thể thuộc các kiểu dữ liệu khác nhau (Binary, Nominal, ordinal, quantitative values) trong khi đó thuộc tính phân lớp phải có kiểu dữ liệu là Binary hoặc Ordinal.
+		Tóm lại, cho dữ liệu về các đối tượng gồm các thuộc tính cùng với lớp (classes) của nó, cây quyết định sẽ sinh ra các luật để dự đoán lớp của các đối tượng chưa biết (unseen data)
+	\subsection{Ví dụ về cây quyết định J48}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Chapter2/Chapter2Figs/Decision_Tree_007}
+		\caption{Ví dụ về cây quyết định}
+		\label{fig:DecisionTreeExample}
+	\end{figure}
+\section{Tiền xử lý dữ liệu}
+Giai đoạn tiền xử lý dữ liệu
+Quá trình xử lý dữ liệu thô/gốc (raw/original data) nhằm cải thiện chất lượng dữ liệu (quality of the data) và do đó, cải thiện chất lượng của kết quả khai phá.
+Dữ liệu thô/gốc
+	Có cấu trúc, bán cấu trúc, phi cấu trúc
+	Được đưa vào từ các nguồn dữ liệu trong các hệ thống xử lý tập tin (file processing systems) và/hay các hệ thống cơ sở dữ liệu (database systems)
+Chất lượng dữ liệu (data quality): tính chính xác, tính hiện hành, tính toàn vẹn, tính nhất quán 
+Chất lượng dữ liệu (data quality)
+	tính chính xác (accuracy): giá trị được ghi nhận đúng với giá trị thực.
+	tính hiện hành (currency/timeliness): giá trị được ghi nhận không bị lỗi thời.
+	tính toàn vẹn (completeness): tất cả các giá trị dành cho một biến/thuộc tính đều được ghi nhận.
+	tính nhất quán (consistency): tất cả giá trị dữ liệu đều được biểu diễn như nhau trong tất cả các trường hợp.
+	
+	Các kỹ thuật tiền xử lý dữ liệu
+		Làm sạch dữ liệu (data cleaning/cleansing): loại bỏ nhiễu (remove noise), hiệu chỉnh những phần dữ liệu không nhất quán (correct data inconsistencies)
+		Tích hợp dữ liệu (data integration): trộn dữ liệu (merge data) từ nhiều nguồn khác nhau vào một kho dữ liệu
+		Biến đổi dữ liệu (data transformation): chuẩn hoá dữ liệu (data normalization)
+		Thu giảm dữ liệu (data reduction): thu giảm kích thước dữ liệu (nghĩa là giảm số phần tử) bằng kết hợp dữ liệu (data 	aggregation), loại bỏ các đặc điểm dư thừa (redundant features) (nghĩa là giảm số chiều/thuộc tính dữ liệu), gom cụm dữ liệu
 \section{Các nghiên cứu liên quan}
 Twitter đã thu hút sự chú ý của nhiều nhà nghiên cứu trong thời gian gần đây. Nhờ vào sự phổ biến rộng rãi trên nhiều quốc gia, cùng với vai trò là một mạng xã hội cho phép người dùng chia sẻ thông tin một cách nhanh chóng và ngắn gọn.
-
 Jagan Sankaranarayanan và cộng sự \cite{TwiterStand:Sankaranarayanan} đã xây dựng một hệ thống xử lý tin tức trên Twitter, với tên là Twitter Stand. Hệ thống biểu diễn dữ liệu dưới dạng tf-idf, và sử dụng thuật toán phân lớp Naive Bayes để lọc bỏ các tin rác. Sau đó dùng một thuật toán online clustering để gom các tin thành từng câu chuyện.
-
 Phuvipadawat và cộng sự \cite{SwitPhuvipadawat} đưa ra phương pháp phát hiện tin nóng trên Twitter dựa vào tiếp cận gom cụm. Các tweet được thu thập thông qua Twitter Search API với một số từ khóa (VD: "breaking news", "\#breakingnews"). Độ tương đồng giữa các bài viết được tính theo công thức dựa trên tf-idf, với các danh từ riêng, các hashtag và tên người dùng được tăng trọng số. Tác giả nhấn mạnh việc tăng trọng số như vậy giúp tăng độ chính xác của thuật toán, bởi độ dài tweet giới hạn.
-
 \section{Giới thiệu một số độ đo khoảng cách/sự tương đồng} \label{distances}
 Một thành phần tất yếu của tiếp cận gom cụm là tiêu chí, độ đo được sử dụng để định lượng sự tương đồng giữa các đối tượng. Dưới đây là một số độ đo phổ biến.
 	\subsection*{Euclidean Distance}
@@ -65,20 +209,16 @@ Một thành phần tất yếu của tiếp cận gom cụm là tiêu chí, đ�
 		\begin{equation}
 		D_{Euclidean}(\vec{x}, \vec{y}) = \sqrt{\sum_{i=1}^n (x_i-y_i)^2}
 		\end{equation}
-	với n là số chiều của vector biểu diễn document, $x_i$ và $y_i$ lần lượt là giá trị tọa độ thứ i của document x và y\\
-	
+	với n là số chiều của vector biểu diễn document, $x_i$ và $y_i$ lần lượt là giá trị tọa độ thứ i của document x và y\\	
 	\subsection*{Cosine Similarity}
 	Cosine Similarity phản ánh góc chênh lệch giữa 2 vector, mà không cân nhắc đến độ lớn của vector. Độ đo này được áp dụng rộng rãi đối với dữ liệu văn bản. Cách tính \cite{IntroToIR}: 
 		\begin{equation}
 		Similarity_{Cosine}(\vec{x}, \vec{y}) = \frac {\vec{x} \cdot \vec{y}}{||\vec{x}|| \cdot ||\vec{y}||} = \frac{\sum_{i=1}^{n}x_iy_i}{\sqrt{\sum_{i=1}^{n}x_i^2} \sqrt{\sum_{i=1}^{n}y_i^2}}	
 		\end{equation}
 	với  $x_i$ và $y_i$ lần lượt là giá trị tọa độ thứ i của document x và y
-
 \section{Các phương pháp tiếp cận phổ biến}
 Gom cụm, gom nhóm là quá trình nhóm các đối tượng thành những nhóm/cụm/lớp, qua đó phát hiện được cấu trúc, ý nghĩa tiềm ẩn của dữ liệu. Các đối tượng trong cùng một nhóm có nhiều tính chất chung và có những tính chất khác với các đối tượng ở nhóm khác. Đây là một trong những tác vụ chính của ngành khai thác dữ liệu, và được dùng trong nhiều lĩnh vực như: máy học, nhận diện mẫu, phân tích ảnh,...
-
-Bài toán gom cụm bao gồm nhiều phương pháp khác nhau như: phân hoạch, phân cấp, dựa trên mật độ, dựa trên mô hình,... Trong khóa luận này chỉ sử dụng đến \textit{phương pháp phân hoạch}.
-	
+Bài toán gom cụm bao gồm nhiều phương pháp khác nhau như: phân hoạch, phân cấp, dựa trên mật độ, dựa trên mô hình,... Trong khóa luận này chỉ sử dụng đến \textit{phương pháp phân hoạch}. 	
 \subsection{Thuật toán gom cụm k-láng giềng gần (k-Nearest Neighbor)}
 	\subsubsection{Ý tưởng}
 		%sửa lại chỉ nói về NNS thôi chứ không nói ý tưởng giải FSD?
