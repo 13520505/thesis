@@ -16,17 +16,32 @@ Dưới đây là mô hình của các thành phần chính hệ thống:
 	\caption{Các thành phần chính của hệ thống}
 	\label{fig:systemarchitecture}
 \end{figure}
+\subsection{Luồng xử lý dữ liệu}
+	Hệ thống phân loại tin tức được chia thành 2 hệ thống nhỏ hơn, đó là hệ thống Crawler và hệ thống Spam Filtering: 
+	\begin{itemize}
+		\item Hệ thống Crawler có nhiệm vụ đồng bộ hóa tin tức đã được lấy về từ các trang tin tức và thực hiện tiến trình phân lớp(classification process) cho các tin tức đó.
+		\item Hệ thống Spam Filtering cung cấp các API: phân loại tin tức bằng tiêu đề hoặc bằng URL của tin đó, cung cấp dữ liệu thống kê cho các tin đã phân lớp ở hệ thống Crawler, API feedback khi các tin dự đoán sai mong muốn của bình luận viên.
+	\end{itemize}
+Hệ thống Crawler phục vụ cho bài toán Hot News Detection, sau khi tin tức được lọc rác, các tin tức được đánh giá là rác sẽ bị bỏ qua khi đưa vào hệ thống Hot News Detection.
+Hệ thống Spam Filtering chủ yếu phục vụ cho biên tập viên. Biên tập viên sử dụng hệ thống thông qua giao diện Spam Filtering để sử dụng chức năng phân lớp tin tức hoặc xem các số liệu thống kê về tin tức đã phân lớp lưu trong cơ sở dữ liệu.
+\section{Tiến trình phân lớp}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Chapter3/Chapter3Figs/PDF/ClassifyProcess}
+	\caption{Tiến trình phân lớp}
+	\label{fig:classifyprocess}
+\end{figure}
+Tiến trình phân lớp sẽ bao gồm \nameref{sec:DataPreprocessor} và phân hệ Classify.
+Phân hệ Classify bao gồm: \nameref{sec:newsClassify} và \nameref{sec:spamCategory}.
+Luồng xử lý của tiến trình phân lớp sẽ thực thi theo hình \ref{fig:classifyprocess} :
+\begin{itemize}
+	\item Input data: Dữ liệu đầu vào, gồm các document bao gồm Id và title của tin được lưu dưới định dạng csv. Mỗi dòng trong file csv bao gồm 2 cột: Id và title của tin tức đó.
+	\item Data Preprocess: Dữ liệu ở cột title  sẽ thực thi theo \nameref{sec:DataPreprocessor}. Output của quá trình này là file csv với cột title đã được xử lý.
+	\item Calculate TF-IDF: Dữ liệu title sau khi được tiền xử lý sẽ được tính TF-IDF. Output của quá trình tính tf-idf sẽ là file csv chứa các kết quả tf-idf theo attribute của tập từ điển.
+	\item Classify Algorithm: Hệ thống sẽ sử dụng thư viện Weka để phân lớp dữ liệu. Output của quá trình này sẽ là nhãn(Label) của tin. Sau đó, nhãn sẽ được lưu xuống cơ sở dữ liệu MongoDB.
+\end{itemize}
 
-Hệ thống chủ yếu phục vụ cho biên tập viên. Biên tập viên sử dụng hệ thống thông qua giao diện Spam Filtering để sử dụng chức năng phân lớp tin tức hoặc xem các số liệu thống kê về tin tức đã phân lớp lưu trong cơ sở dữ liệu.
-%\begin{itemize}
-%	\item \textit{Data Streaming}: Module này sử dụng Twitter Streaming API để thu thập các bài đăng từ Twitter, theo một danh sách các từ khóa cho trước.
-%	\item \textit{Data Preprocessor}: Module tiền xử lý (loại bỏ link, stopwords; tách từ) và biểu diễn dữ liệu thành vector trọng số tf-idf.
-%	\item \textit{Clustering Algorithm}: Chạy thuật toán gom cụm trên dữ liệu đã mã hóa thành vector trọng số, đưa ra các cụm bài viết tương ứng và lưu vào cơ sở dữ liệu.
-%	\item \textit{MongoDB}: Cơ sở dữ liệu chứa bài viết và các thông tin đính kèm, sử dụng MongoDB.
-%	\item \textit{Top Stories}: Giao diện hiển thị các cụm tin tức đáng chú ý cho người dùng.
-%\end{itemize}
-
-\section{Phân hệ thu thập dữ liệu (Data Streaming)}
+\section{Phân hệ thu thập dữ liệu (Data Streaming)} \label{sec:DataStreaming}
 Module này sử dụng hệ thống Crawler để lấy các bài đăng từ nhiều nguồn tin tức lưu trữ ở cơ sở dữ liệu MySQL và đưa qua cơ sở dữ liệu MongoDB, hệ thống sẽ thực hiện các chức năng:
 	\begin{itemize}
 		\item Connect vào cơ sở dữ liệu mySQL để lấy các bài bài báo.
@@ -34,6 +49,7 @@ Module này sử dụng hệ thống Crawler để lấy các bài đăng từ n
 		\item Lưu trữ xuống cơ sở dữ liệu MongoDB
 	\end{itemize}
 \section{Phân hệ tiền xử lý dữ liệu (Data Preprocessor)}
+\label{sec:DataPreprocessor}
 Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hiện tách từ, loại bỏ stopwords và biểu diễn dữ liệu thành vector trọng số tf-idf. Trước khi chạy thuật toán phân loại, dữ liệu được lấy ra từ MongoDB và tiền xử lý phần nội dung của bài báo bằng các bước sau:
 	\begin{enumerate}
 		\item Loại bỏ URL bằng regular expression.
@@ -44,6 +60,7 @@ Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hi�
 	\end{enumerate}
 
 \section{Phân hệ phân loại tin tức}
+\label{sec:newsClassify}
 Sử dụng model đã train trước đó để phân loại tin tức. Model sử dụng thuật toán SVM đã trình bày ở chương 2 làm thuật toán chính để phân loại tin tức. Hiện tại hệ thống có 2 nhãn đã được định nghĩa trước đó:
 	\begin{itemize}
 		\item \textit Không rác
@@ -53,6 +70,7 @@ Sử dụng model đã train trước đó để phân loại tin tức. Model s
 Sau khi đã phân loại, hệ thống sẽ lưu nhãn đã gán cho tin tức xuống cơ sở dữ liệu MongoDB.
 
 \section{Phân hệ phân loại loại rác}
+\label{sec:spamCategory}
 Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân loại tin tức ở trên để phân loại loại rác cho tin đó. Hiện tại có 3 loại rác đã được định nghĩa trước:
 \begin{itemize}
 	\item \textit Quảng cáo
@@ -71,7 +89,7 @@ Hệ thống Crawler được xây dựng độc lập bao gồm phân hệ thu 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\linewidth]{Chapter3/Chapter3Figs/Layers}
-		\caption{Kiến trúc hệ thống kết hợp Multilayer architecture kết hợp với mô hình MVC}
+		\caption{Kiến trúc hệ thống Spam Filter kết hợp Multilayer architecture kết hợp với mô hình MVC}
 		\label{fig:layers}
 	\end{figure}
 %Hệ thống xây dựng theo kiến trúc client-server và sử dụng struts 2 framework áp dụng mô hình Model - View - Controller (MVC) với View tách biệt(sử dụng framework React) và cung cấp api để trả về kết quả dạng JSON. Cụ thể:
@@ -110,7 +128,7 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 		\item vn.vccorp.crawler.thread: Các lớp bao đóng để tạo thread chạy song song các tác vụ
 		\item vn.vccorp.crawler.util: Các công cụ hỗ trợ trong hệ thống
 	\end{itemize}
-	Hệ thống HotNewsDetector:
+	Hệ thống Spam Filter được tích hợp vào hệ thống HotNewsDetector:
 	\begin{itemize}
 		\item vn.vccorp.hotnewsdetector.action.general: lớp ảo chứa các phương thức của action.
 		\item vn.vccorp.hotnewsdetector.action.news: chứa các action cho tin tức
@@ -178,6 +196,221 @@ Hệ thống ứng dụng được xây dựng trên nền tảng Java EE với 
 			\label{tab:table_3_2}%
 		\end{table}%
 		
+		\subsubsection{Collection HashCode}
+		Collection cluster chứa các hash code cho bài báo để kiểm tra trùng cho tin tức đó.
+		\begin{table}[H]
+			%				\centering
+			\setlength\extrarowheight{3pt}
+			\begin{tabular}{|l|l|p{9cm}|}
+				\hline
+				\textbf{Thuộc tính}     & \textbf{Loại} & \textbf{Ý nghĩa} \\\hline
+				\_id           & ObjectID       &  ID trong MongoDB của cụm\\\hline
+				HashCode      & String           & Hash code của tin tức\\\hline
+			\end{tabular}%
+			\caption{Các trường của collection HashCode}
+			\label{tab:table_3_3}%
+		\end{table}%
+\section{Các API hệ thống HotNewsDetector}
+Hệ thống HotNewsDetector cung cấp các API:
+\subsection{Classified News List}
+Lấy và hiển thị các tin đã được phân loại và gán nhãn “Không rác” hoặc “Rác” trong một ngày \\
+\textbf{URL:}
+
+/HotNewsDetector/news/spam/list\\
+\textbf{Request Method:}
+
+GET\\
+\textbf{Data Params:}
+	\begin{itemize}
+		\item startDate (String): chuỗi thể hiện ngày cần lấy tin với định dạng “dd-MM-yyyy”. Lưu ý ngày trong CSDL được lưu theo múi giờ UTC+0:00.
+		\item offset (Integer, optional): số lần lượt bỏ các tin đầu tiên theo limit (số tin lượt bỏ = offset * limit). Mặc định là 0. Giá trị phải là số nguyên không âm.
+		\item limit (Integer, optional): số tin tối đa cần lấy từ danh sách trả về (sau khi đã sắp xếp và lược bỏ). Giá trị phải là số nguyên không âm và nhỏ hơn 50. Giá trị mặc định là 10.
+	\end{itemize}
+\textbf{Success Response:}	
+\lstset{
+	string=[s]{"}{"},
+	stringstyle=\color{blue},
+	comment=[l]{:},
+	commentstyle=\color{black},
+	escapeinside={\%*}{*)},
+	tabsize =4,
+}
+\begin{lstlisting}
+{
+	"error": false,
+	"data": "[{	
+		"title": "...",	
+		"postdate": "...",	
+		"id": "...",	
+		"source": "...",	
+		"SpamLabel": "...",	
+		"spamCategory": "...",	
+		"spamLabelFeedback": "...",	
+		"url": "..."	
+	},...]"
+}
+\end{lstlisting}
+\textbf{Error Response}
+\begin{lstlisting}
+	"error": true,		
+	"message": "..."
+\end{lstlisting}
+\textbf{Attributes}
+	\begin{itemize}
+		\item id(String): ID của tin.	
+		\item title(String): tiêu đề tin.	
+		\item source(String): nguồn post tin.	
+		\item postDate(String): ngày đăng tin.	
+		\item spamLabel(String): nhãn của tin đã được phân loại, nhãn của tin có thể có 3 giá trị: Rác, Không rác hoặc null nếu chưa phân loại.
+		\item spamCategory(String): nhãn của loại rác mà tin rác được phân loại, nhãn của loại rác có thể có 4 giá trị: Quảng cáo, Tuyển dụng, Chia sẻ hoặc null nếu tin được phân loại là “Tin” hoặc chưa phân loại.
+		\item spamLabelFeedback(String): phản hồi của người dùng về nhãn mà tin được tiên đoán. Có thể là “Tin”, “Rác” hoặc null.
+		\item url(String): đường dẫn tới tin.
+	\end{itemize}
+\textbf{Sample Call}
+\begin{lstlisting}
+	axios.get("/HotNewsDetector/news/spam/list", {params:{startDate="11-12-2017", offset=2, limit=5}})
+	.then(response => {	console.log(response);
+	});
+\end{lstlisting}
+\subsection{Spam Label Feedback}
+Cho phép người dùng phản hồi về nhãn của một tin (Rác, Tin) \\
+\textbf{URL:} 
+
+    /HotNewsDetector/news/spam/feedback \\
+\textbf{Request Method:}
+
+POST\\
+\textbf{Data Params:}
+\begin{itemize}
+	\item spamFeedback(Integer, optional): giá trị feedback người dùng. Các giá trị có thể sử dụng: 0 (Rác), 1 (Tin).
+	\item id(String): ID của tin.
+\end{itemize}
+\textbf{Success Response:} 
+\begin{lstlisting}
+{
+	"error": false,
+	"message": "%*Thao tác thành công*)"
+}
+\end{lstlisting}
+\textbf{Error Response}
+\begin{lstlisting}
+	"error": true,		`
+	"message": "..."
+\end{lstlisting}
+\textbf{Attributes}
+\begin{itemize}
+	\item error(Boolean): Kết quả trả về, true nếu có lỗi và false nếu thành công. 
+	\item message(String): Thông báo thông tin cho người dùng.
+\end{itemize}
+\textbf{Sample Call}
+\begin{lstlisting}
+	axios.get("/HotNewsDetector/news/spam/list",
+	{params:{startDate="11-12-2017", offset=2, limit=5}})
+	.then(response => { console.log(response);
+	});
+\end{lstlisting}
+\subsection{Spam Filter}
+Cho phép người dùng phân loại một tin. Đầu vào của API có thể là danh sách chứa các URL của các tin hoặc một chuỗi String là title của các bài viết. \\
+\textbf{URL:}
+
+/HotNewsDetector/news/spam\\
+\textbf{Request Method:}
+
+POST\\
+\textbf{Data Params:}
+\begin{itemize}
+	\item data(String[]): mảng chứa nội dung của các tin cần phân lớp, có thể là URL hoặc title của tin. Có thể nhận vào một hoặc nhiều tin cùng một lúc.
+	\item type(int): xác định thuật toán sử dụng để phân lớp, có 2 giá trị có thể sử dụng: 0( Sử dụng thuật toán SVM), 1( Sử dụng Doc2Vec).
+\end{itemize}
+\textbf{Success Response:}
+\begin{lstlisting}
+{
+	error: false,
+	data: [{
+		"label": "...",
+		"type": "...",
+		"content": "..."}
+	},...]
+}
+\end{lstlisting}
+\textbf{Error Response}
+\begin{lstlisting}
+	"error": true,		
+	"message": "..."
+\end{lstlisting}
+\textbf{Attributes}
+\begin{itemize}
+	\item label(String):  nhãn của tin đã phân lớp: Tin, Rác(Quảng cáo, tuyển dụng, chia sẻ) nếu loại tin là URL, nhãn của tin có thể là Undefined nếu không lấy được tin về từ web.
+	\item type(String):  loại tin đã nhập (URL hoặc Text)
+	\item content (String):  Nội dung đã nhập (URL hoặc nội dung tin)
+	
+\end{itemize}
+\textbf{Sample Call}
+
+axios.get("{\color{blue}{/HotNewsDetector/news/spam?data}}= Trà Ngọc Hằng Thà cô đơn chứ 
+
+không đổi tự trọng lấy tình yêu"\&type=0")
+
+	.then(response => \{ console.log(response);
+	
+	\});
+\subsection{Spam statistic}
+Lấy các thông số thống kê về số lượng tin đã phân lớp theo khoảng thời gian và theo nguồn tin \\
+\textbf{URL:} 
+
+/HotNewsDetector/news/spam/statistics\\
+\textbf{Request Method:}
+
+GET\\
+\textbf{Data Params:}
+
+dateRange(Integer): số ngày cần lấy dữ liệu thống kê, chỉ nhận các giá trị 1, 7, 30, và 365
+\textbf{Success Response:}	
+\begin{lstlisting}
+	"error": false,
+	"data": [
+	{
+		"bySource": [{
+		"source": ...,
+		"news": ...,
+		"spams": ...
+	
+	},...],
+		"byTime": [{
+		"categories": ...,
+		"news": ...,
+		"spam": ...
+	}, ...]}
+]
+\end{lstlisting}
+\textbf{Error Response}
+\begin{lstlisting}
+	"error": true,		
+	"message": "..."
+\end{lstlisting}
+\textbf{Attributes}
+\begin{itemize}
+	\item (String): dữ liệu thống kê theo nguồn đưa tin.
+	\item byTime(String): dữ liệu thống kê theo khoảng thời gian.
+	\item source(String): tên nguồn tin.
+	\item categories(String): khoảng thời gian đã phân chia, khoảng thời gian có thể có 4 giá trị tùy theo dateRange đã nhập:
+	\begin{itemize}
+		\item Date range = 1: khoảng thời gian sẽ được chia làm 12 phần, mỗi phần tương ứng 2 tiếng
+		\item 	Date range = 7: khoảng thời gian được chia làm 7 phần, mỗi phần tương ứng 1 ngày.
+		\item 	Date range = 30: khoảng thời gian được chia làm 15 phần, mỗi phần tương ứng 2 ngày.
+		\item 	Date range = 365: khoảng thời gian được chia làm 12 phần, mỗi phần tương ứng 1 tháng.
+	\end{itemize}
+	\item news(String): số lượng tin đã phân lớp “Không rác”
+	\item spam(String): số lượng tin đã phân lớp là “Rác”
+\end{itemize}	
+\textbf{Sample Call}
+\begin{lstlisting}
+	axios.get("/HotNewsDetector/news/spam/statistics", { params:{dateRange:7} })
+	.then(response => { console.log(response);
+	}); 
+
+\end{lstlisting}
+
 \section{Giao diện}
 Giao diện hệ thống được xây dựng sử dụng thư viện React, với kiến trúc Redux. Giao diện tương tác với hệ thống thông qua ajax request.
 	\begin{figure}[H]
@@ -199,7 +432,6 @@ Giao diện hệ thống được xây dựng sử dụng thư viện React, v�
     \end{tabular}
     \caption{Bảng các thuộc tính}
   \end{table}
-
   \begin{table}[H]
     \centering
     \setlength{\tabcolstep}{12pt}

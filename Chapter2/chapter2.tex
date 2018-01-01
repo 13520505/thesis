@@ -67,8 +67,8 @@ Phát hiện rác trên các nền tảng mạng xã hội cũng là một trong
 
 Wang cũng xây dựng một hệ thống phát hiện rác cho dữ liệu Twitter sử dụng thuật toán phân lớp Naive Bayes. Hệ thống thức hiện phân lớp dựa trên các đặc tính mạng xã hội của Twitter và đặc tính nội dung của dữ liệu văn bản. Theo kết quả đo kiểm đánh giá thì độ chính xác của hệ thống đạt đến 89\%\cite{5741690}
 
-\section{Giới thiệu một số phương phát trừu tượng hóa dữ liệu văn bản} \label{distances}
-Do máy tính không thể đọc hiểu và xử lý được dữ liệu thuần văn bản, ta cần có một phương pháp trừu tượng hóa dữ liệu văn bản thành các con số mà máy tính có thể hiểu được.
+\section{Giới thiệu một số phương phát biểu diễn dữ liệu văn bản} \label{distances}
+Do máy tính không thể đọc hiểu và xử lý được dữ liệu thuần văn bản, ta cần có một phương pháp biểu diễn dữ liệu văn bản thành các con số mà máy tính có thể hiểu được.
 \subsection*{Term Frequency - Inverse Document Frequency (TF-IDF)}
 Trong lĩnh vực thu thập thông tin, TF-IDF là một dữ liệu số dùng để thể hiện độ quan trọng của một từ trong một một tập hợp hoạc một kho từ vựng \cite{rajaraman_ullman_2011}. Nó thường được dùng trong việc thu thập thông tin, text mining và user modeling. Giá trị của TF-IDF tăng theo tỉ lệ với số lần một từ xuất hiện trong một văn bản, nhưng thường bị giảm lại theo tần xuất của từ đó trong toàn kho từ vựng, vì một từ có thể chỉ đơn giản là nó phổ biến hơn các từ khác. Ngày nay, TF-IDF là một trong những phương pháp tính trọng số cho các từ phổ biến nhất; 83\% các hệ thống khuyến nghị dựa trên văn bản trong lĩnh vực thư viện điện tử sử dụng TF-IDF \cite{Beel2016}.
 
@@ -119,6 +119,7 @@ Support vector machine hay còn gọi là support vector network là một thu�
 		\end{itemize}
 \subsubsection{SVM với bài toán lọc rác tin tức}
 Bài toán lọc rác văn bản là một bài toán phân lớp nhị vân với các vector đặc trưng có số chiều rất lớn nên đây là một bài toán rất phù hợp cho việc sử dụng thuật toán SVM. 
+%\section{Biểu diễn dữ liệu bằng Vector space model và tf-idf}
 %========================================================================================================================
 \section{Thuật toán Naive Bayes} 
 \subsection{Giới thiệu}
@@ -168,6 +169,7 @@ Nhược điểm:
   \item Tốc độ huấn luyện tăng nhanh chóng khi kích thước tập dữ liệu và số lượng các đặc tính tăng.
 \end{itemize}
 \section{Các độ đo đánh giá các thuật toán phân lớp}
+\label{sec:eval}
 \subsection{Precision và Recall}
 Trong lĩnh vực nhận diện mẫu, thu thập thông tin và phân lớp nhị phân, precision là tỉ lệ giữa số lượng các đối tượng cần quan tâm đối với tổng các số lượng trả về, trong khi đó recall là tỉ lệ số lượng các đối tượng cần quan tâm trả về đối với tổng số các đối tượng cần quan tâm.
 

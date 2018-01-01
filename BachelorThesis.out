@@ -17,7 +17,7 @@
 \BOOKMARK [2][]{subsection.20}{2.2.3 B\340i to\341n loc r\341c tin tc}{section.17}% 17
 \BOOKMARK [2][]{subsection.21}{2.2.4 Ph\341t biu b\340i to\341n loc r\341c tin tc cho h thng ph\341t hin tin n\363ng}{section.17}% 18
 \BOOKMARK [1][]{section.22}{2.3 C\341c nghi\352n cu li\352n quan}{chapter.15}% 19
-\BOOKMARK [1][]{section.23}{2.4 Gii thiu mt s phng ph\341t tru tng h\363a d liu van ban}{chapter.15}% 20
+\BOOKMARK [1][]{section.23}{2.4 Gii thiu mt s phng ph\341t biu din d liu van ban}{chapter.15}% 20
 \BOOKMARK [1][]{section.27}{2.5 C\341c phng ph\341p tip cn ph bin}{chapter.15}% 21
 \BOOKMARK [2][]{subsection.28}{2.5.1 Thut to\341n ph\342n lp Support Vector Machine \(SVM\)}{section.27}% 22
 \BOOKMARK [3][]{subsubsection.29}{2.5.1.1 Gii thiu}{subsection.28}% 23
@@ -38,35 +38,43 @@
 \BOOKMARK [0][]{chapter.46}{3 HIN THC H THNG LOC R\301C TIN TC}{}% 38
 \BOOKMARK [1][]{section.47}{3.1 M u}{chapter.46}% 39
 \BOOKMARK [1][]{section.48}{3.2 M\364 h\354nh h thng}{chapter.46}% 40
-\BOOKMARK [1][]{section.50}{3.3 Ph\342n h thu thp d liu \(Data Streaming\)}{chapter.46}% 41
-\BOOKMARK [1][]{section.51}{3.4 Ph\342n h tin x l\375 d liu \(Data Preprocessor\)}{chapter.46}% 42
-\BOOKMARK [1][]{section.56}{3.5 Ph\342n h ph\342n loai tin tc}{chapter.46}% 43
-\BOOKMARK [1][]{section.57}{3.6 Ph\342n h ph\342n loai loai r\341c}{chapter.46}% 44
-\BOOKMARK [1][]{section.58}{3.7 Thit k h thng}{chapter.46}% 45
-\BOOKMARK [1][]{section.61}{3.8 C\340i t h thng}{chapter.46}% 46
-\BOOKMARK [2][]{subsection.62}{3.8.1 C\341c package}{section.61}% 47
-\BOOKMARK [2][]{subsection.63}{3.8.2 C s d liu MongoDB}{section.61}% 48
-\BOOKMARK [3][]{subsubsection.65}{3.8.2.1 Collection News}{subsection.63}% 49
-\BOOKMARK [1][]{section.67}{3.9 Giao din}{chapter.46}% 50
-\BOOKMARK [2][]{subsection.69}{3.9.1 Giao din danh s\341ch tin \343 ph\342n lp}{section.67}% 51
-\BOOKMARK [2][]{subsection.72}{3.9.2 Giao din ph\342n lp tin}{section.67}% 52
-\BOOKMARK [2][]{subsection.75}{3.9.3 Giao din thng k\352 d liu ph\342n lp}{section.67}% 53
-\BOOKMARK [1][]{section.78}{3.10 Kt qua}{chapter.46}% 54
-\BOOKMARK [1][]{section.84}{3.11 Kt chng}{chapter.46}% 55
-\BOOKMARK [0][]{chapter.85}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 56
-\BOOKMARK [1][]{section.86}{4.1 M u}{chapter.85}% 57
-\BOOKMARK [1][]{section.87}{4.2 Tng quan v b d liu}{chapter.85}% 58
-\BOOKMARK [1][]{section.91}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.85}% 59
-\BOOKMARK [1][]{section.92}{4.4 Kt qua thc nghim}{chapter.85}% 60
-\BOOKMARK [2][]{subsection.93}{4.4.1 Kt qua train model ph\342n loai tin tc}{section.92}% 61
-\BOOKMARK [3][]{subsubsection.94}{4.4.1.1 Kt qua da tr\352n ni dung cua tin cua tp mu}{subsection.93}% 62
-\BOOKMARK [3][]{subsubsection.98}{4.4.1.2 Kt qua da tr\352n ti\352u \040cua tin cua tp mu}{subsection.93}% 63
-\BOOKMARK [2][]{subsection.102}{4.4.2 Kt qua train model ph\342n loai loai tin r\341c}{section.92}% 64
-\BOOKMARK [1][]{section.106}{4.5 Nhn x\351t}{chapter.85}% 65
-\BOOKMARK [2][]{subsection.107}{4.5.1 Nhn inh v c\341c thut to\341n ph\342n lp cho b\340i to\341n}{section.106}% 66
-\BOOKMARK [1][]{section.108}{4.6 Kt chng}{chapter.85}% 67
-\BOOKMARK [0][]{chapter*.109}{KT LUN V\300 HNG PH\301T TRIN}{}% 68
-\BOOKMARK [1][]{section*.110}{Kt qua at c}{chapter*.109}% 69
-\BOOKMARK [1][]{section*.111}{Hng ph\341t trin}{chapter*.109}% 70
-\BOOKMARK [0][]{chapter*.112}{T\300I LIU THAM KHAO}{}% 71
-\BOOKMARK [0][]{section*.114}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 72
+\BOOKMARK [2][]{subsection.50}{3.2.1 Lung x l\375 d liu}{section.48}% 41
+\BOOKMARK [1][]{section.51}{3.3 Tin tr\354nh ph\342n lp}{chapter.46}% 42
+\BOOKMARK [1][]{section.53}{3.4 Ph\342n h thu thp d liu \(Data Streaming\)}{chapter.46}% 43
+\BOOKMARK [1][]{section.54}{3.5 Ph\342n h tin x l\375 d liu \(Data Preprocessor\)}{chapter.46}% 44
+\BOOKMARK [1][]{section.59}{3.6 Ph\342n h ph\342n loai tin tc}{chapter.46}% 45
+\BOOKMARK [1][]{section.60}{3.7 Ph\342n h ph\342n loai loai r\341c}{chapter.46}% 46
+\BOOKMARK [1][]{section.61}{3.8 Thit k h thng}{chapter.46}% 47
+\BOOKMARK [1][]{section.64}{3.9 C\340i t h thng}{chapter.46}% 48
+\BOOKMARK [2][]{subsection.65}{3.9.1 C\341c package}{section.64}% 49
+\BOOKMARK [2][]{subsection.66}{3.9.2 C s d liu MongoDB}{section.64}% 50
+\BOOKMARK [3][]{subsubsection.68}{3.9.2.1 Collection News}{subsection.66}% 51
+\BOOKMARK [3][]{subsubsection.70}{3.9.2.2 Collection HashCode}{subsection.66}% 52
+\BOOKMARK [1][]{section.72}{3.10 C\341c API h thng HotNewsDetector}{chapter.46}% 53
+\BOOKMARK [2][]{subsection.73}{3.10.1 Classified News List}{section.72}% 54
+\BOOKMARK [2][]{subsection.95}{3.10.2 Spam Label Feedback}{section.72}% 55
+\BOOKMARK [2][]{subsection.109}{3.10.3 Spam Filter}{section.72}% 56
+\BOOKMARK [2][]{subsection.122}{3.10.4 Spam statistic}{section.72}% 57
+\BOOKMARK [1][]{section.147}{3.11 Giao din}{chapter.46}% 58
+\BOOKMARK [2][]{subsection.149}{3.11.1 Giao din danh s\341ch tin \343 ph\342n lp}{section.147}% 59
+\BOOKMARK [2][]{subsection.152}{3.11.2 Giao din ph\342n lp tin}{section.147}% 60
+\BOOKMARK [2][]{subsection.155}{3.11.3 Giao din thng k\352 d liu ph\342n lp}{section.147}% 61
+\BOOKMARK [1][]{section.158}{3.12 Kt qua}{chapter.46}% 62
+\BOOKMARK [1][]{section.164}{3.13 Kt chng}{chapter.46}% 63
+\BOOKMARK [0][]{chapter.165}{4 THC NGHIM V\300 \320\301NH GI\301}{}% 64
+\BOOKMARK [1][]{section.166}{4.1 M u}{chapter.165}% 65
+\BOOKMARK [1][]{section.167}{4.2 Tng quan v b d liu}{chapter.165}% 66
+\BOOKMARK [1][]{section.171}{4.3 Thit lp thc nghim, c\341ch \341nh gi\341}{chapter.165}% 67
+\BOOKMARK [1][]{section.172}{4.4 Kt qua thc nghim}{chapter.165}% 68
+\BOOKMARK [2][]{subsection.173}{4.4.1 Kt qua train model ph\342n loai tin tc}{section.172}% 69
+\BOOKMARK [3][]{subsubsection.174}{4.4.1.1 Kt qua da tr\352n ni dung cua tin cua tp mu}{subsection.173}% 70
+\BOOKMARK [3][]{subsubsection.178}{4.4.1.2 Kt qua da tr\352n ti\352u \040cua tin cua tp mu}{subsection.173}% 71
+\BOOKMARK [2][]{subsection.182}{4.4.2 Kt qua train model ph\342n loai loai tin r\341c}{section.172}% 72
+\BOOKMARK [1][]{section.186}{4.5 Nhn x\351t}{chapter.165}% 73
+\BOOKMARK [2][]{subsection.187}{4.5.1 Nhn inh v c\341c thut to\341n ph\342n lp cho b\340i to\341n}{section.186}% 74
+\BOOKMARK [1][]{section.188}{4.6 Kt chng}{chapter.165}% 75
+\BOOKMARK [0][]{chapter*.189}{KT LUN V\300 HNG PH\301T TRIN}{}% 76
+\BOOKMARK [1][]{section*.190}{Kt qua at c}{chapter*.189}% 77
+\BOOKMARK [1][]{section*.191}{Hng ph\341t trin}{chapter*.189}% 78
+\BOOKMARK [0][]{chapter*.192}{T\300I LIU THAM KHAO}{}% 79
+\BOOKMARK [0][]{section*.194}{Phu luc. Gii thiu v th vin Apache Lucene}{}% 80

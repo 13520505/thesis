@@ -12,6 +12,10 @@ A level-1 auxiliary file: Conclusions/conclusions.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Appendix/appendix.aux
 Database file #1: References/PhDResearch.bib
+Repeated entry---line 383 of file References/PhDResearch.bib
+ : @article{dimitoglou2012comparison
+ :                                  ,
+I'm skipping whatever remains of this entry
 Warning--empty booktitle in An:2017
 Warning--empty publisher in An:2017
 Warning--empty booktitle in zechner:history
@@ -60,4 +64,4 @@ warning$ -- 7
 while$ -- 31
 width$ -- 17
 write$ -- 160
-(There were 7 warnings)
+(There was 1 error message)
