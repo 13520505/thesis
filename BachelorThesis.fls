@@ -535,6 +535,9 @@ INPUT ./Chapter2/Chapter2Figs/linearSVM.png
 INPUT Chapter2/Chapter2Figs/J48.png
 INPUT ./Chapter2/Chapter2Figs/J48.png
 INPUT ./Chapter2/Chapter2Figs/J48.png
+INPUT Chapter2/Chapter2Figs/ROC.png
+INPUT ./Chapter2/Chapter2Figs/ROC.png
+INPUT ./Chapter2/Chapter2Figs/ROC.png
 OUTPUT Chapter3/chapter3.aux
 INPUT Chapter3/chapter3.tex
 INPUT Chapter3/chapter3.tex

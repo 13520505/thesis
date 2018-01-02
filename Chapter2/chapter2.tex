@@ -67,6 +67,26 @@ Phát hiện rác trên các nền tảng mạng xã hội cũng là một trong
 
 Wang cũng xây dựng một hệ thống phát hiện rác cho dữ liệu Twitter sử dụng thuật toán phân lớp Naive Bayes. Hệ thống thức hiện phân lớp dựa trên các đặc tính mạng xã hội của Twitter và đặc tính nội dung của dữ liệu văn bản. Theo kết quả đo kiểm đánh giá thì độ chính xác của hệ thống đạt đến 89\%\cite{5741690}
 
+\section{Tiền xử lý}
+\subsection{Khái niệm}
+Tiền xử lý dữ liệu là quá trình lọc và chuẩn bị dữ liệu cho quá trình phân lớp văn bản. Thường các văn bản đầu vào đa số chứa nhiều thông tin gây nhiễu và các thông tin không có giá trị như HTML tags, địa chỉ trang web, quảng cáo… Vì vậy, ở mức độ từ, nhiều từ không có ý nghĩa cho ý chung của câu.
+\subsection{Vì sao phải tiền xử lý}
+Giữ những từ có khả năng gây nhiễu sẽ làm tăng số chiều làm quá trình phân lớp trở nên khó hơn vì mỗi từ được xem như một chiều cần phải xem xét. Đây là lý do chúng ta cần tiền xử lý dữ liệu: để giảm nhiễu trong văn bản sẽ giúp tăng hiệu năng của bộ phân lớp(classfier) và làm giảm thời gian phân lớp.
+\subsection{Cách thực hiện}
+Quá trình tiền xử lý dữ liệu thường sẽ gồm các bước:
+\begin{itemize}
+  \item Loại bỏ một số thông tin không cần thiết (Ví dụ như HTML tags,…)
+  \item Loại bỏ một số dấu câu không cần thiết (khoảng trắng hoặc dấu câu)
+  \item Loại bỏ stop-word: Một số từ thường xuất hiện trong văn bản nhưng không mang nhiều ý nghĩa. Thường sẽ được lưu thành một stop-word list. Ở tiếng Việt, một số stop word là(à, á, á à, ạ,…)
+  \item Ghép từ một số từ ghép được ghép lại để biểu diễn cho một chiều trong phân lớp (Ví dụ máy bay sẽ ghép thành máybay hoặc máy\_bay)
+\end{itemize}
+\subsection{Tiền xử lý trong bài toán lọc rác tin tức}
+  Ở bài toán lọc rác tin tức, dữ liệu đầu vào là tin tức nên đa số thông tin gây nhiễu như quảng cáo, HTML tags đã được giảm thiểu, chúng ta chỉ cần xử lý văn bản và lọc một số thông tin gây nhiễu. Ví dụ như:
+  \begin{itemize}
+    \item Link(URL) nếu có.
+    \item Ghép từ để tăng độ chính xác (ví dụ máy bay sẽ được ghép thành máy\_bay)
+    \item Loại bỏ stop-word
+  \end{itemize}
 \section{Giới thiệu một số phương phát biểu diễn dữ liệu văn bản} \label{distances}
 Do máy tính không thể đọc hiểu và xử lý được dữ liệu thuần văn bản, ta cần có một phương pháp biểu diễn dữ liệu văn bản thành các con số mà máy tính có thể hiểu được.
 \subsection*{Term Frequency - Inverse Document Frequency (TF-IDF)}
@@ -192,7 +212,11 @@ F-measure là một phương thức kết hợp giá trị của precision và r
 Giá trị của F-measure thể hiện mức độ cân bằng của hai giá trị precision và recall, và gần bằng giá trị trung bình của chúng khi chúng xấp xỉ nhau.
 \subsection{Receiver operating characteristic (ROC) area}
 Trong  xác suất, đường cong ROC là một dạng đồ thị thể hiện khả năng phân tích của một bộ phân lớp nhị phân khi có đa dạng ngưỡng phân biệt.
-
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{Chapter2/Chapter2Figs/ROC.png}
+\caption{Ví dụ về đường cong ROC\@. Đường A là đường có sức phân biệt cao tuyệt đối, B là đường có sức phân biệt cao trung bình, và C là đường không có sức phân biệt}
+\end{figure}
 Đường cong ROC được tạo ra bằng việc bằng cách vẽ biểu đồ dựa trên tỉ lệ true positive (recall) và true negative (specifity). Và diện tich nằm dưới đường cong ROC (ROC area) bằng với xác suất một bộ phân lớp sẽ đánh giá một đối tượng positive được chọn ngẫu nhiên cao hơn một đối tượng negative được chọn ngẫu nhiên (ngầm đình là postive xếp hạng cao hơn negative)\cite{Fawcett:2006:IRA:1159473.1159475}.
 
 \section{Kết chương}
