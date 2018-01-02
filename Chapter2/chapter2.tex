@@ -180,24 +180,26 @@ Khi d lớn và các xác suất nhỏ, biểu thức ở vế phải của \ref
 		\caption{Ví dụ về cây quyết định}
 		\label{fig:DecisionTreeExample}
 	\end{figure}
-\section{Tiền xử lý dữ liệu}
-Giai đoạn tiền xử lý dữ liệu
-Quá trình xử lý dữ liệu thô/gốc (raw/original data) nhằm cải thiện chất lượng dữ liệu (quality of the data) và do đó, cải thiện chất lượng của kết quả khai phá.
-Dữ liệu thô/gốc
-	Có cấu trúc, bán cấu trúc, phi cấu trúc
-	Được đưa vào từ các nguồn dữ liệu trong các hệ thống xử lý tập tin (file processing systems) và/hay các hệ thống cơ sở dữ liệu (database systems)
-Chất lượng dữ liệu (data quality): tính chính xác, tính hiện hành, tính toàn vẹn, tính nhất quán 
-Chất lượng dữ liệu (data quality)
-	tính chính xác (accuracy): giá trị được ghi nhận đúng với giá trị thực.
-	tính hiện hành (currency/timeliness): giá trị được ghi nhận không bị lỗi thời.
-	tính toàn vẹn (completeness): tất cả các giá trị dành cho một biến/thuộc tính đều được ghi nhận.
-	tính nhất quán (consistency): tất cả giá trị dữ liệu đều được biểu diễn như nhau trong tất cả các trường hợp.
-	
-	Các kỹ thuật tiền xử lý dữ liệu
-		Làm sạch dữ liệu (data cleaning/cleansing): loại bỏ nhiễu (remove noise), hiệu chỉnh những phần dữ liệu không nhất quán (correct data inconsistencies)
-		Tích hợp dữ liệu (data integration): trộn dữ liệu (merge data) từ nhiều nguồn khác nhau vào một kho dữ liệu
-		Biến đổi dữ liệu (data transformation): chuẩn hoá dữ liệu (data normalization)
-		Thu giảm dữ liệu (data reduction): thu giảm kích thước dữ liệu (nghĩa là giảm số phần tử) bằng kết hợp dữ liệu (data 	aggregation), loại bỏ các đặc điểm dư thừa (redundant features) (nghĩa là giảm số chiều/thuộc tính dữ liệu), gom cụm dữ liệu
+\section{Tiền xử lý}
+\subsection{Khái niệm}
+Tiền xử lý dữ liệu là quá trình lọc và chuẩn bị dữ liệu cho quá trình phân lớp văn bản. Thường các văn bản đầu vào đa số chứa nhiều thông tin gây nhiễu và các thông tin không có giá trị như HTML tags, địa chỉ trang web, quảng cáo... Vì vậy, ở mức độ từ, nhiều từ không có ý nghĩa cho ý chung của câu.
+\subsection{Vì sao phải tiền xử lý}
+Giữ những từ có khả năng gây nhiễu sẽ làm tăng số chiều làm quá trình phân lớp trở nên khó hơn vì mỗi từ được xem như một chiều cần phải xem xét. Đây là lý do chúng ta cần tiền xử lý dữ liệu: để giảm nhiễu trong văn bản sẽ giúp tăng hiệu năng của bộ phân lớp(classfier) và làm giảm thời gian phân lớp.
+\subsection{Một số cách tiếp cận}
+Quá trình tiền xử lý dữ liệu thường sẽ gồm các bước:
+\begin{itemize}
+	\item Loại bỏ một số thông tin không cần thiết (Ví dụ như HTML tags,...)
+	\item Loại bỏ một số dấu câu không cần thiết (khoảng trắng hoặc dấu câu)
+	\item Loại bỏ stop-word: Một số từ thường xuất hiện trong văn bản nhưng không mang nhiều ý nghĩa. Thường sẽ được lưu thành một stop-word list. Ở tiếng Việt, một số stop word là(à, á, á à, ạ,....)
+	\item Ghép từ một số từ ghép được ghép lại để biểu diễn cho một chiều trong phân lớp (Ví dụ máy bay sẽ ghép thành máybay hoặc máy\_bay)
+\end{itemize}
+\subsection{Tiền xử lý trong bài toán lọc rác tin tức}
+Ở bài toán lọc rác tin tức, dữ liệu đầu vào là tin tức nên đa số thông tin gây nhiễu như quảng cáo, HTML tags đã được giảm thiểu, chúng ta chỉ cần xử lý văn bản và lọc một số thông tin gây nhiễu. Ví dụ như:
+\begin{itemize}
+	\item Link(URL) nếu có.
+	\item Ghép từ để tăng độ chính xác (ví dụ máy bay sẽ được ghép thành máy\_bay)
+	\item Loại bỏ stop-word
+\end{itemize} 
 \section{Các nghiên cứu liên quan}
 Twitter đã thu hút sự chú ý của nhiều nhà nghiên cứu trong thời gian gần đây. Nhờ vào sự phổ biến rộng rãi trên nhiều quốc gia, cùng với vai trò là một mạng xã hội cho phép người dùng chia sẻ thông tin một cách nhanh chóng và ngắn gọn.
 Jagan Sankaranarayanan và cộng sự \cite{TwiterStand:Sankaranarayanan} đã xây dựng một hệ thống xử lý tin tức trên Twitter, với tên là Twitter Stand. Hệ thống biểu diễn dữ liệu dưới dạng tf-idf, và sử dụng thuật toán phân lớp Naive Bayes để lọc bỏ các tin rác. Sau đó dùng một thuật toán online clustering để gom các tin thành từng câu chuyện.
