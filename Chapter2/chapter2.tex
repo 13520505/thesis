@@ -9,10 +9,7 @@
 Chương này sẽ giới thiệu bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng. Trình bày cơ sở lý thuyết và phát biểu bài toán lọc rác tin tức. Cuối cùng trình bày một số phương pháp tiếp cận bài toán lọc rác tin tức  và các kiến thức liên quan.
 \section{Giới thiệu bài toán} %Topic Detection and Tracking}
 	\subsection{Các khái niệm cơ bản}
-  Để có thể xác định khái niệm rác, ta phải hiểu được khái nhiệm "tin nóng". Le \cite{An:2017} đã định nghĩa khái niệm "tin nóng" như sau:
-	\begin{itemize}
-    \item \textit{Tin nóng (Hot news)}: những tin viết về một sự kiện mới xảy ra, có tính thời sự, có tầm ảnh hưởng rộng, thu hút được sự chú ý, quan tâm của cộng đồng.
-	\end{itemize}
+  Để có thể xác định khái niệm "rác", ta phải hiểu được tính chất của "tin tức". Harcup và O'Neill  cho rằng một mẫu tin phải thỏa mãn được một trong các tính chất: \textit{đối tượng quyền lực (the power elite), người nổi tiếng (celebrity), giải trí (entertainment), bất ngờ (surprise), tin xấu (bad news), tin tốt (bad news), tầm ảnh hưởng (magnitude), tính liên quan (relevance), tính tiếp nối (follow-up), định hướng của tờ báo (newspaper agenda)}\cite{doi:10.1080/14616700118449}.
 
   Ngoài ra Gy\"{o}ngyi và Garcia-Molina định nghĩa "đăng rác" như sau: 
 	\begin{itemize}
@@ -21,7 +18,7 @@ Chương này sẽ giới thiệu bài toán lọc rác tin tức cho hệ thố
 
   Từ các khái niệm trên ta có định nghĩa "rác" cho bài toán như sau:
 
-  \textbf{Định nghĩa:} Rác là các tin không mang tính chất sự kiện, thời sự, và làm sai lệch kết quả phân tích và xử lý dữ liệu của hệ thống phân loại tin tức. 
+  \textbf{Định nghĩa:} Rác là các bài không thõa mãn được các tính chất của tin tức và làm sai lệch kết quả phân tích và xử lý dữ liệu của hệ thống phân loại tin tức. 
 
   Từ định nghĩa trên ta có thể xác định được các loại tin sẽ được xem là rác:
   \begin{itemize}
@@ -48,7 +45,7 @@ Chương này sẽ giới thiệu bài toán lọc rác tin tức cho hệ thố
   Mặc dù nguồn dữ liệu mà chúng ta quan tâm là tin tức từ các trang báo điện tử chính thống, số lượng nguồn tin, chủ đề tin và số lượng tin rất lớn dẫn đến việc chất lượng dữ liệu tin tức không được đảm bảo cũng như tính chất dữ liệu không được phù hợp với nhu cầu của hệ thống. Do đó việc lọc rác tin tức là cần thiết cho việc khai thác và sử dụng nguồn dữ liệu tin tức một các hiệu quả.
 
   \subsection{Phát biếu bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng}
-  Cho trước một bài báo $d_i$i. Mục tiêu của bài toán là tìm ra được nhãn $l_i$ của bài báo $d_i$ và nhãn đó nhận một trong hai giá trị: "rác" và "không rác".
+  Cho trước một bài báo $d_i$. Mục tiêu của bài toán là tìm ra được nhãn $l_i$ của bài báo $d_i$ và nhãn đó nhận một trong hai giá trị: "rác" và "không rác".
 	
 \section{Các nghiên cứu liên quan}
 Vấn đề phát hiện và lọc rác là một vấn đề lâu đời và kinh điển đối với bài toán phân lớp văn bản. Do đó số lượng nghiên cứu xoay quan vấn đề này cũng rất lớn và đa dạng. Phần lớn các nghiên cứu cho đến ngày nay tập trung vào việc phát hiện rác cho email, web và mạng xã hội. 
@@ -113,6 +110,7 @@ Word vector là một hình thức biểu diễn các từ trong một kho từ 
   Word vector thường được sử dụng trong các công cụ tìm kiếm và dịch thuật do nó cung cấp thông tin về sự tương qua ngữ nghĩa giữa các từ và các ngữ cảnh cũng như giữa các từ với nhau.
 
 \section{Các phương pháp tiếp cận phổ biến}
+\label{sec:alg}
 Phân lớp là quá trình xác định xem một đối tượng sẽ thuộc về lớp nào dựa trên việc quan sát các đối tượng khác mà lớp của chúng đã được xác định từ trước. Thông thường, các đối tượng cần phân lớp sẽ được phân tích thành các thuộc tính có thể đo đếm được. Một thuật toán dùng để phân lớp, hay còn được gọi là một bộ phân lớp, sẽ dựa trên các thuộc tính đó để ánh xạ các đối tượng input mới vào lớp của chúng. Đây là một trong những tác vụ chính của lĩnh vực khai thác dữ liệu.
 
 Bài toán phân lớp bao gồm nhiều thuật toán khác nhau, trong phạm vi của khóa luận chúng ta sẽ chỉ quan tâm đến các thuật toán: Support vector machine, Naive Bayes, và J48 decision tree.
@@ -220,4 +218,4 @@ Trong  xác suất, đường cong ROC là một dạng đồ thị thể hiện
 Đường cong ROC được tạo ra bằng việc bằng cách vẽ biểu đồ dựa trên tỉ lệ true positive (recall) và true negative (specifity). Và diện tich nằm dưới đường cong ROC (ROC area) bằng với xác suất một bộ phân lớp sẽ đánh giá một đối tượng positive được chọn ngẫu nhiên cao hơn một đối tượng negative được chọn ngẫu nhiên (ngầm đình là postive xếp hạng cao hơn negative)\cite{Fawcett:2006:IRA:1159473.1159475}.
 
 \section{Kết chương}
-Chương này đã đề cập đến các nghiên cứu liên quan đến bài toán lọc rác tin tức, các thuật toán được sử dụng trong đề tài, và các phương pháp để đánh giá các thuật toán đó.
+Chương này đã đề cập đến các nghiên cứu liên quan đến bài toán lọc rác tin tức, các thuật toán trong đề tài, và các phương pháp để đánh giá các thuật toán đó.

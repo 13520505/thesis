@@ -63,8 +63,8 @@ Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hi�
 \label{sec:newsClassify}
 Sử dụng model đã train trước đó để phân loại tin tức. Model sử dụng thuật toán SVM đã trình bày ở chương 2 làm thuật toán chính để phân loại tin tức. Hiện tại hệ thống có 2 nhãn đã được định nghĩa trước đó:
 	\begin{itemize}
-		\item \textit Không rác
-		\item \textit Rác
+    \item \textit{Không rác}
+    \item \textit{Rác}
 	\end{itemize}
 
 Sau khi đã phân loại, hệ thống sẽ lưu nhãn đã gán cho tin tức xuống cơ sở dữ liệu MongoDB.
@@ -73,9 +73,9 @@ Sau khi đã phân loại, hệ thống sẽ lưu nhãn đã gán cho tin tức 
 \label{sec:spamCategory}
 Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân loại tin tức ở trên để phân loại loại rác cho tin đó. Hiện tại có 3 loại rác đã được định nghĩa trước:
 \begin{itemize}
-	\item \textit Quảng cáo
-	\item \textit Tuyển dụng
-	\item \textit Chia sẻ
+  \item \textit{Quảng cáo}
+  \item \textit{Tuyển dụng}
+  \item \textit{Chia sẻ}
 \end{itemize}
 
 \section{Thiết kế hệ thống} 
@@ -502,37 +502,40 @@ Hệ thống đã hoàn thiện các chức năng: lọc rác tin tức trên Cr
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{Chapter3/Chapter3Figs/Classified.png}
-	\caption{Giao diện danh sách tin đã phân lớp. Người dùng có thể chọn ngày để hiển thị tin và gửi phản hồi về nhãn của tin.}
+	\caption{Giao diện danh sách tin đã phân lớp.}
 	\label{fig:streaming}
 \end{figure}
-
+Người dùng có thể chọn ngày để hiển thị tin và gửi phản hồi về nhãn của tin.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart1.png}
-  \caption{Giao diện thống kê biểu đồ với hai biểu đồ. Biểu đồ thứ nhất thể hiện tổng số tin đã phân lớp phân theo nhãn "Rác" và "Không rác". Biểu đồ thứ hai thể hiện số lượng và tỉ lệ số lượng tin rác của mỗi nguồn tin so với tổng số tin rác và số tin rác của các nguồn tin khác (biểu đồ chỉ hiển thị top 20, nguồn tin có số lượng tin rác nhiều nhất)}
+  \caption{Giao diện thống kê biểu đồ với hai biểu đồ.}
 	\label{fig:streamingkeywords}
 \end{figure}
+ Biểu đồ thứ nhất thể hiện tổng số tin đã phân lớp phân theo nhãn "Rác" và "Không rác". Biểu đồ thứ hai thể hiện số lượng và tỉ lệ số lượng tin rác của mỗi nguồn tin so với tổng số tin rác và số tin rác của các nguồn tin khác (biểu đồ chỉ hiển thị top 20, nguồn tin có số lượng tin rác nhiều nhất)
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart2.png}
-	\caption{Giao diện thống kê. Biểu đồ thể hiện số lượng tin "Rác" và "Không rác" và tỉ lệ tin "Rác" so với tổng số tin theo thời gian. Người dùng có thể chọn hiển thị số liệu thống kê trong hôm nay, 7 ngày trước, 30 ngày trước, hoặc 12 tháng trước }
+	\caption{Giao diện thống kê.}
 	\label{fig:streamingkeywords}
 \end{figure}
+ Biểu đồ thể hiện số lượng tin "Rác" và "Không rác" và tỉ lệ tin "Rác" so với tổng số tin theo thời gian. Người dùng có thể chọn hiển thị số liệu thống kê trong hôm nay, 7 ngày trước, 30 ngày trước, hoặc 12 tháng trước.
 
 \begin{figure}[H]
 	\centering
   \includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Chart3.png}
-  \caption{Giao diện thống kê. Biểu đồ thể hiện tỉ lệ tin rác của một nguồn tin trên tổng số các tin của nguồn tin đó. Biểu đồ chỉ hiển thị top 20 nguồn tin với tỉ lệ lớn nhất và khác 0}
+  \caption{Giao diện thống kê.}
 	\label{fig:streamingkeywords}
 \end{figure}
-
+ Biểu đồ thể hiện tỉ lệ tin rác của một nguồn tin trên tổng số các tin của nguồn tin đó. Biểu đồ chỉ hiển thị top 20 nguồn tin với tỉ lệ lớn nhất và khác 0
 \begin{figure}[H]
 		\centering
 	\includegraphics[width=0.96\linewidth]{Chapter3/Chapter3Figs/Filter.png}
-	\caption{Giao diện bộ phân lớp tin tức. Người dùng có thể thực hiện phân lớp một cách thủ công bằng cách cho cho vào input là văn bản hoặc các đường dẫn đến các bài báo cần phân lớp, kèm theo là nhãn mà người dùng gán cho tin đó. Input có thể được truyền vào bằng cách nhập từ bàn phím hoặc truyền vào từ một file. Sao khi đã hoàn thành việc phân lớp, hệ thống sẽ trả về các nhãn tương ứng kèm theo độ chính xác của việc phân lớp và confusion matrix}
+	\caption{Giao diện bộ phân lớp tin tức.}
 	\label{fig:startclustering}
 \end{figure}
-
+ Người dùng có thể thực hiện phân lớp một cách thủ công bằng cách cho cho vào input là văn bản hoặc các đường dẫn đến các bài báo cần phân lớp, kèm theo là nhãn mà người dùng gán cho tin đó. Input có thể được truyền vào bằng cách nhập từ bàn phím hoặc truyền vào từ một file. Sao khi đã hoàn thành việc phân lớp, hệ thống sẽ trả về các nhãn tương ứng kèm theo độ chính xác của việc phân lớp và confusion matrix.
 \section{Kết chương}
-Chương này đã trình bày về các thành phần chính hệ thống, kiến trúc phân tầng, các hệ cơ sở dữ liệu được sử dụng và cách tổ chức, cùng một số kết quả cài đặt hệ thống.
+Chương này đã trình bày về các thành phần chính hệ thống, kiến trúc phân tầng,
+các hệ cơ sở dữ liệu được sử dụng và cách tổ chức, cùng các  kết quả cài đặt hệ thống.
