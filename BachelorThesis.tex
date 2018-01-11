@@ -73,19 +73,17 @@
 
 \frontmatter % book mode only
 \includepdf{General/danhsachhoidong.pdf}
-\includepdf{General/nhanxetCBHD.pdf}
-\includepdf{General/nhanxetCBPB.pdf}
+\includepdf[pages=-]{General/nhanxetCBHD.pdf}
+\includepdf[pages=-]{General/nhanxetCBPB.pdf}
 \include{Acknowledgement/acknowledgement}
+\includepdf[pages=-]{General/decuongchitiet.pdf}
 
 
 \tableofcontents
-\include{Terms/terms}
-%\begin{center}
+\newpage
 \listoftables  
 \newpage
 \listoffigures
-%\end{center}
-%\newpage
 \mainmatter
 \renewcommand\thefigure{0.\arabic{figure}} 
 \setcounter{figure}{0}
@@ -109,7 +107,6 @@
 \backmatter  
 
 
-%\bibliographystyle{unsrtnat} % bibliography style
 %\bibliographystyle{apa}
 \bibliographystyle{unsrt}
 %\bibliographystyle{Classes/plainnat} % bibliography style
