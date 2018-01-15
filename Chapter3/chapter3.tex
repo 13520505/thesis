@@ -48,6 +48,44 @@ Module này sử dụng hệ thống Crawler để lấy các bài đăng từ n
 		\item Xóa các bài viết trùng.
 		\item Lưu trữ xuống cơ sở dữ liệu MongoDB
 	\end{itemize}
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{ll} \toprule%
+      \textbf{Tên chức năng}  &  Đồng bộ cơ sở dữ liệu tin tức \\ \toprule%
+      \textbf{Tóm tắt}   &  Hệ thống sẽ truy xuất vào cơ sở dữ \\
+                 & liệu của ông ty VCCorp để thực hiện \\ 
+                 & truy xuất và lưu trữ dữ liệu xuống cơ \\
+                 & sở dữ liệu của hệ thống \\ \midrule
+
+      \textbf{Dòng sự kiện chính}
+                                  & 1. Truy xuất các tin chưa có trong \\
+                                  & cơ sở dữ liệu của hệ thống.\\
+                                  & 2. Tạo và so sánh hash code của tin \\
+                                  & đối với các hash code trong cơ sở dữ\\
+                                  & liệu. \\
+                                  & 3. Lưu các tin không trùng hash\\ 
+                                  & code vào cơ sở dữ liệu của hệ thống.\\
+                                  & Tạo và lưu trữ hash code của các tin \\
+                                  & đó.\\ \midrule
+      \textbf{Dòng sự kiện khác} & 1. Tin tức được đồng bộ về có hash \\
+                                 & code trùng với hash code có trong cơ \\
+                                 & sở dữ liệu: tin tức sẽ bị bỏ qua.\\ \midrule
+      \textbf{Các yêu cầu đặc biệt} & Không có. \\ \midrule
+      \textbf{Trạng thái của hệ thống} & Hệ thống đã thiết lập kết nối với cơ\\ 
+      \textbf{trước khi thực hiện chức năng} & sở dữ liệu của công ty VCCorp. \\ \midrule
+      \textbf{Trạng thái của hệ thống} & Cở sở dữ liệu của hệ thống sẽ xuất \\
+      \textbf{sau khi thực hiện chức năng} & hiện các mẫu dữ liệu tin tức. \\ \midrule
+      \textbf{Điểm mở rộng} & Không có. \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng mô tả chức năng lấy các bài báo}
+  \end{table}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Chapter3/Chapter3Figs/Crawler.png}
+	\caption{Sơ đồ luồn dữ liệu cho tiến trình đồng bộ hóa dữ liệu}
+	\label{fig:classifyprocess}
+\end{figure}
 \section{Phân hệ tiền xử lý dữ liệu (Data Preprocessor)}
 \label{sec:DataPreprocessor}
 Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hiện tách từ, loại bỏ stopwords và biểu diễn dữ liệu thành vector trọng số tf-idf. Trước khi chạy thuật toán phân loại, dữ liệu được lấy ra từ MongoDB và tiền xử lý phần nội dung của bài báo bằng các bước sau:
@@ -59,6 +97,38 @@ Module tiền xử lý có nhiệm vụ chính gồm loại bỏ URL, thực hi�
 		\item Tính và biểu diễn dữ liệu thành vector tf-idf và metadata.
 	\end{enumerate}
 
+  \begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{12pt}
+    \begin{tabular}{ll} \toprule%
+      \textbf{Tên chức năng}  &  \\ \toprule%
+      \textbf{Tóm tắt}   &  Hệ thống sẽ nhận vào một tập các mẫu tin \\
+                 & để thực hiện tiền xử lý dữ liệu.\\ \midrule
+
+      \textbf{Dòng sự kiện chính}
+                                  & 1. Đọc dữ liệu input từ các tập tin. \\
+                                  & 2. Loại bỏ các URL. \\
+                                  & 3. Tách từ.\\ 
+                                  & 4. Loại bỏ stopwords.\\
+                                  & 5. Index các tập tin mới vào tập từ vựng \\
+                                  & 6. Tính tf-idf cho các mẫu tin và lưu kết \\
+                                  & kết quả ra file output. \\ \midrule
+      \textbf{Dòng sự kiện khác} & Không có. \\ \midrule
+      \textbf{Các yêu cầu đặc biệt} & Không có. \\ \midrule
+      \textbf{Trạng thái của hệ thống} & Cở sở dữ liệu của hệ thống có tồn tại \\
+      \textbf{trước khi thực hiện chức năng} & các mẫu tin chưa được gán nhãn.\\ \midrule
+      \textbf{Trạng thái của hệ thống} & Các mẫu tin chưa được gán nhãn trước \\
+      \textbf{sau khi thực hiện chức năng} & Không có. \\ \midrule
+      \textbf{Điểm mở rộng} & Không có. \\ \bottomrule
+    \end{tabular}
+    \caption{Bảng mô tả chức năng lấy các bài báo}
+  \end{table}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Chapter3/Chapter3Figs/Preprocess.png}
+	\caption{Sơ đồ luồn dữ liệu cho tiến trình tiền xử lý dữ liệu}
+	\label{fig:classifyprocess}
+\end{figure}
 \section{Phân hệ phân loại tin tức}
 \label{sec:newsClassify}
 Sử dụng model đã train trước đó để phân loại tin tức. Model sử dụng thuật toán SVM đã trình bày ở chương 2 làm thuật toán chính để phân loại tin tức. Hiện tại hệ thống có 2 nhãn đã được định nghĩa trước đó:
@@ -66,9 +136,14 @@ Sử dụng model đã train trước đó để phân loại tin tức. Model s
     \item \textit{Không rác}
     \item \textit{Rác}
 	\end{itemize}
-
 Sau khi đã phân loại, hệ thống sẽ lưu nhãn đã gán cho tin tức xuống cơ sở dữ liệu MongoDB.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Chapter3/Chapter3Figs/Classify.png}
+	\caption{Sơ đồ luồn dữ liệu cho tiến trình phân loại tin tức}
+	\label{fig:classifyprocess}
+\end{figure}
 \section{Phân hệ phân loại loại rác}
 \label{sec:spamCategory}
 Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân loại tin tức ở trên để phân loại loại rác cho tin đó. Hiện tại có 3 loại rác đã được định nghĩa trước:
@@ -78,6 +153,12 @@ Hệ thống sẽ lấy những tin được gán nhãn "Rác" ở bước phân
   \item \textit{Chia sẻ}
 \end{itemize}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Chapter3/Chapter3Figs/Classify.png}
+	\caption{Sơ đồ luồn dữ liệu cho tiến trình phân loại loại rác}
+	\label{fig:classifyprocess}
+\end{figure}
 \section{Thiết kế hệ thống} 
 	\begin{figure}[H]
 		\centering

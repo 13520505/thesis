@@ -8,19 +8,23 @@
 \section{Mở đầu}
 Chương này sẽ giới thiệu bài toán lọc rác tin tức cho hệ thống phát hiện tin nóng. Trình bày cơ sở lý thuyết và phát biểu bài toán lọc rác tin tức. Cuối cùng trình bày một số phương pháp tiếp cận bài toán lọc rác tin tức  và các kiến thức liên quan.
 \section{Giới thiệu bài toán} %Topic Detection and Tracking}
-	\subsection{Các khái niệm cơ bản}
-  Để có thể xác định khái niệm "rác", ta phải hiểu được tính chất của "tin tức". Harcup và O'Neill  cho rằng một mẫu tin phải thỏa mãn được một trong các tính chất: \textit{đối tượng quyền lực (the power elite), người nổi tiếng (celebrity), giải trí (entertainment), bất ngờ (surprise), tin xấu (bad news), tin tốt (bad news), tầm ảnh hưởng (magnitude), tính liên quan (relevance), tính tiếp nối (follow-up), định hướng của tờ báo (newspaper agenda)}\cite{doi:10.1080/14616700118449}.
-
-  Ngoài ra Gy\"{o}ngyi và Garcia-Molina định nghĩa "đăng rác" như sau: 
+	\subsection{Một số khái niệm cơ bản}
 	\begin{itemize}
-    \item \textit{Đăng rác (Spamming)}: các hành động có chủ đích của con người nhầm thiên vị tính liên quan của một trang web nào đó, làm sai lệch giá trị của trang web.
+    \item \textit{Tin tức}: Harcup và O'Neill cho rằng để được xem là "tin tức", một mẫu tin phải thỏa mãn được một trong các tính chất: \textit{đối tượng quyền lực (the power elite), người nổi tiếng (celebrity), giải trí (entertainment), bất ngờ (surprise), tin xấu (bad news), tin tốt (bad news), tầm ảnh hưởng (magnitude), tính liên quan (relevance), tính tiếp nối (follow-up), định hướng của tờ báo (newspaper agenda)}\cite{doi:10.1080/14616700118449}.
+    \item \textit{Đăng rác (Spamming)}: Gy\"{o}ngyi và Garcia-Molina định nghĩa "đăng rác" là các hành động có chủ đích của con người nhầm thiên vị tính liên quan của một trang web nào đó, làm sai lệch giá trị của trang web \cite{Gyongyi:2004:CWS:1316689.1316740}.
 	\end{itemize}
+  Fiscus và Doditon \cite{Fiscus:TDTDefinition} cũng cho ta các định nghĩa:
+  \begin{itemize}
+    \item \textit{Sự kiện (Event)}: một cái gì đó xủa ra tại một thời điểm và địa điểm cụ thể cùng với các điều kiện và các hậu quả không thể tránh khỏi.
+    \item \textit{Câu chuyện (Story)}: một mẩu tin đồng bộ về chủ đề bao gồm hai câu trần thuật trở lên về một sự kiện.
+  \end{itemize}
+  Từ các khái niệm trên ta rút ra được các định nghĩa như sau:
+  \begin{itemize}
+    \item \textit{Tin nóng:} bài viết thỏa mãn các tính chất của tin tức, viết về một sự kiện gần đây, có tính thời sự, có tầm ảnh hưởng rộng, thu hút được sự quan tâm chú ý của nhiều người.
+    \item \textit{Rác}: bài viết không thõa mãn các tính chất của tin tức, không có tính thời sự, làm ảnh hưởng đến kết quả phân tích và xử lý dữ liệu tin tức.
+  \end{itemize}
 
-  Từ các khái niệm trên ta có định nghĩa "rác" cho bài toán như sau:
-
-  \textbf{Định nghĩa:} Rác là các bài không thõa mãn được các tính chất của tin tức và làm sai lệch kết quả phân tích và xử lý dữ liệu của hệ thống phân loại tin tức. 
-
-  Từ định nghĩa trên ta có thể xác định được các loại tin sẽ được xem là rác:
+  Từ định nghĩa trên về rác, ta có thể xác định được các loại tin sẽ được xem là rác:
   \begin{itemize}
     \item \textit{Quảng cáo}: các bài quảng cáo, giới thiệu sản phẩm, các chương trình khuyển mãi, trúng thưởng.
     \item \textit{Tuyển dụng}: các bài đăng tuyển dụng, giới thiệu việc làm của các tổ chức, doanh nghiệp.
@@ -52,7 +56,7 @@ Vấn đề phát hiện và lọc rác là một vấn đề lâu đời và ki
 
 Sahami và cộng sự \cite{Sahami1998ABA} sử dụng các tiếp cận Bayesian vào vấn đề lọc rác cho email. Thực nghiệm cho thấy các bộ phân lớp đạt được hiệu suất cao hơn khi ta cân nhắc các tính năng đặc trưng theo domain và nội dung văn bản của email. Ngày nay thì các phương pháp phát hiện và lọc rác cho email đã khá hoàn thiện, và các phương pháp phát hiện và lọc rác Bayesian được áp dụng rộng rãi trong các email client và server.
 
-Rothwell và cộng sự\cite{rothwell2004intelligent} đã xây dựng một hệ thống phát hiện các thông điệp rác bằng cách sử dụng neural network. Khi một thông điệp được đưa vào hệ thống nó sẽ được phân rã và các thông số thống kê trong thông điệp đó sẽ được thu thập bở bộ phân tích số liệu. Một neural network được huấn luyện bằng cách sử dụng sự kết hợp tuyến tính linh hoạt đề thay đổi các trọng số cùng với bộ phân tích số liệu thống kê sẽ được dùng để quyết định xem một thông điệp có phải là rác hay không.  
+Rothwell và cộng sự\cite{rothwell2004intelligent} đã xây dựng một hệ thống phát hiện các thông điệp rác bằng cách sử dụng neural network. Khi một thông điệp được đưa vào hệ thống nó sẽ được phân rã và các thông số thống kê trong thông điệp đó sẽ được thu thập bở bộ phân tích số liệu. Một neural network được huấn luyện bằng cách sử dụng sự kết hợp tuyến tính linh hoạt để thay đổi các trọng số cùng với bộ phân tích số liệu thống kê sẽ được dùng để quyết định xem một thông điệp có phải là rác hay không.  
 
 Idris và cộng sự\cite{IDRIS201533} đã xây dựng một hệ thống phát hiện rác cho email sử dụng thuật toán negative selection và particle swarm optimization (NSA-PSO). Hệ thống áp dụng thuật toán local outlier factor (LOF) để tính toán độ mở rộng của không gian không rác để thu thập được các tính năng tốt nhất cho việc phân lớp. Mô hình NSA-SPO được dùng để phân biệt giữa rác và không rác trong các mạng client-server.
 
@@ -64,7 +68,7 @@ Phát hiện rác trên các nền tảng mạng xã hội cũng là một trong
 
 Wang cũng xây dựng một hệ thống phát hiện rác cho dữ liệu Twitter sử dụng thuật toán phân lớp Naive Bayes. Hệ thống thức hiện phân lớp dựa trên các đặc tính mạng xã hội của Twitter và đặc tính nội dung của dữ liệu văn bản. Theo kết quả đo kiểm đánh giá thì độ chính xác của hệ thống đạt đến 89\%\cite{5741690}
 
-\section{Tiền xử lý}
+\section{Tiền xử lý dữ liệu văn bản}
 \subsection{Khái niệm}
 Tiền xử lý dữ liệu là quá trình lọc và chuẩn bị dữ liệu cho quá trình phân lớp văn bản. Thường các văn bản đầu vào đa số chứa nhiều thông tin gây nhiễu và các thông tin không có giá trị như HTML tags, địa chỉ trang web, quảng cáo… Vì vậy, ở mức độ từ, nhiều từ không có ý nghĩa cho ý chung của câu.
 \subsection{Vì sao phải tiền xử lý}
@@ -87,7 +91,7 @@ Quá trình tiền xử lý dữ liệu thường sẽ gồm các bước:
 \section{Giới thiệu một số phương phát biểu diễn dữ liệu văn bản} \label{distances}
 Do máy tính không thể đọc hiểu và xử lý được dữ liệu thuần văn bản, ta cần có một phương pháp biểu diễn dữ liệu văn bản thành các con số mà máy tính có thể hiểu được.
 \subsection*{Term Frequency - Inverse Document Frequency (TF-IDF)}
-Trong lĩnh vực thu thập thông tin, TF-IDF là một dữ liệu số dùng để thể hiện độ quan trọng của một từ trong một một tập hợp hoạc một kho từ vựng \cite{rajaraman_ullman_2011}. Nó thường được dùng trong việc thu thập thông tin, text mining và user modeling. Giá trị của TF-IDF tăng theo tỉ lệ với số lần một từ xuất hiện trong một văn bản, nhưng thường bị giảm lại theo tần xuất của từ đó trong toàn kho từ vựng, vì một từ có thể chỉ đơn giản là nó phổ biến hơn các từ khác. Ngày nay, TF-IDF là một trong những phương pháp tính trọng số cho các từ phổ biến nhất; 83\% các hệ thống khuyến nghị dựa trên văn bản trong lĩnh vực thư viện điện tử sử dụng TF-IDF \cite{Beel2016}.
+Trong lĩnh vực thu thập thông tin, TF-IDF là một dữ liệu số dùng để thể hiện độ quan trọng của một từ trong một một tập hợp hoặc một kho từ vựng \cite{rajaraman_ullman_2011}. Nó thường được dùng trong việc thu thập thông tin, text mining và user modeling. Giá trị của TF-IDF tăng theo tỉ lệ với số lần một từ xuất hiện trong một văn bản, nhưng thường bị giảm lại theo tần xuất của từ đó trong toàn kho từ vựng, vì một từ có thể chỉ đơn giản là nó phổ biến hơn các từ khác. Ngày nay, TF-IDF là một trong những phương pháp tính trọng số cho các từ phổ biến nhất; 83\% các hệ thống khuyến nghị dựa trên văn bản trong lĩnh vực thư viện điện tử sử dụng TF-IDF \cite{Beel2016}.
 
 TF-IDF gồm có hai thành phần chính Term Frequency (TF) và Inverse Document Frequency (IDF).
 
@@ -105,10 +109,16 @@ Trong đó:
   \item $\abs{\{d \in D: t \in d \}}$: số lượng văn bản và có xuất hiện từ $t$. 
 \end{itemize}
 	\subsection*{Word Vector}
-Word vector là một hình thức biểu diễn các từ trong một kho từ vựng dưới dạng các vector. Các từ thường xuất hiện cùng nhau trong các nhiều ngữ cảnh khác nhau thì sẽ được biểu diễn bằng các vector gần với nhau trong không gian vector \cite{mikolov:word2vec}. Tập hợp các kỹ thuật để nhận vào input là một kho từ vựng và cho ra một không gian vector tương ứng được gọi là word2vec.
+Word vector là một hình thức biểu diễn các từ trong một kho từ vựng dưới dạng các vector. Các từ thường xuất hiện cùng nhau trong các nhiều ngữ cảnh khác nhau thì sẽ được biểu diễn bằng các vector gần với nhau trong không gian vector \cite{mikolov:word2vec}. Tập hợp các kỹ thuật để nhận vào input là một kho từ vựng và cho ra một không gian vector tương ứng được gọi là Word2Vec. Word2Vec được phát triển bởi một nhóm nghiên cứu tại Google mà người dẫn đầu là Tomas Mikolov.
 
   Word vector thường được sử dụng trong các công cụ tìm kiếm và dịch thuật do nó cung cấp thông tin về sự tương qua ngữ nghĩa giữa các từ và các ngữ cảnh cũng như giữa các từ với nhau.
 
+  Word2Vec gồm hai mô hình huấn luyện phổ biến là: continuous bag-of-word (CBOW) và skip-gram. 
+	\begin{figure}[H]
+    \centering
+			\includegraphics[width=0.9\textwidth]{word2vec.png}
+      \caption{\textit{Mô hình CBOW thực hiện dự đoán các từ dựa trên ngữ cảnh, còn Skip-gram thực hiện dự đoán ngữ cảnh dựa trên từ cho trước}\cite{mikolov:word2vec}}
+	\end{figure}
 \section{Các phương pháp tiếp cận phổ biến}
 \label{sec:alg}
 Phân lớp là quá trình xác định xem một đối tượng sẽ thuộc về lớp nào dựa trên việc quan sát các đối tượng khác mà lớp của chúng đã được xác định từ trước. Thông thường, các đối tượng cần phân lớp sẽ được phân tích thành các thuộc tính có thể đo đếm được. Một thuật toán dùng để phân lớp, hay còn được gọi là một bộ phân lớp, sẽ dựa trên các thuộc tính đó để ánh xạ các đối tượng input mới vào lớp của chúng. Đây là một trong những tác vụ chính của lĩnh vực khai thác dữ liệu.
@@ -116,8 +126,8 @@ Phân lớp là quá trình xác định xem một đối tượng sẽ thuộc 
 Bài toán phân lớp bao gồm nhiều thuật toán khác nhau, trong phạm vi của khóa luận chúng ta sẽ chỉ quan tâm đến các thuật toán: Support vector machine, Naive Bayes, và J48 decision tree.
 \subsection{Thuật toán phân lớp Support Vector Machine (SVM)}
 \subsubsection{Giới thiệu}
-Support vector machine hay còn gọi là support vector network là một thuật toán phân lớp dành cho các bài toán phân lớp nhịphân. SVM thực hiện phân lớp bằng việc ánh xạ các vector lên một không gian nhiều chiều. Trên không gian này sẽ sinh ra một mặt phẳng quyết định tuyến tính phân tách hai lớp dữ liệu \cite{Cortes1995}.
-	\begin{figure}[ht]
+Support vector machine hay còn gọi là support vector network là một thuật toán phân lớp dành cho các bài toán phân lớp nhị phân được đề xuất bởi Cortes và Vapnik (1995). SVM thực hiện phân lớp bằng việc ánh xạ các vector lên một không gian nhiều chiều. Trên không gian này sẽ sinh ra một mặt phẳng quyết định tuyến tính phân tách hai lớp dữ liệu \cite{Cortes1995}.
+	\begin{figure}[H]
     \centering
 			\includegraphics[width=0.65\textwidth]{linearSVM.png}
       \caption{\textit{Minh họa về một bộ phân lớp SVM tuyến tính. Siêu phẳng với lề cực đại và các margin của một bộ SVM được học từ các mẫu được gán nhãn thành hai lớp. Những mẫu nằm trên margin được gọi là support vector}}
@@ -139,12 +149,12 @@ Support vector machine hay còn gọi là support vector network là một thu�
 Bài toán lọc rác văn bản là một bài toán phân lớp nhị vân với các vector đặc trưng có số chiều rất lớn nên đây là một bài toán rất phù hợp cho việc sử dụng thuật toán SVM. 
 %\section{Biểu diễn dữ liệu bằng Vector space model và tf-idf}
 %========================================================================================================================
-\section{Thuật toán Naive Bayes} 
-\subsection{Giới thiệu}
+\subsection{Thuật toán Naive Bayes} 
+\subsubsection{Giới thiệu}
 Thuật toán Naive Bayes là một thuật toán phân lớp xác suất đơn giản dùng để tính một tập các xác suất bằng cách đếm tần suất và kết hợp của các giá trị trong một tập cho trước. Thuật toán sử dụng định luật Bayes sẽ giả định rằng tất cả các chiều(attributes) của dữ liệu là độc lập với nhau. Các giả định rằng các chiều là độc lập với nhau rất khó để có thể xuất hiện trong thực tế. Tuy nhiên giả thiết ngây ngô này lại mang lại những kết quả phân lớp tốt cho nhiều bài toán phân lớp \cite{dimitoglou2012comparison}.
 
 Định lý Bayes cho phép tính xác suất xảy ra của một sự kiện ngẫu nhiên A khi biết sự kiện liên quan B đã xảy ra. Xác suất này được ký hiệu là P(A|B), và đọc là “xác suất của A nếu có B”. Đại lượng này được gọi xác suất có điều kiện hay xác suất hậu nghiệm vì nó được rút ra từ giá trị được cho của B hoặc phụ thuộc vào giá trị đó. Theo định lí Bayes, xác suất xảy ra A khi biết B sẽ phụ thuộc vào 3 yếu tố: Xác suất xảy ra A của riêng nó, không quan tâm đến B. Kí hiệu là P(A) và đọc là xác suất của A. Đây được gọi là xác suất biên duyên hay xác suất tiên nghiệm, nó là “tiên nghiệm” theo nghĩa rằng nó không quan tâm đến bất kỳ thông tin nào về B. Xác suất xảy ra B của riêng nó, không quan tâm đến A. Kí hiệu là P(B) và đọc là “xác suất của B”. Đại lượng này còn gọi là hằng số chuẩn hóa (normalising constant), vì nó luôn giống nhau, không phụ thuộc vào sự kiện A đang muốn biết. Xác suất xảy ra B khi biết A xảy ra. Kí hiệu là P(B|A) và đọc là “xác suất của B nếu có A”. Đại lượng này gọi là khả năng (likelihood) xảy ra B khi biết A đã xảy ra. Chú ý không nhầm lẫn giữa khả năng xảy ra B khi biết A và xác suất xảy ra A khi biết B. Tóm lại định lý Bayes sẽ giúp ta tính ra xác suất xảy ra của một giả thuyết bằng cách thu thập các bằng chứng nhất quán hoặc không nhất quán với một giả thuyết nào đó. Khi các bằng chứng tích lũy, mức độ tin tưởng vào một giả thuyết thay đổi. Khi có đủ bằng chứng, mức độ tin tưởng này thường trở nên rất cao hoặc rất thấp, tức là xác xuất sảy ra giả thuyết sẽ thay đổi thì các bằng chứng liên quan đến nó thay đổi.	
-\subsection{Ưu điểm, hạn chế}
+\subsubsection{Ưu điểm, hạn chế}
 Ưu điểm:
 \begin{itemize}
   \item Đơn giản, nhanh, dễ cài đặt
@@ -161,11 +171,11 @@ Nhược điểm:
 \begin{itemize}
   \item Trên thực tế điều kiện giả định độc lập là gần như không thể xảy ra, điều này dẫn đến sự hao hụt về độ chính xác.
 \end{itemize}
-\subsection{Thuật toán Naive Bayes và bài toán lọc rác tin tức}
+\subsubsection{Thuật toán Naive Bayes và bài toán lọc rác tin tức}
 Naive Bayes là một trong các thuật toán được dùng rất phổ biến trong việc phát hiện và lọc rác cho email. Nó là một trong những kỹ thuật cơ bản và lâu đời nhất trong lĩnh vực này. Do đó, đề tài nãy cũng sẽ tìm hiểu và áp dụng Naive Bayes vào bài toán lọc rác tin tức.
 
-\section{Thuật toán J48}
-\subsection{Giới thiệu}
+\subsection{Thuật toán J48}
+\subsubsection{Giới thiệu}
 Thuật toán J48(C4.5) là một thuật toán sử dụng cây quyết định (decision tree) cho việc phân lớp. Thuật toán sẽ tạo ra môn cây nhị phân. Bằng cách sử dụng cây quyết định, cách tiếp cận này cũng thường đước sử dụng trong bài toán phân lớp. Cây quyết định sẽ được xây dựng để mô hình hóa quá trình phân lớp.
 
 Cây quyết định (Decision Tree) là một cây phân cấp có cấu trúc được dùng để phân lớp các đối tượng dựa vào dãy các luật (series of rules). Các thuộc tính của đối tượng (ngoại trừ thuộc tính phân lớp – Category attribute) có thể thuộc các kiểu dữ liệu khác nhau (Binary, Nominal, ordinal, quantitative values) trong khi đó thuộc tính phân lớp phải có kiểu dữ liệu là Binary hoặc Ordinal. Tóm lại, cho dữ liệu về các đối tượng gồm các thuộc tính cùng với lớp (classes) của nó, cây quyết định sẽ sinh ra các luật để dự đoán lớp của các đối tượng chưa biết (unseen data).
@@ -174,7 +184,7 @@ Cây quyết định (Decision Tree) là một cây phân cấp có cấu trúc 
 \includegraphics[width=0.9\linewidth]{Chapter2/Chapter2Figs/J48.png}
 \caption{Ví dụ về cây quyết định. Thực hiện phân lớp các loài hoa: setosa, versicolor, virginica; dựa trên độ dài và độ rộng của cánh hoa}
 \end{figure}
-\subsection{Ưu điểm, hạn chế}
+\subsubsection{Ưu điểm, hạn chế}
 Ưu điểm:
 \begin{itemize}
   \item Có khả năng chọn ra các đặc tính có tính phân biệt sâu sắc nhất.
@@ -186,6 +196,8 @@ Nhược điểm:
   \item Tỉ lệ lỗi phân lớp cao khi tập dữ liệu huấn luyện có kích thước nhỏ so với số lượng lớp.
   \item Tốc độ huấn luyện tăng nhanh chóng khi kích thước tập dữ liệu và số lượng các đặc tính tăng.
 \end{itemize}
+\subsubsection{Thuật toán J48 và bài toán lọc rác tin tức}
+Các thuật toán cây quyết định thường được sử dụng rộng rãi trong các bài toán phân lớp, nên đề tài này cũng sẽ áp dụng và đánh giá thuật toán J48 vào bài toán lọc rác tin tức.
 \section{Các độ đo đánh giá các thuật toán phân lớp}
 \label{sec:eval}
 \subsection{Precision và Recall}
